@@ -1,0 +1,6 @@
+Tietokannan suunnittelua: 10h
+HTML: 5h
+CSS: 3h
+JavaScript: 15h
+PHP: 35h
+Dokumentointia: 5h

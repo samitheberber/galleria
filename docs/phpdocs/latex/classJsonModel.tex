@@ -1,0 +1,799 @@
+\section{JsonModel Class Reference}
+\label{classJsonModel}\index{JsonModel@{JsonModel}}
+Inheritance diagram for JsonModel:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=91pt]{classJsonModel__inherit__graph}
+\end{center}
+\end{figure}
+Collaboration diagram for JsonModel:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=91pt]{classJsonModel__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf deleteUser} (\$uid)
+\item 
+{\bf userActivity} (\$uid, \$act)
+\item 
+{\bf addUserInGroup} (\$uid, \$gid)
+\item 
+{\bf delUserInGroup} (\$uid, \$gid)
+\item 
+{\bf getGroupsFromUser} (\$uid, \$involves=true)
+\item 
+{\bf saveCatGroups} (\$groups, \$catid)
+\item 
+{\bf groupAdmin} (\$gid, \$admin)
+\item 
+{\bf deleteGroup} (\$gid)
+\item 
+{\bf saveCats} (\$cats)
+\item 
+{\bf addCat} (\$name)
+\item 
+{\bf deleteCat} (\$id)
+\item 
+{\bf getGroupsFromCat} (\$cid)
+\item 
+{\bf changeDesc} (\$pid, \$text)
+\item 
+{\bf changePg} (\$pid, \$text)
+\item 
+{\bf changeYear} (\$pid, \$text)
+\item 
+{\bf changeCat} (\$pid, \$cid)
+\item 
+{\bf addTag} (\$pid, \$name)
+\item 
+{\bf pictureVisibility} (\$pid, \$show)
+\item 
+{\bf deletePicTag} (\$pid, \$tid)
+\item 
+{\bf deletePic} (\$pid)
+\item 
+{\bf getChangelog} (\$pid)
+\item 
+{\bf getPgs} ()
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf \_\-catsToSqlString} (\$cat)
+\item 
+{\bf \_\-groupsToSqlString} (\$catid, \$groupid)
+\item 
+{\bf \_\-addNewTag} (\$name)
+\item 
+{\bf \_\-getTagId} (\$name)
+\item 
+{\bf \_\-deleteEmptyTags} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 19 of file jsonmodel.php.
+
+\subsection{Member Function Documentation}
+\index{JsonModel@{JsonModel}!deleteUser@{deleteUser}}
+\index{deleteUser@{deleteUser}!JsonModel@{JsonModel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}JsonModel.deleteUser (\$ {\em uid})}\label{classJsonModel_6844ca7057ffd876899bdae9e6fc91e3}
+
+
+Delete user.
+
+This function deletes user.  public \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em integer}]\$uid \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]boolean \end{Desc}
+
+
+Definition at line 32 of file jsonmodel.php.
+
+References Galleria\_\-Model.\_\-getConnection().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{classJsonModel_6844ca7057ffd876899bdae9e6fc91e3_cgraph}
+\end{center}
+\end{figure}
+\index{JsonModel@{JsonModel}!userActivity@{userActivity}}
+\index{userActivity@{userActivity}!JsonModel@{JsonModel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}JsonModel.userActivity (\$ {\em uid}, \$ {\em act})}\label{classJsonModel_9e63a88b49207db1203e19821decf93d}
+
+
+Change user activity.
+
+This function grants and removes active status from user.  public \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em integer}]\$uid \item[{\em boolean}]\$act \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]stdClass \end{Desc}
+
+
+Definition at line 48 of file jsonmodel.php.
+
+References Galleria\_\-Model.\_\-getConnection().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{classJsonModel_9e63a88b49207db1203e19821decf93d_cgraph}
+\end{center}
+\end{figure}
+\index{JsonModel@{JsonModel}!addUserInGroup@{addUserInGroup}}
+\index{addUserInGroup@{addUserInGroup}!JsonModel@{JsonModel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}JsonModel.addUserInGroup (\$ {\em uid}, \$ {\em gid})}\label{classJsonModel_247eb183c9cb1f28d30d0f9195b51349}
+
+
+Add user in group.
+
+This function adds user in group.  public \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em integer}]\$uid \item[{\em integer}]\$gid \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]boolean \end{Desc}
+
+
+Definition at line 67 of file jsonmodel.php.
+
+References Galleria\_\-Model.\_\-getConnection().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classJsonModel_247eb183c9cb1f28d30d0f9195b51349_cgraph}
+\end{center}
+\end{figure}
+\index{JsonModel@{JsonModel}!delUserInGroup@{delUserInGroup}}
+\index{delUserInGroup@{delUserInGroup}!JsonModel@{JsonModel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}JsonModel.delUserInGroup (\$ {\em uid}, \$ {\em gid})}\label{classJsonModel_2c82d6f4fb97f4aae9256a3a1cc4b6a0}
+
+
+Delete user from group.
+
+This function deletes user from group.  public \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em integer}]\$uid \item[{\em integer}]\$gid \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]boolean \end{Desc}
+
+
+Definition at line 83 of file jsonmodel.php.
+
+References Galleria\_\-Model.\_\-getConnection().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=283pt]{classJsonModel_2c82d6f4fb97f4aae9256a3a1cc4b6a0_cgraph}
+\end{center}
+\end{figure}
+\index{JsonModel@{JsonModel}!getGroupsFromUser@{getGroupsFromUser}}
+\index{getGroupsFromUser@{getGroupsFromUser}!JsonModel@{JsonModel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}JsonModel.getGroupsFromUser (\$ {\em uid}, \$ {\em involves} = {\tt true})}\label{classJsonModel_961794ed1c7fdf1448c3cd5c6c314bf6}
+
+
+Give groups form user.
+
+This function returns groups where user is in.  public \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em integer}]\$uid \item[{\em boolean}]\$involves \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]array \end{Desc}
+
+
+Definition at line 99 of file jsonmodel.php.
+
+References Galleria\_\-Model.\_\-fetchObjects(), and Galleria\_\-Model.\_\-getConnection().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{classJsonModel_961794ed1c7fdf1448c3cd5c6c314bf6_cgraph}
+\end{center}
+\end{figure}
+\index{JsonModel@{JsonModel}!saveCatGroups@{saveCatGroups}}
+\index{saveCatGroups@{saveCatGroups}!JsonModel@{JsonModel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}JsonModel.saveCatGroups (\$ {\em groups}, \$ {\em catid})}\label{classJsonModel_33cec069274573cc08a95380ddedb45d}
+
+
+Save category groups.
+
+This function clears and adds new groups for category.  public \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em array}]\$groups \item[{\em integer}]\$catid \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]boolean \end{Desc}
+
+
+Definition at line 119 of file jsonmodel.php.
+
+References Galleria\_\-Model.\_\-getConnection(), and \_\-groupsToSqlString().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=283pt]{classJsonModel_33cec069274573cc08a95380ddedb45d_cgraph}
+\end{center}
+\end{figure}
+\index{JsonModel@{JsonModel}!groupAdmin@{groupAdmin}}
+\index{groupAdmin@{groupAdmin}!JsonModel@{JsonModel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}JsonModel.groupAdmin (\$ {\em gid}, \$ {\em admin})}\label{classJsonModel_c7dc1d6b3cdefdbe6d998861e661a964}
+
+
+Toggle admin status.
+
+This function grants and removes admin status from group.  public \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em integer}]\$gid \item[{\em boolean}]\$admin \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]stdClass \end{Desc}
+
+
+Definition at line 143 of file jsonmodel.php.
+
+References Galleria\_\-Model.\_\-getConnection().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=275pt]{classJsonModel_c7dc1d6b3cdefdbe6d998861e661a964_cgraph}
+\end{center}
+\end{figure}
+\index{JsonModel@{JsonModel}!deleteGroup@{deleteGroup}}
+\index{deleteGroup@{deleteGroup}!JsonModel@{JsonModel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}JsonModel.deleteGroup (\$ {\em gid})}\label{classJsonModel_aef5fd91794dd52dd5183f319ffd6205}
+
+
+Delete group.
+
+This function deletes group.  public \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em integer}]\$gid \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]boolean \end{Desc}
+
+
+Definition at line 161 of file jsonmodel.php.
+
+References Galleria\_\-Model.\_\-getConnection().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=275pt]{classJsonModel_aef5fd91794dd52dd5183f319ffd6205_cgraph}
+\end{center}
+\end{figure}
+\index{JsonModel@{JsonModel}!saveCats@{saveCats}}
+\index{saveCats@{saveCats}!JsonModel@{JsonModel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}JsonModel.saveCats (\$ {\em cats})}\label{classJsonModel_dd03cce82736a4d0c5eb78ca1904a274}
+
+
+Saves categories.
+
+This function saves the categories hierarchy.  public \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em array}]\$cats \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]boolean \end{Desc}
+
+
+Definition at line 178 of file jsonmodel.php.
+
+References \_\-catsToSqlString(), and Galleria\_\-Model.\_\-getConnection().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{classJsonModel_dd03cce82736a4d0c5eb78ca1904a274_cgraph}
+\end{center}
+\end{figure}
+\index{JsonModel@{JsonModel}!addCat@{addCat}}
+\index{addCat@{addCat}!JsonModel@{JsonModel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}JsonModel.addCat (\$ {\em name})}\label{classJsonModel_a782f3718c9ab8eb4899dee374f05dfc}
+
+
+Add category.
+
+This function creates category.  public \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em string}]\$name \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]boolean \end{Desc}
+
+
+Definition at line 199 of file jsonmodel.php.
+
+References Galleria\_\-Model.\_\-getConnection().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{classJsonModel_a782f3718c9ab8eb4899dee374f05dfc_cgraph}
+\end{center}
+\end{figure}
+\index{JsonModel@{JsonModel}!deleteCat@{deleteCat}}
+\index{deleteCat@{deleteCat}!JsonModel@{JsonModel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}JsonModel.deleteCat (\$ {\em id})}\label{classJsonModel_640024eed0b06570ba3f700911f6615e}
+
+
+Delete category.
+
+This function deletes category.  public \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em integer}]\$id \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]boolean \end{Desc}
+
+
+Definition at line 214 of file jsonmodel.php.
+
+References Galleria\_\-Model.\_\-getConnection().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=269pt]{classJsonModel_640024eed0b06570ba3f700911f6615e_cgraph}
+\end{center}
+\end{figure}
+\index{JsonModel@{JsonModel}!getGroupsFromCat@{getGroupsFromCat}}
+\index{getGroupsFromCat@{getGroupsFromCat}!JsonModel@{JsonModel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}JsonModel.getGroupsFromCat (\$ {\em cid})}\label{classJsonModel_108451085085e5cdd7f959aec2c518e7}
+
+
+Gives category related groups.
+
+This function group \doxyref{data}{p.}{namespacedata}, which is related to specific category id.  public \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em integer}]\$cid \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]array \end{Desc}
+
+
+Definition at line 229 of file jsonmodel.php.
+
+References Galleria\_\-Model.\_\-fetchObjects(), and Galleria\_\-Model.\_\-getConnection().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{classJsonModel_108451085085e5cdd7f959aec2c518e7_cgraph}
+\end{center}
+\end{figure}
+\index{JsonModel@{JsonModel}!\_\-catsToSqlString@{\_\-catsToSqlString}}
+\index{\_\-catsToSqlString@{\_\-catsToSqlString}!JsonModel@{JsonModel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}JsonModel.\_\-catsToSqlString (\$ {\em cat})\hspace{0.3cm}{\tt  [private]}}\label{classJsonModel_288ae4e9e23a136f7365b5eacd5c578d}
+
+
+Category SQL string.
+
+This function creates SQL string for category update.  private \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em stdClass}]\$cat \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]boolean \end{Desc}
+
+
+Definition at line 245 of file jsonmodel.php.
+
+Referenced by saveCats().\index{JsonModel@{JsonModel}!\_\-groupsToSqlString@{\_\-groupsToSqlString}}
+\index{\_\-groupsToSqlString@{\_\-groupsToSqlString}!JsonModel@{JsonModel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}JsonModel.\_\-groupsToSqlString (\$ {\em catid}, \$ {\em groupid})\hspace{0.3cm}{\tt  [private]}}\label{classJsonModel_dc9c9f053c28b00a7230c33f2060e86d}
+
+
+Format category groups.
+
+This function format category id and groups id to categorygroups query.  private \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em integer}]\$catid \item[{\em integer}]\$groupid return stdClass \end{description}
+\end{Desc}
+
+
+Definition at line 262 of file jsonmodel.php.
+
+Referenced by saveCatGroups().\index{JsonModel@{JsonModel}!changeDesc@{changeDesc}}
+\index{changeDesc@{changeDesc}!JsonModel@{JsonModel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}JsonModel.changeDesc (\$ {\em pid}, \$ {\em text})}\label{classJsonModel_82924979d39f51cbb6285ab728c4b73c}
+
+
+Change description.
+
+This function changes description of picture.  public \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em integer}]\$pid \item[{\em string}]\$text \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]boolean \end{Desc}
+
+
+Definition at line 281 of file jsonmodel.php.
+
+References Galleria\_\-Model\_\-Collection.\_\-addChangelog(), Galleria\_\-Model.\_\-getConnection(), and Galleria\_\-Auth.getObject().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=401pt]{classJsonModel_82924979d39f51cbb6285ab728c4b73c_cgraph}
+\end{center}
+\end{figure}
+\index{JsonModel@{JsonModel}!changePg@{changePg}}
+\index{changePg@{changePg}!JsonModel@{JsonModel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}JsonModel.changePg (\$ {\em pid}, \$ {\em text})}\label{classJsonModel_b39e947b3302af12653b9ccf2bfd856b}
+
+
+Change photographer.
+
+This function changes photographer of picture.  public \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em integer}]\$pid \item[{\em string}]\$text \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]boolean \end{Desc}
+
+
+Definition at line 297 of file jsonmodel.php.
+
+References Galleria\_\-Model\_\-Collection.\_\-addChangelog(), Galleria\_\-Model.\_\-getConnection(), and Galleria\_\-Auth.getObject().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=395pt]{classJsonModel_b39e947b3302af12653b9ccf2bfd856b_cgraph}
+\end{center}
+\end{figure}
+\index{JsonModel@{JsonModel}!changeYear@{changeYear}}
+\index{changeYear@{changeYear}!JsonModel@{JsonModel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}JsonModel.changeYear (\$ {\em pid}, \$ {\em text})}\label{classJsonModel_66ac503384b8ef309b95f03b432eaf46}
+
+
+Change year.
+
+This function changes year of picture.  public \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em integer}]\$pid \item[{\em string}]\$text \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]boolean \end{Desc}
+
+
+Definition at line 313 of file jsonmodel.php.
+
+References Galleria\_\-Model\_\-Collection.\_\-addChangelog(), Galleria\_\-Model.\_\-getConnection(), and Galleria\_\-Auth.getObject().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classJsonModel_66ac503384b8ef309b95f03b432eaf46_cgraph}
+\end{center}
+\end{figure}
+\index{JsonModel@{JsonModel}!changeCat@{changeCat}}
+\index{changeCat@{changeCat}!JsonModel@{JsonModel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}JsonModel.changeCat (\$ {\em pid}, \$ {\em cid})}\label{classJsonModel_30625fa69b928014605412cd64d7850f}
+
+
+Change category.
+
+This function changes category for picture.  public \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em integer}]\$pid \item[{\em integer}]\$cid \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]boolean \end{Desc}
+
+
+Definition at line 329 of file jsonmodel.php.
+
+References Galleria\_\-Model\_\-Collection.\_\-addChangelog(), Galleria\_\-Model.\_\-getConnection(), and Galleria\_\-Auth.getObject().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=398pt]{classJsonModel_30625fa69b928014605412cd64d7850f_cgraph}
+\end{center}
+\end{figure}
+\index{JsonModel@{JsonModel}!addTag@{addTag}}
+\index{addTag@{addTag}!JsonModel@{JsonModel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}JsonModel.addTag (\$ {\em pid}, \$ {\em name})}\label{classJsonModel_95c070cb30e20d7ed5cefbea3cb86f54}
+
+
+Add tag.
+
+This function adds specific named tag to picture and creates tag if it doesn't already exists.  public \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em integer}]\$pid \item[{\em string}]\$name \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]integer$|$null \end{Desc}
+
+
+Definition at line 346 of file jsonmodel.php.
+
+References Galleria\_\-Model\_\-Collection.\_\-addChangelog(), \_\-addNewTag(), Galleria\_\-Model.\_\-getConnection(), \_\-getTagId(), and Galleria\_\-Auth.getObject().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=389pt]{classJsonModel_95c070cb30e20d7ed5cefbea3cb86f54_cgraph}
+\end{center}
+\end{figure}
+\index{JsonModel@{JsonModel}!\_\-addNewTag@{\_\-addNewTag}}
+\index{\_\-addNewTag@{\_\-addNewTag}!JsonModel@{JsonModel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}JsonModel.\_\-addNewTag (\$ {\em name})\hspace{0.3cm}{\tt  [private]}}\label{classJsonModel_ef9e1562f684f8f182b8b2c1cad3e8c7}
+
+
+Creates new tag.
+
+This function creates tag for specified name of tag.  private \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em string}]\$name \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]integer$|$null \end{Desc}
+
+
+Definition at line 363 of file jsonmodel.php.
+
+References Galleria\_\-Model.\_\-getConnection().
+
+Referenced by addTag().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{classJsonModel_ef9e1562f684f8f182b8b2c1cad3e8c7_cgraph}
+\end{center}
+\end{figure}
+\index{JsonModel@{JsonModel}!\_\-getTagId@{\_\-getTagId}}
+\index{\_\-getTagId@{\_\-getTagId}!JsonModel@{JsonModel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}JsonModel.\_\-getTagId (\$ {\em name})\hspace{0.3cm}{\tt  [private]}}\label{classJsonModel_8e31586c69ee3ca51585c0c37d78eae3}
+
+
+Gives tag id.
+
+This function return tag id, which belogns to specific name of tag.  private \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em string}]\$name \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]integer$|$null \end{Desc}
+
+
+Definition at line 378 of file jsonmodel.php.
+
+References Galleria\_\-Model.\_\-getConnection().
+
+Referenced by addTag().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=269pt]{classJsonModel_8e31586c69ee3ca51585c0c37d78eae3_cgraph}
+\end{center}
+\end{figure}
+\index{JsonModel@{JsonModel}!pictureVisibility@{pictureVisibility}}
+\index{pictureVisibility@{pictureVisibility}!JsonModel@{JsonModel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}JsonModel.pictureVisibility (\$ {\em pid}, \$ {\em show})}\label{classJsonModel_f356dde0befac8cf2aae3ac17e3758d5}
+
+
+Toggle picture shown.
+
+This function changes picture visibility between shown and hidden.  public \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em integer}]\$pid \item[{\em boolean}]\$show \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]boolean \end{Desc}
+
+
+Definition at line 394 of file jsonmodel.php.
+
+References Galleria\_\-Model\_\-Collection.\_\-addChangelog(), Galleria\_\-Model.\_\-getConnection(), and Galleria\_\-Auth.getObject().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=407pt]{classJsonModel_f356dde0befac8cf2aae3ac17e3758d5_cgraph}
+\end{center}
+\end{figure}
+\index{JsonModel@{JsonModel}!deletePicTag@{deletePicTag}}
+\index{deletePicTag@{deletePicTag}!JsonModel@{JsonModel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}JsonModel.deletePicTag (\$ {\em pid}, \$ {\em tid})}\label{classJsonModel_183f81fec0df1cfd7c5540f0e419f24e}
+
+
+Delete picture tag.
+
+This function deletes tag from picture and if there are no relation assigned to tag, it will be removed.  public \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em integer}]\$pid \item[{\em integer}]\$tid \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]boolean \end{Desc}
+
+
+Definition at line 415 of file jsonmodel.php.
+
+References Galleria\_\-Model\_\-Collection.\_\-addChangelog(), \_\-deleteEmptyTags(), Galleria\_\-Model.\_\-getConnection(), and Galleria\_\-Auth.getObject().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=402pt]{classJsonModel_183f81fec0df1cfd7c5540f0e419f24e_cgraph}
+\end{center}
+\end{figure}
+\index{JsonModel@{JsonModel}!\_\-deleteEmptyTags@{\_\-deleteEmptyTags}}
+\index{\_\-deleteEmptyTags@{\_\-deleteEmptyTags}!JsonModel@{JsonModel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}JsonModel.\_\-deleteEmptyTags ()\hspace{0.3cm}{\tt  [private]}}\label{classJsonModel_8f7d1bda56546bdf59fb2072fc68201e}
+
+
+Delete empty tags.
+
+This function deletes empty tags from database.  private \begin{Desc}
+\item[Returns:]boolean \end{Desc}
+
+
+Definition at line 437 of file jsonmodel.php.
+
+References Galleria\_\-Model.\_\-getConnection().
+
+Referenced by deletePic(), and deletePicTag().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{classJsonModel_8f7d1bda56546bdf59fb2072fc68201e_cgraph}
+\end{center}
+\end{figure}
+\index{JsonModel@{JsonModel}!deletePic@{deletePic}}
+\index{deletePic@{deletePic}!JsonModel@{JsonModel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}JsonModel.deletePic (\$ {\em pid})}\label{classJsonModel_b170bc900564b7aff804066556651d1a}
+
+
+Delete picture.
+
+This function deleted picture.  public \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em integer}]\$pid \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]boolean \end{Desc}
+
+
+Definition at line 452 of file jsonmodel.php.
+
+References \_\-deleteEmptyTags(), and Galleria\_\-Model.\_\-getConnection().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=364pt]{classJsonModel_b170bc900564b7aff804066556651d1a_cgraph}
+\end{center}
+\end{figure}
+\index{JsonModel@{JsonModel}!getChangelog@{getChangelog}}
+\index{getChangelog@{getChangelog}!JsonModel@{JsonModel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}JsonModel.getChangelog (\$ {\em pid})}\label{classJsonModel_b4f990cecbc3f28959864ac48bd04aa9}
+
+
+Gives changelog.
+
+This function returns changelog for specified picture.  public \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em integer}]\$pid \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]array \end{Desc}
+
+
+Definition at line 467 of file jsonmodel.php.
+
+References Galleria\_\-Model.\_\-fetchObjects(), and Galleria\_\-Model.\_\-getConnection().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{classJsonModel_b4f990cecbc3f28959864ac48bd04aa9_cgraph}
+\end{center}
+\end{figure}
+\index{JsonModel@{JsonModel}!getPgs@{getPgs}}
+\index{getPgs@{getPgs}!JsonModel@{JsonModel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}JsonModel.getPgs ()}\label{classJsonModel_2a01bcda3d706603b1a653734ef48c58}
+
+
+Gives changelog.
+
+This function returns changelog for specified picture.  public \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em integer}]\$pid \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]array \end{Desc}
+
+
+Definition at line 483 of file jsonmodel.php.
+
+References Galleria\_\-Model.\_\-fetchObjects(), and Galleria\_\-Model.\_\-getConnection().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{classJsonModel_2a01bcda3d706603b1a653734ef48c58_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/var/www/galleria/data/site/mvc/model/{\bf jsonmodel.php}\end{CompactItemize}

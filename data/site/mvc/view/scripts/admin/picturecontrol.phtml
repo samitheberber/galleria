@@ -1,0 +1,18 @@
+<?php include('menu.phtml'); ?>
+
+<form action="<?php echo $html_url; ?>admin/picturecontrol/" method="post" enctype="multipart/form-data">
+    <fieldset>
+        <legend>New picture</legend>
+
+        <label>File</label>
+        <input type="file" name="picturefile" />
+
+        <input type="submit" value="Import" />
+    </fieldset>
+</form>
+
+<?php if ($view->info): echo '<pre>' . $view->info . '</pre>'; endif; ?>
+
+<?php
+echo ($view->pics) ? Galleria_View_Pictures::info($view->pics) : '<p>No uncategorized or hidden pictures.</p>';
+?>

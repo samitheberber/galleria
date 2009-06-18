@@ -1,0 +1,388 @@
+html, body {
+    background-color: #ccccff;
+    color: black;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* This is only for IE floats */
+}
+
+div#frame {
+    background-color: #ffffff;
+    color: black;
+    width: 90%;
+    min-width: 600px;
+    max-width: 800px;
+    border: thin solid black;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3em;
+    text-align: left;
+    padding: 0;
+}
+
+div#header {
+    margin: 0;
+    text-align: center;
+    background-color: #66ff66;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+div#header h1 {
+    margin: 0;
+}
+
+div#menu {
+    padding: 0;
+    margin: 0;
+    background-color: #66ff66;
+    border-bottom: thin solid black;
+}
+
+div#menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+div#menu li {
+    display: inline;
+    padding: 0;
+    margin-left: 0.5em;
+}
+
+div#menu a {
+    border: thin solid green;
+    background-color: #ccffcc;
+    color: black;
+    padding: 0.2em;
+    text-decoration: none;
+}
+
+div#menu a:hover {
+    background-color: #99ff99;
+}
+
+div#content {
+    padding: 1em;
+    margin: 0;
+}
+
+div#footer {
+    text-align: center;
+    margin: 0;
+    padding: 0.1em;
+}
+
+div#footer p {
+    font-size: 90%;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    cursor: default;
+}
+
+
+/* Forms */
+form {
+    margin: 0;
+    padding: 0;
+}
+
+form p {
+}
+
+form p label {
+    display: block;
+    font-weight: bold;
+}
+
+/* Misc */
+div#tags span {
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+}
+
+div#tags a {
+    text-decoration: none;
+}
+
+div#tags a:hover {
+    text-decoration: underline;
+}
+
+div#pics img, div#searchcontent img {
+    margin: 0.5em;
+}
+
+.hover {
+    background: green;
+    color: #fff;
+}
+
+a img {
+    border: thin solid black;
+}
+
+a:hover img {
+    border: thin solid #999;
+    opacity: 0.7;
+}
+
+/* JS */
+.placeholder {          
+    display: block;
+    border: 1px dotted #333333;
+    background-color: #cfcfcf; 
+    height: 15px;
+} 
+
+.ui-dialog {
+    border: thin solid black;
+    background-color: #eee;
+}
+
+.ui-widget-overlay {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    opacity: 0.5;
+    background-color: #999;
+}
+
+.ui-tree-deptherror{
+    background-color: #ff0000;
+} 
+
+.ui-tree-limiterror{
+    background-color: #00ff00;
+}
+
+.hover-up {
+    background: red;
+}
+
+.hover-down {
+    background: red; 
+}
+ 
+.item_name { 
+    border: 1px solid black;
+}
+
+/* Forms */
+fieldset {
+    border: thin solid black;
+}
+
+legend {
+    border: thin solid black;
+    padding: 0.1em;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"] {
+    margin-right: 1em;
+}
+
+/* Cats */
+div.nsw-wrap {
+	border:thin solid #eee;
+	padding: 1em;
+}
+
+div.nsw-header-wrap {
+    display: none;
+}
+
+div.nsw-list-wrap {
+	padding: 1em;
+}
+
+div#dragHelper {
+    text-align: left;
+}
+
+
+ul.nsw-list-holder {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+div.nsw-clear {
+	clear: both;
+}
+
+li.nsw-item {
+	margin: 0;
+	padding: 0;
+}
+
+li.nsw-item div div {
+	background: #ccc;
+}
+
+div.nsw-alt-cell{
+	background: #eee !important;
+}
+
+.nsw-header-item div div {
+	background: #DFDFDF;
+	font-weight: bold;
+}
+
+.nsw-save-button,
+.nsw-disabled-save-button, 
+.nsw-disabled-save-button:focus, 
+.nsw-disabled-save-button:active, 
+.nsw-save-button:focus {
+    color: black;
+}
+
+.nsw-disabled-save-button,
+.nsw-disabled-save-button:focus, 
+.nsw-disabled-save-button:active {
+	color: #999;
+}
+
+.nsw-progress {
+	background: center url(../images/progress_indicator.gif) no-repeat;
+	width:16px;
+	height:16px;
+	left: 50%;
+	top: 0.5em;
+	position: absolute;
+}
+
+.nsw-warning {
+	left: 30%;
+	top: 0.5em;
+	width: 40%;
+	position: absolute;
+	background: yellow;
+	border: solid 1px;
+	border-color:#CCCCCC rgb(153, 153, 153) rgb(153, 153, 153) rgb(204, 204, 204);
+	text-align: center;
+}
+
+.nsw-save-progress-wrap {
+	position: static;
+}
+
+.nsw-progress-warning-wrap {
+	position: relative;
+}
+
+.nsw-handle {
+	font-weight: bold;
+}
+
+.nsw-helper {
+    border:thin dashed #999;
+    background-color: #ccf;
+}
+
+div.user {
+    border: thin dotted black;
+    margin: 1em;
+    padding: 0.5em;
+}
+
+div.user.active, div.picture.shown {
+    background-color: #eeffee;
+}
+
+div.user.inactive, div.picture.hidden {
+    background-color: #ffeeee;
+}
+
+div.picture {
+    border: thin dashed black;
+    margin: 1em;
+    padding: 0.5em;
+}
+
+div.picture img {
+    float: right;
+}
+
+div.picture .controls {
+    clear: both;
+}
+
+a.catbutton {
+    margin: 0 0.2em;
+}
+
+p#imagecontainer {
+    text-align: center;
+}
+
+div.changelog {
+    overflow: auto;
+    text-align: left;
+}
+
+div.changelog th {
+    min-width: 100px;
+}
+
+img.hidden {
+    opacity: 0.3;
+    border: thin solid red;
+}
+
+.ac_results {
+	padding: 0px;
+	border: 1px solid black;
+	background-color: white;
+	overflow: hidden;
+	z-index: 99999;
+}
+
+.ac_results ul {
+	width: 100%;
+	list-style-position: outside;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.ac_results li {
+	margin: 0px;
+	padding: 2px 5px;
+	cursor: default;
+	display: block;
+	/* 
+	if width will be 100% horizontal scrollbar will apear 
+	when scroll mode will be used
+	*/
+	/*width: 100%;*/
+	font: menu;
+	font-size: 12px;
+	/* 
+	it is very important, if line-height not setted or setted 
+	in relative units scroll will be broken in firefox
+	*/
+	line-height: 16px;
+	overflow: hidden;
+}
+
+.ac_loading {
+	background: white url('indicator.gif') right center no-repeat;
+}
+
+.ac_odd {
+	background-color: #eee;
+}
+
+.ac_over {
+	background-color: #0A246A;
+	color: white;
+}

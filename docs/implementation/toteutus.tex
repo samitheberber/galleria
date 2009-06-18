@@ -1,0 +1,200 @@
+\documentclass[gradu,emptyfirstpagenumber]{tktltiki}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{clrscode}
+
+\begin{document}
+
+\title{Kuvagalleria - Toteutusdokumentti}
+\author{Sami Saada <saada@cs.helsinki.fi>, Ohjaaja: Paula Kuosmanen}
+\date{\today}
+\level{Tietokantasovellus}
+\faculty{Matemaattis-luonnontieteellinen}
+\department{Tietojenkäsittelytieteen laitos}
+\depositeplace{}
+\additionalinformation{Tämä on tietokantasovelluksen toteutusdokumentti}
+\numberofpagesinformation{\numberofpages\ sivua}
+\classification{}
+\keywords{Tietokantasovellus, Toteutusdokumentti}
+
+\maketitle
+
+\begin{abstract}
+Tietokantasovelluksen toteutusdokumentti. Dokumentissa kerrotaan
+tietokantasovelluksen rakenteesta ja miten se on toteutettu.
+\end{abstract}
+
+\mytableofcontents
+
+\section{Johdanto}
+
+Järjestelmä on kuvagalleria ja tarkoitus on tutustuttaa sen saloihin
+pikaisella pintaraapaisulla.
+
+\subsection{Järjestelmän tarkoitus}
+
+Järjestelmä toimii kuvagalleriana, jossa voi selata kuvia eri tasoisilla
+oikeuksilla. Kuvia on tietenkin mahdollista lisätä ja niiden tietoja pystyy
+muuttamaan.
+
+Järjestelmä on tarkoitettu niin yksityishenkilöiden kuin yritysten ja
+yhdistysten kuvallisen toiminnan tukemiseksi. Erilaisten järjestettyjen
+tapahtumien kuvat saadaan helposti esille. Käyttäjätasojen ansiosta myös
+rajatun piirin keskuuteen tarkoitetut kuvat onnistuvat.
+
+Järjestelmän päätavoite on ratkaista sitä käyttävien tahojen kuvien
+hallintaongelmat tai edes helpottaa niitä.
+
+\subsection{Toimintaympäristö}
+
+Järjestelmä on toteutettu käyttäen ohjelmointikielenä PHP5.2.x:tä ja
+tietokantana PostgreSQL:ää, joten se toimii missä tahansa ympäristössä,
+joka tukee tarpeeksi tuoretta PHP-versiota, jossa on käytetyt ominaisuudet.
+Ohjelmointikieli ei aseta rajoitteita käyttöjärjestelmälle.
+
+Tietokantapalvelimelta vaaditaan jokin PHP:n PDO-moduulin ajurin tukema
+tietokanta-alusta. Tietokantapavelin voi olla yhdistettynä
+sovelluspalvelimeen tai siitä erikseen. Molemmat vaihtoehdot ovat tuettuna
+sovelluksen toteutuksessa.
+
+Tietokannan luontikyselyt on kirjoitettu PostgreSQL:ää ajatellen, mutta ne
+on mahdollista saada pienehköllä vaivalla tukemaan myös muita
+tietokanta-alustoja. Kaikki nykyiset käyttöjärjestelmät tukevat
+tietokanta-alustoja kohtuullisen laajalti.
+
+Järjestelmä on toteutettu esittelykuntoon TKTL:n tietokantasovelluspalvelin
+Alkokrunnille $(db.cs.helsinki.fi)$ ja se löytyy osoitteesta
+http://db.cs.helsinki.fi/\~{}saada/galleria/.
+
+Asiakaspuolelta vaaditaan tuki XHTML ja CSS-standardeille sekä tuki
+JavaScriptille. Työhön kuuluu osia WEB 2.0:n tekniseltä puolelta.
+
+\subsection{Rajaukset}
+
+Sovellus sisältää kaikki siihen määritellyt ominaisuudet.
+
+Asiakkaan selaimen on tuettava toimintaympäristön määrittelemiä
+tekniikoita, joten se toimii kaikilla nykyaikaisilla selaimilla.
+
+\subsection{Toteutusympäristö}
+
+Työ toteutettiin omassa kehitysympäristössä, johon kuuluu Gentoo Linux,
+Apache 2, PHP 5.2.8-r2, PostgreSQL 8.2.7 ja vim-tekstieditori sopivilla
+lisäosilla.
+
+Käytössä oli myös SVN-palvelin, jolle varastoitiin projektin eri vaiheet ja
+vain toimivat osat olivat näkyvissä toteutuspalvelimella.
+
+Toteutusympäristön testausympäristö on pääasiallisesti Firefox 3 -selain,
+jossa on tärkeinä lisäosina Firebug sekä Web Developer.
+
+\pagebreak
+
+\section{Ohjemiston yleisrakenne}
+
+Ohjelmiston yleisrakenne on kaavioin kuvattu liitteenä olevassa referenssi
+manuaalissa.
+
+Lähdekoodit löytyvät myös saatavilla kokonaisuudessaan HTML-muodossa
+verkosta osoitteesta: http://db.cs.helsinki.fi/\~{}saada/galleria-docs/
+
+\pagebreak
+
+\section{Järjestelmän komponentit}
+
+Ohjelmiston yleisrakenne on kaavioin kuvattu liitteenä olevassa referenssi
+manuaalissa.
+
+Lähdekoodit löytyvät myös saatavilla kokonaisuudessaan HTML-muodossa
+verkosta osoitteesta: http://db.cs.helsinki.fi/\~{}saada/galleria-docs/
+
+\pagebreak
+
+\section{Asennustiedot}
+
+Tämä osio kertoo kuinka kuvagallerian saa asennettua omaan ympäristöönsä.
+
+\subsection{Tiedostojen hakeminen}
+
+Tiedostot ovat saatavilla SVN-palvelimelta $asemdan.homelinux.org$, joten
+ne voi vapaasti hakea sieltä. Palvelin hyväksyy kirjautumattomille
+käyttäjille mm. tiedostojen hakemisen, mutta tiedostojen lisääminen
+onnistuu vain sisäänkirjautuneena. Kuvagallerian tiedostot sijaistevat
+polussa http://asemdan.homelinux.org/svn/galleria/.
+$trunk$-alihakemistossa on tuoreimmat vedokset, mutta
+$branches$-alihakemisto sisältää julkaistut versiot. Harjoitustyötä varten
+on $version-0.1$-branch.
+
+Linuxissa tiedostot saa ottamalla SVN:stä tuoreimman tarkistuksen
+komennolla: svn co http://asemdan.homelinux.org/svn/galleria/branches/version-0.1
+
+\subsection{Asetusten luominen}
+
+Tiedostojen hakeminen luo hakemisto rakenteen, mutta paikalliset asetukset
+on asetettava käsin. $data/config$-hakemistossa on $.dist.php$-tiedostot,
+jotka kopioidaan $.php$-muotoon samaan hakemistoon. Omat asetukset
+täytetään sille sopivalle kohdalle. Esimerkiksi tietokannan asetukset tulee
+laittaa sille tarkoitettuun tiedostoon $data/config/database.php$.
+
+Apachen uudelleen ohjaus tarvitsee asettaa $.htaccess$-tiedostoon. Mukana
+on esimerkki tästä tiedostosta polussa $docs/examples/htaccess.txt$, kopioi
+se hakemiston $data/html$ alle. Varmista, että siihen on lukuoikeudet
+kaikilla. Myös hakemistolla ja sen alahakemistoilla on oltava luku ja
+suoritus-oikeudet ja sen alaisilla tiedoilla lukuoikeudet.
+
+\subsection{Tietokannan alustaminen}
+
+Sivuston tietojen asettamisen jälkeen on sitten syytä luoda tietokantaan
+tarvittavat tiedot. Tämä onnistuu kohtuu suoraviivaisesti $psql$-komentoa
+käyttämällä.
+
+Tietokannan asentaminen: cat docs/install\_database.sql | psql -U tunnus
+tietokanta
+
+Tietokannan näkymien asettaminen: cat docs/configure\_database.sql | psql
+-U tunnus tietokanta
+
+Testitietojen asettaminen: cat docs/test\_database.sql | psql -U tunnus
+tietokanta
+
+Tietokanna voi poistaa komentamalla: cat docs/uninstall\_database.sql |
+psql -U tunnus tietokanta
+
+Testitiedoissa on käyttäjätunnukset $demouser$ ja $demoadmin$ ja molempien
+oletussalasana on $demo$.
+
+\subsection{Valmis käyttöön}
+
+Tietokantakyselyiden viennin jälkeen kuvagalleria on valmis käytettäväksi.
+
+\pagebreak
+
+\section{Käynnistys- / käyttöohjeet}
+
+Sovellus käynnistyy osoitteesta:
+http://db.cs.helsinki.fi/\~{}saada/galleria/
+
+Suuriin kuviin pääsee kuvalinkkejä painamalla. Läpinäkyvyyttä tukevissa
+selaimissa kuvalinkkien kuvat muuttuvat osittain läpinäkyviksi hiiren
+tullessa päälle.
+
+Kuvia hakiessa riittää, että kirjoittaa tarvittavat hakuparametrit ja
+sovellus hakee jatkuvaa hakua käyttäen kuvia tietokannasta.
+
+Ylläpitotoiminnoissa lomakkeet lähetetään, kun ne eivät ole enää
+aktivoituna.
+
+Testitiedoissa on käyttäjätunnukset $demouser$ ja $demoadmin$ ja molempien
+oletussalasana on $demo$.
+
+\pagebreak
+
+\lastpage
+\appendices
+\externalappendix{\theappendix}{Suunnitteludokumentti}
+\externalappendix{\theappendix}{Referenssimanuaali}
+e % Extra char to create appendices.
+\end{document}
+
+\endinput

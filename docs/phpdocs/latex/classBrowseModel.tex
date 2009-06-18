@@ -1,0 +1,114 @@
+\section{BrowseModel Class Reference}
+\label{classBrowseModel}\index{BrowseModel@{BrowseModel}}
+Inheritance diagram for BrowseModel:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=91pt]{classBrowseModel__inherit__graph}
+\end{center}
+\end{figure}
+Collaboration diagram for BrowseModel:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=91pt]{classBrowseModel__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf getPictures} (\$cid)
+\item 
+{\bf getCategories} ()
+\item 
+{\bf getCatName} (\$id)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 19 of file browsemodel.php.
+
+\subsection{Member Function Documentation}
+\index{BrowseModel@{BrowseModel}!getPictures@{getPictures}}
+\index{getPictures@{getPictures}!BrowseModel@{BrowseModel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}BrowseModel.getPictures (\$ {\em cid})}\label{classBrowseModel_40951007c4372d4c9d8d6d109f2db256}
+
+
+Gets pictures.
+
+This function gets pictures \doxyref{data}{p.}{namespacedata} from database.  public \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em integer}]\$cid \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]array \end{Desc}
+
+
+Definition at line 30 of file browsemodel.php.
+
+References Galleria\_\-Model.\_\-fetchObjects(), Galleria\_\-Model.\_\-getConnection(), Galleria\_\-Model.\_\-prepareIn(), Galleria\_\-Auth.getObject(), and Galleria\_\-Auth.isLogged().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{classBrowseModel_40951007c4372d4c9d8d6d109f2db256_cgraph}
+\end{center}
+\end{figure}
+\index{BrowseModel@{BrowseModel}!getCategories@{getCategories}}
+\index{getCategories@{getCategories}!BrowseModel@{BrowseModel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}BrowseModel.getCategories ()}\label{classBrowseModel_d78c84da8514a13e4d4a6666946ae66b}
+
+
+Gets categories.
+
+This function get categories \doxyref{data}{p.}{namespacedata} from database.  public \begin{Desc}
+\item[Returns:]array \end{Desc}
+
+
+Definition at line 55 of file browsemodel.php.
+
+References Galleria\_\-Model.\_\-fetchObjects(), Galleria\_\-Model.\_\-getConnection(), Galleria\_\-Model.\_\-prepareIn(), Galleria\_\-Auth.getObject(), and Galleria\_\-Auth.isLogged().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=287pt]{classBrowseModel_d78c84da8514a13e4d4a6666946ae66b_cgraph}
+\end{center}
+\end{figure}
+\index{BrowseModel@{BrowseModel}!getCatName@{getCatName}}
+\index{getCatName@{getCatName}!BrowseModel@{BrowseModel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}BrowseModel.getCatName (\$ {\em id})}\label{classBrowseModel_b31c252cd1e458582767c917bc7d3c8d}
+
+
+Gets name of category.
+
+This function gets name of specified category from database.  public \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em integer}]\$id \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]string \end{Desc}
+
+
+Definition at line 82 of file browsemodel.php.
+
+References Galleria\_\-Model.\_\-getConnection(), Galleria\_\-Model.\_\-prepareIn(), Galleria\_\-Auth.getObject(), and Galleria\_\-Auth.isLogged().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{classBrowseModel_b31c252cd1e458582767c917bc7d3c8d_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/var/www/galleria/data/site/mvc/model/{\bf browsemodel.php}\end{CompactItemize}

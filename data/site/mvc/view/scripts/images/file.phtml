@@ -1,0 +1,19 @@
+<?php
+/**
+ *
+ */
+if ($view->type) {
+    header('Content-type: image/' . $view->type);
+    header('Cache-Control: max-age=86400');
+    $etag = md5($view->fileData);
+    header('Etag: ' . $etag);
+    if (isset($_SERVER['HTTP_IF_NONE_MATCH']) && isset($etag)) {
+        if ($_SERVER['HTTP_IF_NONE_MATCH'] == $etag) {
+            header('HTTP/1.1 304 Not Modified');
+            exit;
+        }
+    }
+    header('Content-Length: ' . $view->filesize);
+    echo $view->fileData;
+}
+?>

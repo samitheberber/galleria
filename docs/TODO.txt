@@ -1,0 +1,15 @@
+== TODO ==
+
+Plan the project
+Create database
+Create library classes
+Create pages
+Release
+
+Add insert user.
+Add remove users.
+Add insert user group.
+Add insert picture.
+Add insert category.
+
+Categories have active or not status (depends on count).

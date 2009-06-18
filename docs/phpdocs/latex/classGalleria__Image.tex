@@ -1,0 +1,159 @@
+\section{Galleria\_\-Image Class Reference}
+\label{classGalleria__Image}\index{Galleria\_\-Image@{Galleria\_\-Image}}
+\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+static {\bf getData} (\$id, \$size= '')
+\item 
+static {\bf getFilesize} (\$id, \$size= '')
+\item 
+static {\bf fileNotFound} (\$size= '')
+\item 
+static {\bf permissionDenied} (\$size= '')
+\item 
+static {\bf fileFound} (\$id)
+\item 
+static {\bf transform} ()
+\item 
+static {\bf deleteFiles} (\$pid)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 19 of file image.php.
+
+\subsection{Member Function Documentation}
+\index{Galleria\_\-Image@{Galleria\_\-Image}!getData@{getData}}
+\index{getData@{getData}!Galleria_Image@{Galleria\_\-Image}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static Galleria\_\-Image.getData (\$ {\em id}, \$ {\em size} = {\tt ''})\hspace{0.3cm}{\tt  [static]}}\label{classGalleria__Image_96cf50dd1b1e0a104c65aa008dfe35ed}
+
+
+Get image \doxyref{data}{p.}{namespacedata}.
+
+This function includes the image \doxyref{data}{p.}{namespacedata} from file and returns it.  public
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em integer}]\$id \item[{\em string}]\$size \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]string$|$boolean  PATH\_\-DATA\_\-SITE\_\-IMAGES \end{Desc}
+
+
+Definition at line 33 of file image.php.
+
+Referenced by ImagesController.fileAction().\index{Galleria\_\-Image@{Galleria\_\-Image}!getFilesize@{getFilesize}}
+\index{getFilesize@{getFilesize}!Galleria_Image@{Galleria\_\-Image}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static Galleria\_\-Image.getFilesize (\$ {\em id}, \$ {\em size} = {\tt ''})\hspace{0.3cm}{\tt  [static]}}\label{classGalleria__Image_d5e457d687ea1b2c1dccd40fe72327e7}
+
+
+Get image filesize.
+
+This function gets image filesize and returns it.  public
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em integer}]\$id \item[{\em string}]\$size \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]integer  PATH\_\-DATA\_\-SITE\_\-IMAGES \end{Desc}
+
+
+Definition at line 49 of file image.php.
+
+Referenced by ImagesController.fileAction().\index{Galleria\_\-Image@{Galleria\_\-Image}!fileNotFound@{fileNotFound}}
+\index{fileNotFound@{fileNotFound}!Galleria_Image@{Galleria\_\-Image}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static Galleria\_\-Image.fileNotFound (\$ {\em size} = {\tt ''})\hspace{0.3cm}{\tt  [static]}}\label{classGalleria__Image_225f068b087154ee13dad083345bffd0}
+
+
+Get 404 image \doxyref{data}{p.}{namespacedata}.
+
+This function includes the 404 image \doxyref{data}{p.}{namespacedata} from file and returns it.  public
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em string}]\$size \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]string$|$boolean  PATH\_\-DATA\_\-SITE\_\-IMAGES \end{Desc}
+
+
+Definition at line 64 of file image.php.
+
+Referenced by ImagesController.fileAction().\index{Galleria\_\-Image@{Galleria\_\-Image}!permissionDenied@{permissionDenied}}
+\index{permissionDenied@{permissionDenied}!Galleria_Image@{Galleria\_\-Image}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static Galleria\_\-Image.permissionDenied (\$ {\em size} = {\tt ''})\hspace{0.3cm}{\tt  [static]}}\label{classGalleria__Image_76faea04137a906753799c4530b3d544}
+
+
+Get 403 image \doxyref{data}{p.}{namespacedata}.
+
+This function includes the 403 image \doxyref{data}{p.}{namespacedata} from file and returns it.  public
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em string}]\$size \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]string$|$boolean  PATH\_\-DATA\_\-SITE\_\-IMAGES \end{Desc}
+
+
+Definition at line 79 of file image.php.
+
+Referenced by ImagesController.fileAction().\index{Galleria\_\-Image@{Galleria\_\-Image}!fileFound@{fileFound}}
+\index{fileFound@{fileFound}!Galleria_Image@{Galleria\_\-Image}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static Galleria\_\-Image.fileFound (\$ {\em id})\hspace{0.3cm}{\tt  [static]}}\label{classGalleria__Image_38e292f046f08e68a0faf7b53eecbc42}
+
+
+Does file found?
+
+This function checks if file exists.  public
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em integer}]\$id \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]boolean  PATH\_\-DATA\_\-SITE\_\-IMAGES \end{Desc}
+
+
+Definition at line 94 of file image.php.
+
+Referenced by ImagesController.fileAction().\index{Galleria\_\-Image@{Galleria\_\-Image}!transform@{transform}}
+\index{transform@{transform}!Galleria_Image@{Galleria\_\-Image}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static Galleria\_\-Image.transform ()\hspace{0.3cm}{\tt  [static]}}\label{classGalleria__Image_c9201742dc3cfbd61ab2847ed7a0e243}
+
+
+Runs transformation.
+
+This function runs image transrofmation.  PATH\_\-DATA\_\-SITE\_\-IMAGES 
+
+Definition at line 105 of file image.php.
+
+Referenced by AdminController.\_\-insertPicture().\index{Galleria\_\-Image@{Galleria\_\-Image}!deleteFiles@{deleteFiles}}
+\index{deleteFiles@{deleteFiles}!Galleria_Image@{Galleria\_\-Image}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static Galleria\_\-Image.deleteFiles (\$ {\em pid})\hspace{0.3cm}{\tt  [static]}}\label{classGalleria__Image_da176fa4de88c8e0acb40e563576973c}
+
+
+Delete files.
+
+This function delete files for specific picture id.  public \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em integer}]\$pid  PATH\_\-DATA\_\-SITE\_\-IMAGES \end{description}
+\end{Desc}
+
+
+Definition at line 120 of file image.php.
+
+Referenced by JsonController.postAction().
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/var/www/galleria/data/lib/{\bf image.php}\end{CompactItemize}

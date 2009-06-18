@@ -1,0 +1,45 @@
+<?php
+/**
+ *
+ */
+if ($view->categories) {
+    if (Galleria_Auth::isLogged() && Galleria_Auth::getObject()->isInAdminGroup()) { ?>
+
+<form id="newcat" action="<?php echo $html_url . 'browse/addcategory/' ?>" method="post">
+    <fieldset>
+        <legend>New category</legend>
+
+        <label for="catname">Name</label>
+        <input id="catname" name="catname" type="text" />
+
+        <input type="submit" value="Add" />
+    </fieldset>
+</form>
+
+<div id="categories"></div>
+
+    <?php } else {
+        echo Galleria_View_Categories::ulList($view->categories);
+    }
+} elseif ($view->name) {
+    echo '<p><a href="' . $html_url . 'browse/">Back to category listing.</a></p>';
+    echo '<h2>' . $view->name . '</h2>';
+    echo ($view->pics) ? Galleria_View_Pictures::info($view->pics) : '<p>No pictures in this category.</p>';
+} else {
+    if (Galleria_Auth::isLogged() && Galleria_Auth::getObject()->isInAdminGroup()) { ?>
+
+<form id="newcat" action="<?php echo $html_url . 'browse/addcategory/' ?>" method="post">
+    <fieldset>
+        <legend>New category</legend>
+
+        <label for="catname">Name</label>
+        <input id="catname" name="catname" type="text" />
+
+        <input type="submit" value="Add" />
+    </fieldset>
+</form>
+
+<div id="categories"></div>
+<?php } else { ?>
+    <p>No categories setted.</p>
+<?php }} ?>

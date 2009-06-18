@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/MarkUp/SCHEMA/xhtml11.xsd" xml:lang="en">
+    <head>
+        <title>Galleria</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="<?php echo $html_url; ?>css/screen.css" />
+    </head>
+    <body>
+        <div id="frame">
+            <div id="header">
+                <h1>Galleria</h1>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="<?php echo $html_url; ?>">Front page</a></li>
+                    <li><a href="<?php echo $html_url; ?>browse/">Browse</a></li>
+                    <li><a href="<?php echo $html_url; ?>search/">Search</a></li>
+                    <li><a href="<?php echo $html_url; ?>help/">Help</a></li>
+                    <li><a href="<?php echo $html_url; ?>login/">Login</a></li>
+                </ul>
+            </div>
+            <div id="content">
+                <?php echo $page_content; ?>
+            </div>
+            <div id="footer">
+                <p>Created by Sami Saada</p>
+            </div>
+        </div>
+    </body>
+</html>

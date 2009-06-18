@@ -1,0 +1,370 @@
+\section{Galleria\_\-Element\_\-Category Class Reference}
+\label{classGalleria__Element__Category}\index{Galleria\_\-Element\_\-Category@{Galleria\_\-Element\_\-Category}}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf \_\-\_\-construct} (\$id, \$name, \$parent=null, \$pics=true)
+\item 
+{\bf addChild} ({\bf Galleria\_\-Element\_\-Category} \$child)
+\item 
+{\bf addChildren} (\$children)
+\item 
+{\bf \_\-\_\-toString} ()
+\item 
+{\bf getName} ()
+\item 
+{\bf getId} ()
+\item 
+{\bf getParent} ()
+\item 
+{\bf hasPics} ()
+\item 
+{\bf getChildren} ()
+\item 
+{\bf hasChildren} ()
+\item 
+{\bf getCount} ()
+\end{CompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+static {\bf create} (\$cats)
+\item 
+static {\bf howMany} (\$element)
+\item 
+static {\bf jsonFormat} (\$element)
+\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+{\bf \$\_\-id}
+\item 
+{\bf \$\_\-parent}
+\item 
+{\bf \$\_\-name}
+\item 
+{\bf \$\_\-children}
+\item 
+{\bf \$\_\-pics}
+\end{CompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{CompactItemize}
+\item 
+static {\bf \_\-appendChildren} (\$parent, \$children)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 19 of file category.php.
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Galleria\_\-Element\_\-Category@{Galleria\_\-Element\_\-Category}!\_\-\_\-construct@{\_\-\_\-construct}}
+\index{\_\-\_\-construct@{\_\-\_\-construct}!Galleria_Element_Category@{Galleria\_\-Element\_\-Category}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Element\_\-Category.\_\-\_\-construct (\$ {\em id}, \$ {\em name}, \$ {\em parent} = {\tt null}, \$ {\em pics} = {\tt true})}\label{classGalleria__Element__Category_f63dcedb38075449a582bb2d3ebcda60}
+
+
+\#@- Creates category element.
+
+This is contructor of category element.  public \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em integer}]\$id \item[{\em string}]\$name \item[{\em integer}]\$parent \item[{\em boolean}]\$pics \end{description}
+\end{Desc}
+
+
+Definition at line 57 of file category.php.
+
+\subsection{Member Function Documentation}
+\index{Galleria\_\-Element\_\-Category@{Galleria\_\-Element\_\-Category}!addChild@{addChild}}
+\index{addChild@{addChild}!Galleria_Element_Category@{Galleria\_\-Element\_\-Category}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Element\_\-Category.addChild ({\bf Galleria\_\-Element\_\-Category} \$ {\em child})}\label{classGalleria__Element__Category_872924ba287d84f8b2520ed87b5a0afd}
+
+
+Add child.
+
+This function adds child to this category.  public \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \doxyref{Galleria\_\-Element\_\-Category}{p.}{classGalleria__Element__Category}}]\$child \end{description}
+\end{Desc}
+
+
+Definition at line 73 of file category.php.\index{Galleria\_\-Element\_\-Category@{Galleria\_\-Element\_\-Category}!addChildren@{addChildren}}
+\index{addChildren@{addChildren}!Galleria_Element_Category@{Galleria\_\-Element\_\-Category}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Element\_\-Category.addChildren (\$ {\em children})}\label{classGalleria__Element__Category_a1825bfb023f779494683ab8194862ee}
+
+
+Add children.
+
+This function adds children to this category.  public \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em array}]\$children \end{description}
+\end{Desc}
+
+
+Definition at line 85 of file category.php.\index{Galleria\_\-Element\_\-Category@{Galleria\_\-Element\_\-Category}!\_\-\_\-toString@{\_\-\_\-toString}}
+\index{\_\-\_\-toString@{\_\-\_\-toString}!Galleria_Element_Category@{Galleria\_\-Element\_\-Category}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Element\_\-Category.\_\-\_\-toString ()}\label{classGalleria__Element__Category_cae9df423b4dc2b0e2626e30a2434839}
+
+
+To string.
+
+This function converts category element to string.  public \begin{Desc}
+\item[Returns:]string \end{Desc}
+
+
+Definition at line 97 of file category.php.
+
+References getName().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classGalleria__Element__Category_cae9df423b4dc2b0e2626e30a2434839_cgraph}
+\end{center}
+\end{figure}
+\index{Galleria\_\-Element\_\-Category@{Galleria\_\-Element\_\-Category}!getName@{getName}}
+\index{getName@{getName}!Galleria_Element_Category@{Galleria\_\-Element\_\-Category}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Element\_\-Category.getName ()}\label{classGalleria__Element__Category_fa7dcae6d309ef79960ce139cee4e2cd}
+
+
+Gives name.
+
+This function gives name of category element.  public \begin{Desc}
+\item[Returns:]string \end{Desc}
+
+
+Definition at line 109 of file category.php.
+
+Referenced by \_\-\_\-toString(), and jsonFormat().\index{Galleria\_\-Element\_\-Category@{Galleria\_\-Element\_\-Category}!getId@{getId}}
+\index{getId@{getId}!Galleria_Element_Category@{Galleria\_\-Element\_\-Category}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Element\_\-Category.getId ()}\label{classGalleria__Element__Category_d440e4cb8ef9e9b22e91df0d1dd42951}
+
+
+Gives id.
+
+This function gives id of category element.  public \begin{Desc}
+\item[Returns:]integer \end{Desc}
+
+
+Definition at line 121 of file category.php.
+
+Referenced by \_\-appendChildren(), and jsonFormat().\index{Galleria\_\-Element\_\-Category@{Galleria\_\-Element\_\-Category}!getParent@{getParent}}
+\index{getParent@{getParent}!Galleria_Element_Category@{Galleria\_\-Element\_\-Category}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Element\_\-Category.getParent ()}\label{classGalleria__Element__Category_a17852444f472524470e39b43e2cff63}
+
+
+Gives parent.
+
+This function gives parent of category element.  public \begin{Desc}
+\item[Returns:]integer \end{Desc}
+
+
+Definition at line 133 of file category.php.
+
+Referenced by \_\-appendChildren().\index{Galleria\_\-Element\_\-Category@{Galleria\_\-Element\_\-Category}!hasPics@{hasPics}}
+\index{hasPics@{hasPics}!Galleria_Element_Category@{Galleria\_\-Element\_\-Category}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Element\_\-Category.hasPics ()}\label{classGalleria__Element__Category_ccb135822bd3c34afd363dd658d9413b}
+
+
+Has pictures?
+
+This function tells if category element has pictures.  public \begin{Desc}
+\item[Returns:]boolean \end{Desc}
+
+
+Definition at line 145 of file category.php.\index{Galleria\_\-Element\_\-Category@{Galleria\_\-Element\_\-Category}!getChildren@{getChildren}}
+\index{getChildren@{getChildren}!Galleria_Element_Category@{Galleria\_\-Element\_\-Category}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Element\_\-Category.getChildren ()}\label{classGalleria__Element__Category_1e43facd163f49fddcea1f17550e05f6}
+
+
+Gives children.
+
+This function gives children of category element.  public \begin{Desc}
+\item[Returns:]array \end{Desc}
+
+
+Definition at line 157 of file category.php.
+
+Referenced by getCount(), and jsonFormat().\index{Galleria\_\-Element\_\-Category@{Galleria\_\-Element\_\-Category}!hasChildren@{hasChildren}}
+\index{hasChildren@{hasChildren}!Galleria_Element_Category@{Galleria\_\-Element\_\-Category}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Element\_\-Category.hasChildren ()}\label{classGalleria__Element__Category_48cc9b403b149a5ffa787b551a9801d3}
+
+
+Has children?
+
+This function tells if category element has children.  public \begin{Desc}
+\item[Returns:]boolean \end{Desc}
+
+
+Definition at line 169 of file category.php.
+
+Referenced by getCount(), and jsonFormat().\index{Galleria\_\-Element\_\-Category@{Galleria\_\-Element\_\-Category}!getCount@{getCount}}
+\index{getCount@{getCount}!Galleria_Element_Category@{Galleria\_\-Element\_\-Category}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Element\_\-Category.getCount ()}\label{classGalleria__Element__Category_9880a17fe4a98c009c3e0179d1b87bfc}
+
+
+Count.
+
+This function returns number of category elements following.  public \begin{Desc}
+\item[Returns:]integer \end{Desc}
+
+
+Definition at line 181 of file category.php.
+
+References getChildren(), and hasChildren().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{classGalleria__Element__Category_9880a17fe4a98c009c3e0179d1b87bfc_cgraph}
+\end{center}
+\end{figure}
+\index{Galleria\_\-Element\_\-Category@{Galleria\_\-Element\_\-Category}!create@{create}}
+\index{create@{create}!Galleria_Element_Category@{Galleria\_\-Element\_\-Category}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static Galleria\_\-Element\_\-Category.create (\$ {\em cats})\hspace{0.3cm}{\tt  [static]}}\label{classGalleria__Element__Category_6adb186df39e6fb6489377f5db08a3b4}
+
+
+Creates category element.
+
+This function creates category element tree from list of array.  public
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em array}]\$cats \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]array \end{Desc}
+
+
+Definition at line 201 of file category.php.
+
+Referenced by JsonController.getAction(), and BrowseController.indexAction().\index{Galleria\_\-Element\_\-Category@{Galleria\_\-Element\_\-Category}!\_\-appendChildren@{\_\-appendChildren}}
+\index{\_\-appendChildren@{\_\-appendChildren}!Galleria_Element_Category@{Galleria\_\-Element\_\-Category}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static Galleria\_\-Element\_\-Category.\_\-appendChildren (\$ {\em parent}, \$ {\em children})\hspace{0.3cm}{\tt  [static, private]}}\label{classGalleria__Element__Category_e89ba84568ec919c3e08185c54963b0f}
+
+
+Appends children.
+
+This function appends children for specific category element.  private
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em integer}]\$parent \item[{\em array}]\$children \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]array \end{Desc}
+
+
+Definition at line 220 of file category.php.
+
+References getId(), and getParent().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{classGalleria__Element__Category_e89ba84568ec919c3e08185c54963b0f_cgraph}
+\end{center}
+\end{figure}
+\index{Galleria\_\-Element\_\-Category@{Galleria\_\-Element\_\-Category}!howMany@{howMany}}
+\index{howMany@{howMany}!Galleria_Element_Category@{Galleria\_\-Element\_\-Category}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static Galleria\_\-Element\_\-Category.howMany (\$ {\em element})\hspace{0.3cm}{\tt  [static]}}\label{classGalleria__Element__Category_d01f2234f1eed597b772ffa763ebead5}
+
+
+How many?
+
+This function tells how many items are in hierarchy.  public
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em array$|$Galleria\_\-Element\_\-Category}]\$element \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]integer \end{Desc}
+
+
+Definition at line 245 of file category.php.
+
+Referenced by JsonController.getAction().\index{Galleria\_\-Element\_\-Category@{Galleria\_\-Element\_\-Category}!jsonFormat@{jsonFormat}}
+\index{jsonFormat@{jsonFormat}!Galleria_Element_Category@{Galleria\_\-Element\_\-Category}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static Galleria\_\-Element\_\-Category.jsonFormat (\$ {\em element})\hspace{0.3cm}{\tt  [static]}}\label{classGalleria__Element__Category_c7cc29d8154a5a338f5e813dd602e841}
+
+
+JSON format.
+
+This function creates specific format for this elements type.  public
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em array$|$Galleria\_\-Element\_\-Category}]\$element \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]array \end{Desc}
+
+
+Definition at line 266 of file category.php.
+
+References getChildren(), getId(), getName(), and hasChildren().
+
+Referenced by JsonController.getAction().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=243pt]{classGalleria__Element__Category_c7cc29d8154a5a338f5e813dd602e841_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\index{Galleria\_\-Element\_\-Category@{Galleria\_\-Element\_\-Category}!\$\_\-id@{\$\_\-id}}
+\index{\$\_\-id@{\$\_\-id}!Galleria_Element_Category@{Galleria\_\-Element\_\-Category}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Element\_\-Category.\$\_\-id\hspace{0.3cm}{\tt  [protected]}}\label{classGalleria__Element__Category_4f6d7da6f4436926bf57d8f44eef6548}
+
+
+
+
+Definition at line 28 of file category.php.\index{Galleria\_\-Element\_\-Category@{Galleria\_\-Element\_\-Category}!\$\_\-parent@{\$\_\-parent}}
+\index{\$\_\-parent@{\$\_\-parent}!Galleria_Element_Category@{Galleria\_\-Element\_\-Category}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Element\_\-Category.\$\_\-parent\hspace{0.3cm}{\tt  [protected]}}\label{classGalleria__Element__Category_874c6fa8f4032c66064c19c91d414316}
+
+
+
+
+Definition at line 32 of file category.php.\index{Galleria\_\-Element\_\-Category@{Galleria\_\-Element\_\-Category}!\$\_\-name@{\$\_\-name}}
+\index{\$\_\-name@{\$\_\-name}!Galleria_Element_Category@{Galleria\_\-Element\_\-Category}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Element\_\-Category.\$\_\-name\hspace{0.3cm}{\tt  [protected]}}\label{classGalleria__Element__Category_a519bec4082e1cdcf6c619a525477093}
+
+
+
+
+Definition at line 36 of file category.php.\index{Galleria\_\-Element\_\-Category@{Galleria\_\-Element\_\-Category}!\$\_\-children@{\$\_\-children}}
+\index{\$\_\-children@{\$\_\-children}!Galleria_Element_Category@{Galleria\_\-Element\_\-Category}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Element\_\-Category.\$\_\-children\hspace{0.3cm}{\tt  [protected]}}\label{classGalleria__Element__Category_47c74a2e9e63ecd1e88d1eda62685e0b}
+
+
+
+
+Definition at line 40 of file category.php.\index{Galleria\_\-Element\_\-Category@{Galleria\_\-Element\_\-Category}!\$\_\-pics@{\$\_\-pics}}
+\index{\$\_\-pics@{\$\_\-pics}!Galleria_Element_Category@{Galleria\_\-Element\_\-Category}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Element\_\-Category.\$\_\-pics\hspace{0.3cm}{\tt  [protected]}}\label{classGalleria__Element__Category_4f918352e33ec38cd24590abaf0ec28a}
+
+
+
+
+Definition at line 44 of file category.php.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/var/www/galleria/data/lib/element/{\bf category.php}\end{CompactItemize}

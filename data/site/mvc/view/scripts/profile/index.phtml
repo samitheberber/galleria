@@ -1,0 +1,31 @@
+<h2>User profile for <?php echo $view->userData->getName(); ?></h2>
+
+<p><strong>Username:</strong> <?php echo $view->userData->getUsername(); ?></p>
+
+<?php if (is_bool($view->pwc)): echo '<p>' . (($view->pwc) ? 'Password changed successfully' : 'Password not changed') . '</p>'; endif; ?>
+
+<form id="changepassword" action="<?php echo $html_url; ?>profile/?action=changepw" method="post">
+    <fieldset>
+        <legend>Change password</legend>
+
+        <label>New password</label>
+        <input type="password" name="password" />
+
+        <label>New password retyped</label>
+        <input type="password" name="passwordrt" />
+
+        <input type="submit" value="Change" />
+    </fieldset>
+</form>
+
+<?php
+if ($view->userData->hasGroups()) {
+    echo '<h3>Groups where this user is in</h3><ul>';
+    foreach ($view->userData->getUsergroups() as $group) {
+        echo '<li>' . $group . '</li>';
+    }
+    echo '</ul>';
+}
+?>
+
+<?php if ($pics = $view->userPics): echo '<h3>User related pictures</h3>' . Galleria_View_Pictures::info($pics); endif; ?>

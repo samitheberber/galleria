@@ -1,0 +1,77 @@
+\section{Galleria\_\-Configuration Class Reference}
+\label{classGalleria__Configuration}\index{Galleria\_\-Configuration@{Galleria\_\-Configuration}}
+\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+static {\bf set} (\$configs)
+\item 
+static {\bf get} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 19 of file configuration.php.
+
+\subsection{Member Function Documentation}
+\index{Galleria\_\-Configuration@{Galleria\_\-Configuration}!set@{set}}
+\index{set@{set}!Galleria_Configuration@{Galleria\_\-Configuration}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static Galleria\_\-Configuration.set (\$ {\em configs})\hspace{0.3cm}{\tt  [static]}}\label{classGalleria__Configuration_958a3a30c77a81617c9ac6bc8528f1cc}
+
+
+Sets configurations.
+
+Function sets configuration in object and searialize it in session. State of success is returned.  public
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em array}]\$configs \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]boolean \end{Desc}
+
+
+Definition at line 32 of file configuration.php.
+
+References Galleria\_\-Session.set().
+
+Referenced by Galleria\_\-Auto\_\-Configure.configFiles().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=167pt]{classGalleria__Configuration_958a3a30c77a81617c9ac6bc8528f1cc_cgraph}
+\end{center}
+\end{figure}
+\index{Galleria\_\-Configuration@{Galleria\_\-Configuration}!get@{get}}
+\index{get@{get}!Galleria_Configuration@{Galleria\_\-Configuration}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static Galleria\_\-Configuration.get ()\hspace{0.3cm}{\tt  [static]}}\label{classGalleria__Configuration_da5cc8edbe25f48cce70cd9116f56f15}
+
+
+Gets configurations.
+
+Function gets configuration object from session, unserialize it and gives the configuration object.  public
+
+\begin{Desc}
+\item[Returns:]\doxyref{Galleria\_\-Configuration\_\-Object}{p.}{classGalleria__Configuration__Object} \end{Desc}
+
+
+Definition at line 46 of file configuration.php.
+
+References Galleria\_\-Session.get().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=167pt]{classGalleria__Configuration_da5cc8edbe25f48cce70cd9116f56f15_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/var/www/galleria/data/lib/{\bf configuration.php}\end{CompactItemize}

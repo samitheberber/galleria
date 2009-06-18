@@ -1,0 +1,193 @@
+\section{AdminModel Class Reference}
+\label{classAdminModel}\index{AdminModel@{AdminModel}}
+Inheritance diagram for AdminModel:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=91pt]{classAdminModel__inherit__graph}
+\end{center}
+\end{figure}
+Collaboration diagram for AdminModel:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=91pt]{classAdminModel__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf getGroups} ()
+\item 
+{\bf getUsers} ()
+\item 
+{\bf addNewUser} (\$name, \$user, \$pass)
+\item 
+{\bf addNewGroup} (\$name, \$admin)
+\item 
+{\bf addPicture} (\$pg, \$year, \$desc)
+\item 
+{\bf getPics} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 19 of file adminmodel.php.
+
+\subsection{Member Function Documentation}
+\index{AdminModel@{AdminModel}!getGroups@{getGroups}}
+\index{getGroups@{getGroups}!AdminModel@{AdminModel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}AdminModel.getGroups ()}\label{classAdminModel_37d7155b3073e4f342efb352c52bd6c9}
+
+
+Give groups.
+
+This function returns groups.  public \begin{Desc}
+\item[Returns:]array \end{Desc}
+
+
+Reimplemented from {\bf Galleria\_\-Model\_\-Collection} \doxyref{}{p.}{classGalleria__Model__Collection_024df98b624b14ff9a2ae67b69d92973}.
+
+Definition at line 29 of file adminmodel.php.
+
+References Galleria\_\-Model.\_\-fetchObjects(), and Galleria\_\-Model.\_\-getConnection().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{classAdminModel_37d7155b3073e4f342efb352c52bd6c9_cgraph}
+\end{center}
+\end{figure}
+\index{AdminModel@{AdminModel}!getUsers@{getUsers}}
+\index{getUsers@{getUsers}!AdminModel@{AdminModel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}AdminModel.getUsers ()}\label{classAdminModel_197b6812c5ed44b955812b233f11b723}
+
+
+Give users.
+
+This function returns users.  public \begin{Desc}
+\item[Returns:]array \end{Desc}
+
+
+Definition at line 44 of file adminmodel.php.
+
+References Galleria\_\-Model.\_\-fetchObjects(), and Galleria\_\-Model.\_\-getConnection().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{classAdminModel_197b6812c5ed44b955812b233f11b723_cgraph}
+\end{center}
+\end{figure}
+\index{AdminModel@{AdminModel}!addNewUser@{addNewUser}}
+\index{addNewUser@{addNewUser}!AdminModel@{AdminModel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}AdminModel.addNewUser (\$ {\em name}, \$ {\em user}, \$ {\em pass})}\label{classAdminModel_b47fb15614534e57ae7014ea15b82d1c}
+
+
+Add new user.
+
+This function adds new user.  public \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em string}]\$name \item[{\em string}]\$user \item[{\em string}]\$pass \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]stdClass \end{Desc}
+
+
+Definition at line 62 of file adminmodel.php.
+
+References Galleria\_\-Model.\_\-getConnection().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{classAdminModel_b47fb15614534e57ae7014ea15b82d1c_cgraph}
+\end{center}
+\end{figure}
+\index{AdminModel@{AdminModel}!addNewGroup@{addNewGroup}}
+\index{addNewGroup@{addNewGroup}!AdminModel@{AdminModel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}AdminModel.addNewGroup (\$ {\em name}, \$ {\em admin})}\label{classAdminModel_f22b59c4fcd97e25b2691ce38b84d6a1}
+
+
+Add new group.
+
+This function adds new group.  public \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em string}]\$name \item[{\em boolean}]\$admin \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]stdClass \end{Desc}
+
+
+Definition at line 79 of file adminmodel.php.
+
+References Galleria\_\-Model.\_\-getConnection().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classAdminModel_f22b59c4fcd97e25b2691ce38b84d6a1_cgraph}
+\end{center}
+\end{figure}
+\index{AdminModel@{AdminModel}!addPicture@{addPicture}}
+\index{addPicture@{addPicture}!AdminModel@{AdminModel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}AdminModel.addPicture (\$ {\em pg}, \$ {\em year}, \$ {\em desc})}\label{classAdminModel_f153f2209c7e5920bccea143b3c9ead2}
+
+
+Add new picture.
+
+This function add new picture.  public \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em string}]\$pg \item[{\em string}]\$year \item[{\em string}]\$desc \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]boolean \end{Desc}
+
+
+Definition at line 100 of file adminmodel.php.
+
+References Galleria\_\-Model\_\-Collection.\_\-addChangelog(), Galleria\_\-Model.\_\-getConnection(), and Galleria\_\-Auth.getObject().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=403pt]{classAdminModel_f153f2209c7e5920bccea143b3c9ead2_cgraph}
+\end{center}
+\end{figure}
+\index{AdminModel@{AdminModel}!getPics@{getPics}}
+\index{getPics@{getPics}!AdminModel@{AdminModel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}AdminModel.getPics ()}\label{classAdminModel_7304af18167fddfe7aaaf140ad420201}
+
+
+Give pictures.
+
+This function returns pictures, which are not in a group nor shown.  public \begin{Desc}
+\item[Returns:]array \end{Desc}
+
+
+Definition at line 114 of file adminmodel.php.
+
+References Galleria\_\-Model.\_\-fetchObjects(), and Galleria\_\-Model.\_\-getConnection().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=269pt]{classAdminModel_7304af18167fddfe7aaaf140ad420201_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/var/www/galleria/data/site/mvc/model/{\bf adminmodel.php}\end{CompactItemize}

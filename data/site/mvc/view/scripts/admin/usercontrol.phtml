@@ -1,0 +1,82 @@
+<?php include('menu.phtml'); ?>
+
+<h3>Users</h3>
+
+<form id="newuser" action="<?php echo $html_url; ?>admin/usercontrol/?newuser" method="post">
+    <fieldset>
+        <legend>New user</legend>
+
+        <label for="newuser-name">Name:</label>
+        <input id="newuser-name" type="text" name="name" />
+
+        <label for="newuser-username">Username:</label>
+        <input id="newuser-username" type="text" name="username" />
+
+        <label for="newuser-password">Password:</label>
+        <input id="newuser-password" type="password" name="password" />
+
+        <input type="submit" value="Create" />
+    </fieldset>
+</form>
+
+<?php if ($view->newuser) { ?>
+<p class="addeduser">Added new user <?php echo $view->newuser->name; ?>.</p>
+<?php } elseif ($view->newuserfailed) { ?>
+<p>Error occured, when tried to add user, check your fields.</p>
+<?php } ?>
+
+<?php
+foreach ($view->users as $user) {
+?>
+<div id="user-<?php echo $user->id; ?>" class="user <?php echo $user->aclass; ?>">
+    <h4><?php echo $user->name; ?></h4>
+    <p><strong>Username:</strong> <?php echo $user->username; ?></p>
+    <p><a href="#activity"><?php echo ($user->aclass == 'active') ? 'Deactive' : 'Active'; ?></a></p>
+    <ul id="usergroups-<?php echo $user->id; ?>" class="usergroups">
+<?php
+    if ($user->groups) {
+        foreach ($user->groups as $group) {
+            echo '<li id="user-' . $user->id . '-group-' . $group->id . '"><span>' . $group->name . '</span></li>';
+        }
+    }
+?>
+        <li class="addusergroups"><a href="#addusergroup">[Add new group]</a></li>
+    </ul>
+
+    <p><a href="#deleteuser">Delete <?php echo $user->name; ?></a></p>
+
+</div>
+
+<?php } ?>
+
+<h3>Groups</h3>
+
+<form id="newgroup" action="<?php echo $html_url; ?>admin/usercontrol/?newgroup" method="post">
+    <fieldset>
+        <legend>New group</legend>
+
+        <label for="newgroup-name">Name:</label>
+        <input id="newgroup-name" type="text" name="name" />
+
+        <label for="newgroup-admin">Is admin</label>
+        <input id="newgroup-admin" type="checkbox" name="admin" />
+
+        <input type="submit" value="Create" />
+    </fieldset>
+</form>
+
+<?php if ($view->newgroup) { ?>
+<p class="addedgroup">Added new group <?php echo $view->newgroup->name; ?>.</p>
+<?php } elseif ($view->newgroupfailed) { ?>
+<p>Error occured, when tried to add group, check your fields.</p>
+<?php } ?>
+
+<?php
+if ($view->groups) {
+    echo '<ul id="groups">';
+    foreach($view->groups as $group) {
+        echo '<li id="group-' . $group->id . '"' . (($group->admin) ? ' class="admin"' : '') . '>' . $group->name . ' <a href="#toggleadmin">(' . (($group->admin) ? 'Admin' : 'Non-admin') . ')</a> <a href="#deletegroup">[delete]</a></li>';
+    }
+    echo '</ul>';
+}
+?>

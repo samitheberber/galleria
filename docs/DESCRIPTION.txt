@@ -1,0 +1,30 @@
+== DESCRIPTION ==
+
+= Databse =
+
+= Library =
+
+1. Pictures
+    - Import
+    - Export
+    - Resize
+    - Modify
+    - Info(?)
+2. ACL
+    - Add rule
+    - Delete rule
+    - Modify rule
+    - Copy rule
+3. Database
+    - Table
+    - Row
+    - Querys
+
+= Bootstrap =
+
+1. Configuration
+2. Configure page
+3. Show page
+
+= Page files =
+

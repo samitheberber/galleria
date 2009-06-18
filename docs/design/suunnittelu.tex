@@ -1,0 +1,688 @@
+\documentclass[gradu,emptyfirstpagenumber]{tktltiki}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{clrscode}
+
+\begin{document}
+
+\title{Kuvagalleria - Suunnitteludokumentti}
+\author{Sami Saada <saada@cs.helsinki.fi>}
+\date{\today}
+\level{Tietokantasovellus}
+\faculty{Matemaattis-luonnontieteellinen}
+\department{Tietojenkäsittelytieteen laitos}
+\depositeplace{}
+\additionalinformation{Tämä on tietokantasovelluksen suunnitteludokumentti}
+\numberofpagesinformation{\numberofpages\ sivua}
+\classification{}
+\keywords{Tietokantasovellus, Suunnitteludokumentti}
+
+\maketitle
+
+\begin{abstract}
+Tietokantasovelluksen suunnitteludokumentti. Dokumentissa kerrotaan
+tietokantasovelluksen rakenteesta ja miten se tulisi toteuttaa. Dokumentti
+sisältää erilaisia oleellisia kaavioita.
+\end{abstract}
+
+\mytableofcontents
+
+\section{Johdanto}
+
+Järjestelmä on kuvagalleria ja tarkoitus on tutustuttaa sen saloihin
+pikaisella pintaraapaisulla.
+
+\subsection{Järjestelmän tarkoitus}
+
+Järjestelmä tulee toimimaan kuvagalleriana, jossa voi selata kuvia eri
+tasoisilla oikeuksilla. Kuvia on tietenkin mahdollista lisätä ja niiden
+tietoja pystyy muuttamaan.
+
+Järjestelmä on tarkoitettu niin yksityishenkilöiden kuin yritysten ja
+yhdistysten kuvallisen toiminnan tukemiseksi. Erilaisten järjestettyjen
+tapahtumien kuvat saadaan helposti esille. Käyttäjätasojen ansiosta myös
+rajatun piirin keskuuteen tarkoitetut kuvat onnistuvat.
+
+Järjestelmän päätavoite on ratkaista sitä käyttävien tahojen kuvien
+hallintaongelmat tai edes helpottaa niitä.
+
+\subsection{Toimintaympäristö}
+
+Järjestelmä toteutetaan käyttäen ohjelmointikielenä PHP5.2.x:tä ja
+tietokantana PostgreSQL:ää, joten se toimii missä tahansa ympäristössä,
+joka tukee tarpeeksi tuoretta PHP-versiota, jossa on käytetyt ominaisuudet.
+Ohjelmointikieli ei aseta rajoitteita käyttöjärjestelmälle.
+
+Tietokantapalvelimelta vaaditaan jokin PHP:n PDO-moduulin ajurin tukema
+tietokanta-alusta. Tietokantapavelin voi olla yhdistettynä
+sovelluspalvelimeen tai siitä erikseen. Molemmat vaihtoehdot ovat tuettuna
+sovelluksen toteutuksessa.
+
+Tietokannan luontikyselyt kirjoitetaan PostgreSQL:ää ajatellen, mutta ne
+on mahdollista saada pienehköllä vaivalla tukemaan myös muita
+tietokanta-alustoja. Kaikki nykyiset käyttöjärjestelmät tukevat
+tietokanta-alustoja kohtuullisen laajalti.
+
+Järjestelmä toteutetaan esittelykuntoon TKTL:n tietokantasovelluspalvelin
+Alkokrunnille $(db.cs.helsinki.fi)$.
+
+Asiakaspuolelta vaaditaan tuki XHTML ja CSS-standardeille sekä tuki
+JavaScriptille. Työhön kuuluu osia WEB 2.0:n tekniseltä puolelta.
+
+\subsection{Rajaukset}
+
+Sovellus toteutetaan sisältämään kaikki siihen määritellyt ominaisuudet.
+Se on mahdollista toteuttaa kokonaan annetussa ajassa, joten koko
+määrittelyn toteuttaminen ei ole ongelma.
+
+Esittelytilaisuudessa on melko rajattu määrä tietoa, sillä
+tekijänoikeuksia ei rikota. Tietoa on sen verran, että kaikkia
+ominaisuuksia on mahdollista esitellä.
+
+Asiakkaan selaimen on tuettava toimintaympäristön määrittelemiä
+tekniikoita, joten Internet Explorer 6 -selaimen tukeminen ei ole
+pääasiassa tässä projektissa.
+
+Käytettävyyden parantamiseksi saatetaan käyttää CSS-standardin ulkopuolisia
+osia, joita nykyaikaiset selaimet kuitenkin tukevat.
+
+\subsection{Toteutusympäristö}
+
+Työ toteutetaan omassa kehitysympäristössä, johon kuuluu Gentoo Linux,
+Apache 2, PHP 5.2.8-r2, PostgreSQL 8.2.7 ja vim-tekstieditori sopivilla
+lisäosilla.
+
+Käytössä on myös SVN-palvelin, jolle varastoidaan projektin eri vaiheet ja
+vain toimivat osat ovat näkyvissä toteutuspalvelimella.
+
+Toteutusympäristön testausympäristö on pääasiallisesti Firefox 3 -selain,
+jossa on tärkeinä lisäosina Firebug sekä Web Developer.
+
+\pagebreak
+
+\section{Yleiskuva järjestelmästä}
+
+Järjestelmän yleiskuvaa kuvataan sidosryhmäkaavion ja käyttäjäryhmien
+avulla.
+
+\subsection{Sidosryhmäkaavio}
+
+\begin{figure}[htb!]
+\centering
+\includegraphics[width=\textwidth]{overview}
+\caption{Sidosryhmäkaavio}
+\label{fig:overview}
+\end{figure}
+
+\subsection{Käyttäjäryhmät}
+
+Määritellään sidosryhmäkaaviossa esiintyvät käyttäjäryhmät.
+
+\subsubsection{Vierailija}
+
+Vierailija on käyttäjä, joka ei ole kirjautunut sisälle.
+
+\subsubsection{Rekisteröitynyt käyttäjä}
+
+Rekisteröitynyt käyttäjä on sisäänkirjautunut käyttäjä.
+
+\subsubsection{Ylläpito}
+
+Ylläpito koostuu rekisteröityneistä käyttäjistä, jotka kuuluvat johonkin
+ryhmään, jolla on ylläpito-oikeus.
+
+\pagebreak
+
+\section{Käyttötapaukset}
+
+Järjestelmässä on useita eri käyttötapauksia.
+
+\subsection{Vierailijan käyttötapaukset}
+
+Vierailijalla on järjestelmän julkiseen käyttöön liittyvät käyttötapaukset.
+
+\subsubsection{Kuvien selaaminen}
+
+Kuvia voi selata muutamalla eri tavalla, kuten tuoreempien kuvien kautta,
+liitesanojen (tagien) kautta, kategorioiden kautta tai hakemalla.
+
+Tuoreimmissa kuvissa on listattuna kymmenen tuoreinta kuvaa. Kuvien tuoreus
+määräytyy kuvan lisäämisen ajankohdan perusteella. Tuoreimpien kuvien
+listasta pääsee kuvaa painamalla sen tietoihin. Tuoreimmat kuvat ovat
+järjestelmän etusivulla.
+
+Liitesanat, tuttavallisemmin tagit, ovat kuviin liitettyjä sanoja. Kuviin
+voi liittää useita tageja. Ne näkyvät etusivulla ja niiden koko määräytyy
+niiden yleisyyden perusteella. Tagista saa näkyville sen sisältämät kuvat,
+joista taas pääsee kuvien tietoihin.
+
+Kuvia voi selata kategorioiden kautta. Ne voivat sisältää myös
+alakategorioita. Kategoriat ovat yleisluontoisia kuvauksia kuvista,
+esimerkiksi jokin rakennus, tapahtuma yms. Kategoriasta saa esiin siihen
+liittyvät kuvat, muttei sen alakategorioiden kuvia. Kuvalistasta pääsee
+kuvien tietoihin.
+
+Kuvien selaamisesta hakemalla on tietoa käyttötapauksien kohdassa \textbf{
+Kuvien hakeminen}.
+
+\subsubsection{Kuvien hakeminen}
+
+Kuvien hakemisen voi tehdä laaja-alaisesti tai suppeasti. Haussa on kolme
+kenttää: teksti, kuvaaja ja kuvausvuosi.
+
+Teksti-kenttä sisältää vapaan tekstihaun, joka hakee kuvan kuvauksesta sekä
+tageista.
+
+Kuvaaja-kenttä sisältää kuvaajan tiedot. Tällä kentällä voi hakea yhtä tai
+useampaa kuvaajaa. Kentän täyttö kertoo, että valitaan vain siihen
+täsmäävien kuvaajien kuvat.
+
+Kuvausvuoden valinta tuo kuvat kyseisiltä vuosilta. Karsinta toimii samalla
+tavalla kuin edellisissä kentissä.
+
+Hakutulokset listautuvat, kuten muutkin listaukset ja niistä pääsee kuvien
+tietoihin. Tämä tehdään mahdollisimman samanlaiseksi kuin muilla sivuilla.
+
+\subsubsection{Kuvien tietojen katsominen}
+
+Vierailijat voivat katsoa julkisia kuvia, joita he ovat selanneet tai
+hakeneet.
+
+Kuvista näkee tietoina itse kuvan, kategorian, valokuvaajan, kuvausvuoden
+kuvaavan tekstin ja tagit.
+
+\subsubsection{Apusivun lukeminen}
+
+Vierailija voi lukea apusivulta tietoa häntä kiinnostavista asioista.
+Apusivulla on esitelty eri käyttötapausten mahdolliset keskeiset ongelmat.
+
+\subsection{Rekisteröityneen käyttäjän käyttötapaukset}
+
+Rekisteröityneellä käyttäjällä on samat käyttötapaukset kuin vierailijalla,
+mutta käyttöoikeudet vaikuttavat siihen, että rekisteröitynyt käyttäjä
+näkee enemmän kuvia, sillä hän voi kuulua johonkin ryhmään, johon on
+liitetty kuvia.
+
+\subsubsection{Rajattujen kuvien katsominen}
+
+Rekisteröitynyt käyttäjä näkee ryhmilleen asetetut kuvat, joita muut
+käyttäjät eivät näe.
+
+Rajatut kuva näkyvät niille käyttäjille, joilla on sama ryhmä kuin kuvien
+kategorioilla. Tätä varten tarvitaan suhde kategorioiden ja käyttäjäryhmien
+välille.
+
+\subsubsection{Profiili}
+
+Rekisteröitynyt käyttäjä voi muokata omia tietojaan, kuten nimeä ja
+salasanaa.
+
+\subsection{Ylläpidon käyttötapaukset}
+
+Ylläpidolla on samat käyttötapaukset kuin rekisteröityneellä käyttäjällä,
+mutta hän näkee kaikkien ryhmien kuvat.
+
+\subsubsection{Käyttäjähallinta}
+
+Ylläpito voi lisätä ja poistaa käyttäjiä ja käyttäjäryhmiä. Se voi liittää
+käyttäjiä ryhmiin ja muokata käyttäjien tietoja.
+
+\textbf{Käyttäjien lisääminen}
+
+Ylläpito voi lisätä uusia käyttäjiä järjestelmään. Se täyttää tarvittavat
+tiedot, eli tunnuksen, nimen ja salasanan. Tämän jälkeen tunnus on luotu ja
+valmis käytettäväksi. Järjestelmä ei kuitenkaan hyväksy kahta samanlaista
+tunnusta.
+
+\textbf{Käyttäjien muokkaaminen}
+
+Ylläpito voi muokata käyttäjiä. Muokattavia asioita ovat tunnus, nimi,
+salasana ja aktiivisuus. Järjestelmä ei kuitenkaan hyväksy kahta
+samanlaista tunnusta. Aktiivisuus kertoo sen, onko tunnuksella oikeus tehdä
+sitä vastaavia tehtäviä vai onko se ns. jäähyllä.
+
+\textbf{Käyttäjien poistaminen}
+
+Ylläpito voi poistaa käyttäjiä. Tällöin tunnus häviää ja kuvien viittaukset
+vaihtuvat.
+
+\textbf{Käyttäjäryhmien lisääminen}
+
+Ylläpito voi lisätä uusia käyttäjäryhmiä. Ryhmälle annetaan nimi ja sen voi
+asettaa ylläpitoryhmäksi.
+
+\textbf{Käyttäjäryhmien muokkaaminen}
+
+Ylläpito voi muuttaa ryhmän nimeä ja sen ylläpito-oikeutta.
+
+\textbf{Käyttäjäryhmien poistominen}
+
+Ylläpito voi poistaa ryhmän, jolloin kaikki siihen viittaavat käyttäjät
+poistetaan kyseisestä ryhmästä.
+
+\subsubsection{Kuvien hallinta}
+
+Ylläpito voi lisätä, muokata ja poistaa kuvia, asettaa kuviin kategorioita
+ja tageja (yksi kategoria ja monta tagia). Jokainen muutos tallennetaan
+kuvan muokkaushistoriaan.
+
+\textbf{Kuvien lisääminen}
+
+Ylläpito lisää kuvia järjestelmään täyttämällä kuvaan kategorian, kuvaajan,
+kuvausvuoden, sanallisen kuvauksen ja tageja.
+
+\textbf{Kuvien muokkaaminen}
+
+Ylläpito voi muuttaa kuvien kuvausta, kategoriaa, kuvaajaa, kuvausvuotta ja
+siihen liittyviä tageja. Itse kuvadataa ei voi muuttaa huonotyylisen
+käytön estämiseksi.
+
+Kuvien näkyvyyttä voi myös muokata, jolloin voidaan päättää onko kuva
+näkyvissä vai ei.
+
+\textbf{Kuvien poisto}
+
+Ylläpito voi poistaa kuvia galleriasta. Tällöin kaikki kuvaan liittyvät
+tiedot poistetaan.
+
+\textbf{Muokkaushistoria}
+
+Muokkaushistoria päivittyy aina, kun kuva lisätään tai siihen tehdään
+jotain muutoksia. Muokkaushistoria näytetään kuvakohtaisesti ylläpidolle.
+
+\subsubsection{Kategorioiden hallinta}
+
+Ylläpito voi lisätä ja poistaa kategorioita sekä asettaa käyttäjäryhmiä
+kategorioihin.
+
+\textbf{Kategorioiden lisäys}
+
+Ylläpito voi lisätä uusia kategorioita, joihin tämän jälkeen voi lisätä
+kuvia ja käyttäjäryhmiä.
+
+\textbf{Kategorioiden poisto}
+
+Ylläpito voi poistaa kategorioita. Jos poistettava kategoria sisältää
+käyttäjäryhmiä, näiden välinen yhteys poistetaan. Jos poistettava kategoria
+sisältää kuvia, kysytään mihin liitetyt kuvat siirretään, jos tämä ei
+onnistu, niin kategoriaa ei anneta poistaa.
+
+\pagebreak
+
+\section{Järjestelmän tietosisältö}
+
+Kuvataan järjestelmän tietosisältö käsitekaavion kautta ja eritellään
+tarkemmin tietosisältöä.
+
+\subsection{Käsitekaavio}
+
+\begin{figure}[htb!]
+\centering
+\includegraphics[width=0.33\textwidth]{conceptual}
+\caption{Käsitekaavio}
+\label{fig:conceptual}
+\end{figure}
+
+\subsection{Tietosisällön kuvaus}
+
+Käsitellään käsitekaavion tietosisällöt.
+
+\begin{center}
+    \begin{tabular}{l l l}
+        \hline
+        \multicolumn{3}{c}{\textbf{Käyttäjät}} \\
+        \hline
+        {\bf Attribuutti} & {\bf Arvojoukko} & {\bf Kuvailu} \\
+        \hline
+        Nimi & merkkijono & Kertoo käyttäjän nimen \\
+        Käyttäjätunnus & merkkijono & Käyttäjän tunnus, jolla kirjautuu sisään \\
+        Salasana & hajautettu merkkijono & Käyttäjän salasana suojattuna \\
+        Aktiivisuus & totuusarvo & kertoo, onko käyttäjä aktiivinen \\
+        \hline
+    \end{tabular}
+    \label{table:users}
+\end{center}
+
+\begin{center}
+    \begin{tabular}{l l l}
+        \hline
+        \multicolumn{3}{c}{\textbf{Käyttäjäryhmät}} \\
+        \hline
+        {\bf Attribuutti} & {\bf Arvojoukko} & {\bf Kuvailu} \\
+        \hline
+        Nimi & merkkijono & Kertoo ryhmän nimen \\
+        Ylläpito & boolean & Kertoo, onko ryhmä osa ylläpitoa \\
+        \hline
+    \end{tabular}
+    \label{table:usergroups}
+\end{center}
+
+\begin{center}
+    \begin{tabular}{l l l}
+        \hline
+        \multicolumn{3}{c}{\textbf{Kategoriat}} \\
+        \hline
+        {\bf Attribuutti} & {\bf Arvojoukko} & {\bf Kuvailu} \\
+        \hline
+        Nimi & merkkijono & Kertoo kategorian nimen \\
+        \hline
+    \end{tabular}
+    \label{table:categories}
+\end{center}
+
+\begin{center}
+    \begin{tabular}{l l l}
+        \hline
+        \multicolumn{3}{c}{\textbf{Kuvat}} \\
+        \hline
+        {\bf Attribuutti} & {\bf Arvojoukko} & {\bf Kuvailu} \\
+        \hline
+        Kuvaaja & merkkijono & Kertoo, kuka on kuvannut kuvan \\
+        Kuvausvuosi & merkkijono & Kertoo, milloin kuva on otettu \\
+        Tekstikuvaus & merkkijono & Kuvaa kuvaa sanallisesti \\
+        Näkyvyysaste & totuusarvo & Kertoo, onko kuva näkyvilä\\
+        \hline
+    \end{tabular}
+    \label{table:pictures}
+\end{center}
+
+\begin{center}
+    \begin{tabular}{l l l}
+        \hline
+        \multicolumn{3}{c}{\textbf{Kuvamuutokset}} \\
+        \hline
+        {\bf Attribuutti} & {\bf Arvojoukko} & {\bf Kuvailu} \\
+        \hline
+        Kuvaviite & kokonaisluku & Kertoo viitenumeron kuvaan \\
+        Käyttäjäviite & kokonaisluku & Kertoo viitenumeron käyttäjään \\
+        Toiminto & merkkijono & Kertoo millaisesta toiminnosta kyse \\
+        Toiminnon aikaleima & aikaleima & Kertoo milloin toiminto tehtiin \\
+        \hline
+    \end{tabular}
+    \label{table:picturemodifies}
+\end{center}
+
+\begin{center}
+    \begin{tabular}{l l l}
+        \hline
+        \multicolumn{3}{c}{\textbf{Tagit}} \\
+        \hline
+        {\bf Attribuutti} & {\bf Arvojoukko} & {\bf Kuvailu} \\
+        \hline
+        Nimi & merkkijono & Kertoo tagin nimen \\
+        \hline
+    \end{tabular}
+    \label{table:tags}
+\end{center}
+
+\pagebreak
+
+\section{Käyttöliittymän hahmotelma}
+
+Käyttöliittymästä on hahmotelmakuva ja kaavio, jossa on kerrottu eri
+näkymien väliset yhteydet.
+
+\subsection{Hahmotelma}
+
+\begin{figure}[htb!]
+\centering
+\includegraphics[width=0.8\textwidth]{ui}
+\caption{Etusivun näkymä}
+\label{fig:ui}
+\end{figure}
+
+\subsection{Näkymien väliset yhteydet}
+
+\begin{figure}[htb!]
+\centering
+\includegraphics[width=\textwidth]{userinterface}
+\caption{Käyttöliittymäkaavio}
+\label{fig:userinterface}
+\end{figure}
+
+\pagebreak
+
+\section{Relaatiotietokanta}
+
+Relaatiotietokanta esitellään kahdella tavalla, ensin kaaviona ja sitten SQL-lauseilla.
+
+\subsection{Relaatiotietokantakaavio}
+
+\begin{figure}[htb!]
+\centering
+\includegraphics[width=\textwidth]{database}
+\caption{Relaatiotietokantakaavio}
+\label{fig:database}
+\end{figure}
+
+\subsection{SQL-lauseet}
+
+Luodaan perus tietokanta Create Table -lauseilla ja erikseen näkymä, jotta tietokantaa olisi järkevä käsitellä.
+
+\subsubsection{Create Table}
+
+\begin{codebox}
+\li CREATE SCHEMA $galleria$;
+\end{codebox}
+
+\begin{codebox}
+\li CREATE TABLE $galleria.users$ (
+\li     $id$ serial PRIMARY KEY,
+\li     $username$ character varying NOT NULL UNIQUE
+\zi     CHECK (char\_length($username$) > 0),
+\li     $password$ character varying NOT NULL CHECK
+\zi     (char\_length($password$) > 0),
+\li     $name$ character varying NOT NULL CHECK
+\zi     (char\_length($name$) > 0),
+\li     $active$ boolean DEFAULT TRUE
+\li );
+\end{codebox}
+
+\begin{codebox}
+\li CREATE TABLE $galleria.groups$ (
+\li     $id$ serial PRIMARY KEY,
+\li     $name$ character varying NOT NULL UNIQUE
+\zi     CHECK (char\_length($name$) > 0),
+\li     $admin$ boolean DEFAULT FALSE
+\li );
+\end{codebox}
+
+\begin{codebox}
+\li CREATE TABLE $galleria.usergroups$ (
+\li     $userid$ integer NOT NULL REFERENCES $galleria.users(id)$
+\zi     ON DELETE CASCADE ON UPDATE CASCADE,
+\li     $groupid$ integer NOT NULL REFERENCES $galleria.groups(id)$
+\zi     ON DELETE CASCADE ON UPDATE CASCADE,
+\li     PRIMARY KEY ($userid$, $groupid$)
+\li );
+\end{codebox}
+
+\begin{codebox}
+\li CREATE TABLE $galleria.categories$ (
+\li     $id$ serial PRIMARY KEY,
+\li     $parent$ integer REFERENCES $galleria.categories(id)$
+\zi     ON DELETE CASCADE ON UPDATE SET NULL,
+\li     $name$ character varying NOT NULL
+\zi     CHECK (char\_length($name$) > 0),
+\li     $weight$ integer DEFAULT 0
+\li );
+\end{codebox}
+
+\begin{codebox}
+\li CREATE TABLE $galleria.pictures$ (
+\li     $id$ serial PRIMARY KEY,
+\li     $photographer$ character varying NOT NULL
+\zi     CHECK (char\_length($photographer$) > 0),
+\li     $year$ char(4) NOT NULL
+\zi     CHECK (char\_length($year$) = 4),
+\li     $description$ character varying NOT NULL
+\zi     CHECK (char\_length($description$) > 0),
+\li     $categoryid$ integer NOT NULL REFERENCES $galleria.categories(id)$
+\zi     ON DELETE RESTRICT ON UPDATE RESTRICT,
+\li     $shown$ boolean DEFAULT TRUE
+\li );
+\end{codebox}
+
+\begin{codebox}
+\li CREATE TABLE $galleria.categorygroups$ (
+\li     $categoryid$ integer NOT NULL REFERENCES $galleria.categories(id)$
+\zi     ON DELETE CASCADE ON UPDATE CASCADE,
+\li     $groupid$ integer NOT NULL REFERENCES $galleria.groups(id)$
+\zi     ON DELETE CASCADE ON UPDATE CASCADE,
+\li     PRIMARY KEY ($categoryid$, $groupid$)
+\li );
+\end{codebox}
+
+\begin{codebox}
+\li CREATE TABLE $galleria.tags$ (
+\li     $id$ serial PRIMARY KEY,
+\li     $name$ character varying NOT NULL UNIQUE
+\zi     CHECK (char\_length($name$) > 0 AND char\_length($name$) <= 20)
+\li );
+\end{codebox}
+
+\begin{codebox}
+\li CREATE TABLE $galleria.picturetags$ (
+\li     $pictureid$ integer NOT NULL REFERENCES $galleria.pictures(id)$
+\zi     ON DELETE CASCADE ON UPDATE CASCADE,
+\li     $tagid$ integer NOT NULL REFERENCES $galleria.tags(id)$
+\zi     ON DELETE CASCADE ON UPDATE CASCADE,
+\li     PRIMARY KEY ($pictureid$, $tagid$)
+\li );
+\end{codebox}
+
+\begin{codebox}
+\li CREATE TABLE $galleria.picturemodifies$ (
+\li     $id$ serial PRIMARY KEY,
+\li     $pictureid$ integer NOT NULL REFERENCES $galleria.pictures(id)$
+\zi     ON DELETE CASCADE ON UPDATE CASCADE,
+\li     $userid$ integer NOT NULL REFERENCES $galleria.users(id)$
+\zi     ON DELETE RESTRICT ON UPDATE RESTRICT,
+\li     $action$ character varying NOT NULL
+\zi     CHECK (char\_length($action$) > 0),
+\li     $action\_timestamp$ timestamp DEFAULT NOW()
+\li );
+\end{codebox}
+
+\subsubsection{Create View}
+
+\begin{codebox}
+\li CREATE OR REPLACE VIEW $galleria.picturedata$ AS
+\li     SELECT $p.id$ AS $pid$,
+\li            $p.photographer$ AS $pg$,
+\li            $p.year$ AS $year$,
+\li            $p.description$ AS $desc$,
+\li            $p.shown$ as $shown$,
+\li            $c.id$ AS $cid$,
+\li            $c.name$ AS $cname$,
+\li            $cg.groupid$ AS $gid$
+\li     FROM $galleria.pictures$ AS $p$
+\li     LEFT JOIN $galleria.categories$ AS $c$
+\li         ON $c.id$ = $p.categoryid$
+\li     LEFT JOIN $galleria.categorygroups$ AS $cg$
+\li         ON $cg.categoryid$ = $c.id$
+\li     ORDER BY $pid$ DESC;
+\end{codebox}
+
+\begin{codebox}
+\li CREATE OR REPLACE VIEW $galleria.tagdata$ AS
+\li     SELECT $t.id$ AS $tid$,
+\li            $t.name$ AS $name$,
+\li            COUNT($t.id$) AS $weight$,
+\li            (
+\li                 SELECT count(*)
+\li                 FROM $galleria.picturetags$
+\li            ) AS $sum$
+\li     FROM $galleria.tags$ AS $t$
+\li     JOIN $galleria.picturetags$ AS $pt$
+\li          ON $pt.tagid$ = $t.id$
+\li     GROUP BY $t.id$,
+\li              $t.name$
+\li     ORDER BY $name$ ASC;
+\end{codebox}
+
+\begin{codebox}
+\li CREATE OR REPLACE VIEW $galleria.tagsofpictures$ AS
+\li     SELECT $t.id$ AS $tid$,
+\li            $t.name$ AS $name$,
+\li            $pt.pictureid$ AS $pid$
+\li     FROM $galleria.tags$ AS $t$
+\li     JOIN $galleria.picturetags$ AS $pt$
+\li          ON $pt.tagid$ = $t.id$
+\li     ORDER BY $tid$ ASC;
+\end{codebox}
+
+\begin{codebox}
+\li CREATE OR REPLACE VIEW $galleria.groupsofuser$ AS
+\li     SELECT $ug.userid$ AS $uid$,
+\li            $g.id$ AS $gid$,
+\li            $g.name$ AS $name$,
+\li            $g.admin$ AS $adm$
+\li     FROM $galleria.groups$ AS $g$
+\li     JOIN $galleria.usergroups$ AS $ug$
+\li          ON $ug.groupid$ = $g.id$
+\li     ORDER BY $uid$;
+\end{codebox}
+
+\begin{codebox}
+\li CREATE OR REPLACE VIEW $galleria.groupsofcategory$ AS
+\li     SELECT $cg.categoryid$ AS $cid$,
+\li            $g.id$ AS $gid$,
+\li            $g.name$ AS $name$,
+\li            $g.admin$ AS $adm$
+\li     FROM $galleria.groups$ AS $g$
+\li     JOIN $galleria.categorygroups$ AS $cg$
+\li         ON $cg.groupid$ = $g.id$
+\li     ORDER BY $cid$;
+\end{codebox}
+
+\begin{codebox}
+\li CREATE OR REPLACE VIEW $galleria.userdata$ AS
+\li     SELECT $u.id$ AS $uid$,
+\li            $u.username$ AS $username$,
+\li            $u.name$ AS $name$,
+\li            $u.active$ AS $active$,
+\li            $ug.groupid$ AS $gid$
+\li     FROM $galleria.users$ AS $u$
+\li     LEFT JOIN $galleria.usergroups$ AS $ug$
+\li          ON $ug.userid$ = $u.id$
+\li     ORDER BY $uid$;
+\end{codebox}
+
+\begin{codebox}
+\li CREATE OR REPLACE VIEW $galleria.categorylist$ AS
+\li     SELECT $c.id$ AS $cid$,
+\li            $c.parent$ AS $cpar$,
+\li            $c.name$ AS $name$,
+\li            (
+\li             SELECT count(*) > 0
+\li             FROM $galleria.pictures$ AS $p$
+\li             WHERE $p.categoryid$ = $c.id$
+\li             AND $p.shown$ = TRUE
+\li            ) AS $haspics$,
+\li            $cg.groupid$ AS $gid$
+\li     FROM $galleria.categories$ AS $c$
+\li     LEFT JOIN $galleria.categorygroups$ AS $cg$
+\li         ON $cg.categoryid$ = $c.id$
+\li     ORDER BY $cpar$ ASC, $c.weight$ ASC;
+\end{codebox}
+
+\begin{codebox}
+\li CREATE OR REPLACE VIEW $galleria.changelog$ AS
+\li     SELECT $pm.pictureid$ AS $pid$,
+\li            $u.name$ AS $user$,
+\li            $pm.action$ AS $action$,
+\li            $pm.action\_timestamp$ AS $timestamp$
+\li     FROM $galleria.picturemodifies$ AS $pm$
+\li     JOIN $galleria.users$ AS $u$
+\li          ON $u.id$ = $pm.userid$
+\li     ORDER BY $timestamp$ ASC;
+\end{codebox}
+
+\lastpage
+\appendices
+
+\end{document}
+
+\endinput

@@ -1,0 +1,258 @@
+\section{Galleria\_\-Controller Class Reference}
+\label{classGalleria__Controller}\index{Galleria\_\-Controller@{Galleria\_\-Controller}}
+Inheritance diagram for Galleria\_\-Controller:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=400pt]{classGalleria__Controller__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf \_\-\_\-construct} (\$action, \$model, \$requests)
+\item 
+{\bf before} ()
+\item 
+{\bf after} ()
+\item 
+{\bf getView} ()
+\item 
+{\bf setNext} (\$cont, \$act)
+\item 
+{\bf getPage} ()
+\item 
+{\bf getSubpage} ()
+\item 
+{\bf redirect} (\$cont, \$act)
+\item 
+{\bf isRedirected} ()
+\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf \_\-getModel} ()
+\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+{\bf \$\_\-action}
+\item 
+{\bf \$\_\-model}
+\item 
+{\bf \$\_\-view}
+\item 
+{\bf \$\_\-requests}
+\item 
+{\bf \$\_\-ncont}
+\item 
+{\bf \$\_\-nact}
+\item 
+{\bf \$\_\-redirect}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 20 of file controller.php.
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Galleria\_\-Controller@{Galleria\_\-Controller}!\_\-\_\-construct@{\_\-\_\-construct}}
+\index{\_\-\_\-construct@{\_\-\_\-construct}!Galleria_Controller@{Galleria\_\-Controller}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Controller.\_\-\_\-construct (\$ {\em action}, \$ {\em model}, \$ {\em requests})}\label{classGalleria__Controller_98d0581031aab649aff18431c60cccbe}
+
+
+\#@- Creates controller.
+
+This is contructor of Controller.  public \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em string}]\$action \item[{\em \doxyref{Galleria\_\-Model}{p.}{classGalleria__Model}}]\$model \item[{\em \doxyref{Galleria\_\-Requests}{p.}{classGalleria__Requests}}]\$requests \end{description}
+\end{Desc}
+
+
+Definition at line 65 of file controller.php.
+
+\subsection{Member Function Documentation}
+\index{Galleria\_\-Controller@{Galleria\_\-Controller}!\_\-getModel@{\_\-getModel}}
+\index{\_\-getModel@{\_\-getModel}!Galleria_Controller@{Galleria\_\-Controller}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Controller.\_\-getModel ()\hspace{0.3cm}{\tt  [protected]}}\label{classGalleria__Controller_ad01e10cb60ceb9997b0cf2e801e263e}
+
+
+Gives model.
+
+This function gives controller related model.  private \begin{Desc}
+\item[Returns:]\doxyref{Galleria\_\-Model}{p.}{classGalleria__Model} \end{Desc}
+\begin{Desc}
+\item[Exceptions:]
+\begin{description}
+\item[{\em Exception}]\end{description}
+\end{Desc}
+
+
+Definition at line 84 of file controller.php.
+
+Referenced by AdminController.\_\-insertPicture(), ImagesController.fileAction(), JsonController.getAction(), TagController.indexAction(), SearchController.indexAction(), ProfileController.indexAction(), IndexController.indexAction(), ImagesController.indexAction(), BrowseController.indexAction(), AdminController.picturecontrolAction(), JsonController.postAction(), and AdminController.usercontrolAction().\index{Galleria\_\-Controller@{Galleria\_\-Controller}!before@{before}}
+\index{before@{before}!Galleria_Controller@{Galleria\_\-Controller}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Controller.before ()}\label{classGalleria__Controller_ee0f1709a351728850747f48a956ef18}
+
+
+Do before.
+
+These is done before actual action. Returned boolean indicates continuing of controller.  public \begin{Desc}
+\item[Returns:]boolean \end{Desc}
+
+
+Reimplemented in {\bf AdminController} \doxyref{}{p.}{classAdminController_f670c8e0e7cd716546804ccd09a7a535}, {\bf JsonController} \doxyref{}{p.}{classJsonController_551bb2fa61f3c738987afaaaa37e9344}, {\bf LoginController} \doxyref{}{p.}{classLoginController_a2b718965894d8af89129573a7ec6309}, and {\bf ProfileController} \doxyref{}{p.}{classProfileController_548ce11de304afe07e7d069345403e3a}.
+
+Definition at line 101 of file controller.php.\index{Galleria\_\-Controller@{Galleria\_\-Controller}!after@{after}}
+\index{after@{after}!Galleria_Controller@{Galleria\_\-Controller}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Controller.after ()}\label{classGalleria__Controller_dbad8804dc4e94be604504d030663849}
+
+
+Do after.
+
+These is done after actual action. Returned boolean indicates continuing of controller.  public \begin{Desc}
+\item[Returns:]boolean \end{Desc}
+
+
+Definition at line 114 of file controller.php.\index{Galleria\_\-Controller@{Galleria\_\-Controller}!getView@{getView}}
+\index{getView@{getView}!Galleria_Controller@{Galleria\_\-Controller}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Controller.getView ()}\label{classGalleria__Controller_6dfcb45baf6c96a30c8895b48b58e1b0}
+
+
+Gives view.
+
+This function returns the view of controller.  public \begin{Desc}
+\item[Returns:]\doxyref{Galleria\_\-View}{p.}{classGalleria__View} \end{Desc}
+
+
+Definition at line 126 of file controller.php.
+
+Referenced by AdminController.\_\-insertPicture(), JsonController.before(), ImagesController.fileAction(), JsonController.getAction(), TagController.indexAction(), SearchController.indexAction(), ProfileController.indexAction(), JsonController.indexAction(), IndexController.indexAction(), ImagesController.indexAction(), BrowseController.indexAction(), AdminController.picturecontrolAction(), JsonController.postAction(), and AdminController.usercontrolAction().\index{Galleria\_\-Controller@{Galleria\_\-Controller}!setNext@{setNext}}
+\index{setNext@{setNext}!Galleria_Controller@{Galleria\_\-Controller}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Controller.setNext (\$ {\em cont}, \$ {\em act})}\label{classGalleria__Controller_8c9ce36228f060d9b8d37efe1072c840}
+
+
+Sets next.
+
+This function sets next controller and action, which will be runned.  public \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em string}]\$cont \item[{\em string}]\$act \end{description}
+\end{Desc}
+
+
+Definition at line 139 of file controller.php.
+
+Referenced by ProfileController.before(), AdminController.before(), and redirect().\index{Galleria\_\-Controller@{Galleria\_\-Controller}!getPage@{getPage}}
+\index{getPage@{getPage}!Galleria_Controller@{Galleria\_\-Controller}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Controller.getPage ()}\label{classGalleria__Controller_d680a00870e1beeb7692dd3d205fc90a}
+
+
+Gives next controller.
+
+Gives next controller, which will be runned.  public \begin{Desc}
+\item[Returns:]string \end{Desc}
+
+
+Definition at line 152 of file controller.php.\index{Galleria\_\-Controller@{Galleria\_\-Controller}!getSubpage@{getSubpage}}
+\index{getSubpage@{getSubpage}!Galleria_Controller@{Galleria\_\-Controller}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Controller.getSubpage ()}\label{classGalleria__Controller_9c4b8e04de108701dbbcda9c08b79075}
+
+
+Gives next controller action.
+
+Gives next controller action, which will be runned.  public \begin{Desc}
+\item[Returns:]string \end{Desc}
+
+
+Definition at line 164 of file controller.php.\index{Galleria\_\-Controller@{Galleria\_\-Controller}!redirect@{redirect}}
+\index{redirect@{redirect}!Galleria_Controller@{Galleria\_\-Controller}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Controller.redirect (\$ {\em cont}, \$ {\em act})}\label{classGalleria__Controller_85535f60f84606126eb133e2f473c7e0}
+
+
+Sets redirection.
+
+This function not just tells next controller and action. It also tells to stop further rendering and jump to totally new page.  public 
+
+Definition at line 176 of file controller.php.
+
+References setNext().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classGalleria__Controller_85535f60f84606126eb133e2f473c7e0_cgraph}
+\end{center}
+\end{figure}
+\index{Galleria\_\-Controller@{Galleria\_\-Controller}!isRedirected@{isRedirected}}
+\index{isRedirected@{isRedirected}!Galleria_Controller@{Galleria\_\-Controller}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Controller.isRedirected ()}\label{classGalleria__Controller_e8ad815dcbd9f14c761d1221db73bf06}
+
+
+Will redirect?
+
+Tells if redirection is set.  public \begin{Desc}
+\item[Returns:]boolean \end{Desc}
+
+
+Definition at line 189 of file controller.php.
+
+\subsection{Member Data Documentation}
+\index{Galleria\_\-Controller@{Galleria\_\-Controller}!\$\_\-action@{\$\_\-action}}
+\index{\$\_\-action@{\$\_\-action}!Galleria_Controller@{Galleria\_\-Controller}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Controller.\$\_\-action\hspace{0.3cm}{\tt  [protected]}}\label{classGalleria__Controller_02b97421b888f05d32432d12ad46b24e}
+
+
+
+
+Definition at line 29 of file controller.php.\index{Galleria\_\-Controller@{Galleria\_\-Controller}!\$\_\-model@{\$\_\-model}}
+\index{\$\_\-model@{\$\_\-model}!Galleria_Controller@{Galleria\_\-Controller}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Controller.\$\_\-model\hspace{0.3cm}{\tt  [protected]}}\label{classGalleria__Controller_6ada7b9ed37b553ef15e03fc67ad0c1f}
+
+
+
+
+Definition at line 33 of file controller.php.\index{Galleria\_\-Controller@{Galleria\_\-Controller}!\$\_\-view@{\$\_\-view}}
+\index{\$\_\-view@{\$\_\-view}!Galleria_Controller@{Galleria\_\-Controller}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Controller.\$\_\-view\hspace{0.3cm}{\tt  [protected]}}\label{classGalleria__Controller_62ef107f513b3756938384c1a2076c8b}
+
+
+
+
+Definition at line 37 of file controller.php.\index{Galleria\_\-Controller@{Galleria\_\-Controller}!\$\_\-requests@{\$\_\-requests}}
+\index{\$\_\-requests@{\$\_\-requests}!Galleria_Controller@{Galleria\_\-Controller}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Controller.\$\_\-requests\hspace{0.3cm}{\tt  [protected]}}\label{classGalleria__Controller_e95ec985cd128c5ab956ae15a27fd67f}
+
+
+
+
+Definition at line 41 of file controller.php.\index{Galleria\_\-Controller@{Galleria\_\-Controller}!\$\_\-ncont@{\$\_\-ncont}}
+\index{\$\_\-ncont@{\$\_\-ncont}!Galleria_Controller@{Galleria\_\-Controller}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Controller.\$\_\-ncont\hspace{0.3cm}{\tt  [protected]}}\label{classGalleria__Controller_0107ca1107dcf8cec8de228621afafb5}
+
+
+
+
+Definition at line 45 of file controller.php.\index{Galleria\_\-Controller@{Galleria\_\-Controller}!\$\_\-nact@{\$\_\-nact}}
+\index{\$\_\-nact@{\$\_\-nact}!Galleria_Controller@{Galleria\_\-Controller}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Controller.\$\_\-nact\hspace{0.3cm}{\tt  [protected]}}\label{classGalleria__Controller_20e947731f4b6f953065fb5054a6df00}
+
+
+
+
+Definition at line 49 of file controller.php.\index{Galleria\_\-Controller@{Galleria\_\-Controller}!\$\_\-redirect@{\$\_\-redirect}}
+\index{\$\_\-redirect@{\$\_\-redirect}!Galleria_Controller@{Galleria\_\-Controller}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Controller.\$\_\-redirect\hspace{0.3cm}{\tt  [protected]}}\label{classGalleria__Controller_72e932d7b539c53a21aedde8fff54811}
+
+
+
+
+Definition at line 53 of file controller.php.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/var/www/galleria/data/lib/{\bf controller.php}\end{CompactItemize}

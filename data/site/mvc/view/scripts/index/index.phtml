@@ -1,0 +1,13 @@
+<h2>Welcome</h2>
+
+<h3>Latest pictures</h3>
+
+<?php echo ($view->pics) ? Galleria_View_Pictures::info($view->pics) : '<p>No (visible) images setted yet.</p>'; ?>
+
+<h3>Tags</h3>
+
+<?php echo ($view->tags) ? Galleria_View_Tags::info($view->tags) : '<p>No tags pointed yet.</p>'; ?>
+
+<h3>Stats</h3>
+
+<?php echo ($view->stats) ? Galleria_View_Stats::info($view->stats) : '<p>Not any material where to calculate stats.</p>'; ?>

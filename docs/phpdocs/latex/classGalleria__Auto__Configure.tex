@@ -1,0 +1,112 @@
+\section{Galleria\_\-Auto\_\-Configure Class Reference}
+\label{classGalleria__Auto__Configure}\index{Galleria\_\-Auto\_\-Configure@{Galleria\_\-Auto\_\-Configure}}
+\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+static {\bf configFiles} (\$elements)
+\end{CompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{CompactItemize}
+\item 
+static {\bf \_\-fileExists} (\$name)
+\item 
+static {\bf \_\-distFileData} (\$element)
+\item 
+static {\bf \_\-userFileData} (\$element)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 19 of file configure.php.
+
+\subsection{Member Function Documentation}
+\index{Galleria\_\-Auto\_\-Configure@{Galleria\_\-Auto\_\-Configure}!configFiles@{configFiles}}
+\index{configFiles@{configFiles}!Galleria_Auto_Configure@{Galleria\_\-Auto\_\-Configure}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static Galleria\_\-Auto\_\-Configure.configFiles (\$ {\em elements})\hspace{0.3cm}{\tt  [static]}}\label{classGalleria__Auto__Configure_a08249ee343327bab20e42dfcb24fb8c}
+
+
+Configure selected files.
+
+Function configures selected files from selected path. Returns state of success.  public
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em array}]\$elements \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]boolean \end{Desc}
+
+
+Definition at line 32 of file configure.php.
+
+References Galleria\_\-Configuration.set().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{classGalleria__Auto__Configure_a08249ee343327bab20e42dfcb24fb8c_cgraph}
+\end{center}
+\end{figure}
+\index{Galleria\_\-Auto\_\-Configure@{Galleria\_\-Auto\_\-Configure}!\_\-fileExists@{\_\-fileExists}}
+\index{\_\-fileExists@{\_\-fileExists}!Galleria_Auto_Configure@{Galleria\_\-Auto\_\-Configure}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static Galleria\_\-Auto\_\-Configure.\_\-fileExists (\$ {\em name})\hspace{0.3cm}{\tt  [static, private]}}\label{classGalleria__Auto__Configure_2a0b57ed079f7fef053cb9996df4b4e6}
+
+
+Does file exist?
+
+Function checks if file exists and return it content or if it doesn't exists it returns empty array.  private
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em string}]\$name \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]array \end{Desc}
+
+
+Definition at line 54 of file configure.php.\index{Galleria\_\-Auto\_\-Configure@{Galleria\_\-Auto\_\-Configure}!\_\-distFileData@{\_\-distFileData}}
+\index{\_\-distFileData@{\_\-distFileData}!Galleria_Auto_Configure@{Galleria\_\-Auto\_\-Configure}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static Galleria\_\-Auto\_\-Configure.\_\-distFileData (\$ {\em element})\hspace{0.3cm}{\tt  [static, private]}}\label{classGalleria__Auto__Configure_2c79da0b5c4fbaabd40a520a192a73ec}
+
+
+Gets distribution file \doxyref{data}{p.}{namespacedata}.
+
+Function combines requested information and returns file exists function.  private
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em string}]\$element  PATH\_\-DATA\_\-CONFIG \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]array \end{Desc}
+
+
+Definition at line 69 of file configure.php.\index{Galleria\_\-Auto\_\-Configure@{Galleria\_\-Auto\_\-Configure}!\_\-userFileData@{\_\-userFileData}}
+\index{\_\-userFileData@{\_\-userFileData}!Galleria_Auto_Configure@{Galleria\_\-Auto\_\-Configure}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static Galleria\_\-Auto\_\-Configure.\_\-userFileData (\$ {\em element})\hspace{0.3cm}{\tt  [static, private]}}\label{classGalleria__Auto__Configure_d1dac09bb4f171e459562319f1d7c152}
+
+
+Gets local file \doxyref{data}{p.}{namespacedata}.
+
+Function combines requested information and returns file exists function.  private
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em string}]\$element  PATH\_\-DATA\_\-CONFIG \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]array \end{Desc}
+
+
+Definition at line 84 of file configure.php.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/var/www/galleria/data/lib/auto/{\bf configure.php}\end{CompactItemize}

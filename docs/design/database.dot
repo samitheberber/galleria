@@ -1,0 +1,54 @@
+strict digraph database {
+
+    node [
+        shape=record
+    ]
+
+    users [
+        label="{users|<pkey> \<\<key\>\> id\lusername\lpassword\lname\lactive\l}"
+    ]
+
+    groups [
+        label="{groups|<pkey> \<\<key\>\> id\lname\ladmin\l}"
+    ]
+
+    usergroups [
+        label="{usergroups|\<\<fkey, key\>\> userid\l\<\<fkey, key\>\> groupid\l}"
+    ]
+
+    categories [
+        label="{categories|<pkey> \<\<key\>\> id\l\<\<fkey\>\> parent\lname\l}"
+    ]
+
+    pictures [
+        label="{pictures|<pkey> \<\<key\>\> id\lphotographer\lyear\ldescription\l\<\<fkey\>\>categoryid\lshown\l}"
+    ]
+
+    categorygroups [
+        label="{categorygroups|\<\<fkey, key\>\> categoryid\l\<\<fkey, key\>\> groupid\l}"
+    ]
+
+    tags [
+        label="{tags|<pkey> \<\<key\>\> id\lname\l}"
+    ]
+
+    picturetags [
+        label="{picturetags|\<\<fkey, key\>\> pictureid\l\<\<fkey, key\>\> tagid\l}"
+    ]
+
+    picturemodifies [
+        label="{picturemodifies|<pkey> \<\<key\>\> id\l\<\<fkey\>\> pictureid\l\<\<fkey\>\> userid\laction\laction_timestamp\l}"
+    ]
+
+    usergroups->users:pkey[weight=8]
+    usergroups->groups:pkey[weight=8]
+    categorygroups->categories:pkey[weight=8]
+    categorygroups->groups:pkey[weight=8]
+    pictures->categories:pkey
+    picturetags->pictures:pkey
+    picturetags->tags:pkey
+    picturemodifies->pictures:pkey
+    picturemodifies->users:pkey
+    categories->categories:pkey
+
+}

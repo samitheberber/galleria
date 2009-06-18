@@ -1,0 +1,53 @@
+<?php
+/**
+ *
+ */
+if ($view->picData) {
+    echo '<p id="imagecontainer">' . Galleria_View_Pictures::format($view->picData) . '</p>';
+?>
+
+<ul>
+    <li>
+        <strong>Category:</strong>
+        <span>
+            <?php echo Galleria_View_Categories::info($view->picData->getCat()); ?>
+            <?php if (Galleria_Auth::isLogged() && Galleria_Auth::getObject()->isInAdminGroup()): echo ' <a href="#changecat" id="piccat-' . $view->picData->getId() . '">[Edit]</a>'; endif; ?>
+        </span>
+    </li>
+    <li>
+        <strong>Photographer:</strong>
+        <span>
+            <a href="<?php echo $html_url . 'search/?search_pg=' . $view->picData->getPg(); ?>"><?php echo $view->picData->getPg(); ?></a>
+            <?php if (Galleria_Auth::isLogged() && Galleria_Auth::getObject()->isInAdminGroup()): echo ' <a href="#editpicpg" id="picpg-' . $view->picData->getId() . '">[Edit]</a>'; endif; ?>
+        </span>
+    </li>
+    <li>
+        <strong>Year:</strong>
+        <span>
+            <a href="<?php echo $html_url . 'search/?search_year=' . $view->picData->getYear(); ?>"><?php echo $view->picData->getYear(); ?></a>
+            <?php if (Galleria_Auth::isLogged() && Galleria_Auth::getObject()->isInAdminGroup()): echo ' <a href="#editpicyear" id="picyear-' . $view->picData->getId() . '">[Edit]</a>'; endif; ?>
+        </span>
+    </li>
+</ul>
+
+<p>
+    <span class="desc"><?php echo $view->picData->getDesc(); ?></span>
+    <?php if (Galleria_Auth::isLogged() && Galleria_Auth::getObject()->isInAdminGroup()): echo ' <a href="#editpicdesc" id="picdesc-' . $view->picData->getId() . '">[Edit]</a>'; endif; ?>
+</p>
+
+<?php if (Galleria_Auth::isLogged() && Galleria_Auth::getObject()->isInAdminGroup()) {
+    echo '<p><a href="#toggleshown" id="shown-' . $view->picData->getId() . '">' . (($view->picData->isShown()) ? 'Click to hide' : 'Click to show') . '</a></p>';
+    echo '<p><a href="#changelog" id="changelog-' . $view->picData->getId() . '">Show changelog</a></p>';
+    echo '<p><a href="#deletepic" id="deletepic-' . $view->picData->getId() . '">Delete</a></p>';
+} ?>
+
+<?php if ($view->tags || (Galleria_Auth::isLogged() && Galleria_Auth::getObject()->isInAdminGroup())) { ?>
+<h3>Tags</h3>
+<?php
+    echo Galleria_View_Tags::lists($view->tags, $view->pid);
+    }
+} else { ?>
+<div>
+    <img src="<?php echo $html_url . 'images/file/?id=' . $view->pid; ?>" alt="Error picture" />
+</div>
+<?php } ?>

@@ -1,0 +1,2791 @@
+This is pdfTeXk, Version 3.1415926-1.40.9 (Web2C 7.5.7) (format=pdflatex 2009.4.1)  29 APR 2009 01:32
+entering extended mode
+ %&-line parsing enabled.
+**refman.tex
+(./refman.tex
+LaTeX2e <2005/12/01>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2005/09/16 v1.4f Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/base/bk10.clo
+File: bk10.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf-dist/tex/latex/ltxmisc/a4wide.sty
+Package: a4wide 1994/08/30
+
+(/usr/share/texmf-dist/tex/latex/ntgclass/a4.sty
+Package: a4 2004/04/15 v1.2g A4 based page layout
+))
+(/usr/share/texmf-dist/tex/latex/base/makeidx.sty
+Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
+)
+(/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip43
+\f@ncyO@elh=\skip44
+\f@ncyO@erh=\skip45
+\f@ncyO@olh=\skip46
+\f@ncyO@orh=\skip47
+\f@ncyO@elf=\skip48
+\f@ncyO@erf=\skip49
+\f@ncyO@olf=\skip50
+\f@ncyO@orf=\skip51
+)
+(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2006/02/20 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 90.
+
+(/usr/share/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2008/07/16 v0.04k Graphics/color for pdfTeX
+\Gread@gobject=\count88
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(/usr/share/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2006/05/18 v1.6g multicolumn formatting (FMi)
+\c@tracingmulticols=\count89
+\mult@box=\box26
+\multicol@leftmargin=\dimen105
+\c@unbalance=\count90
+\c@collectmore=\count91
+\doublecol@number=\count92
+\multicoltolerance=\count93
+\multicolpretolerance=\count94
+\full@width=\dimen106
+\page@free=\dimen107
+\premulticols=\dimen108
+\postmulticols=\dimen109
+\multicolsep=\skip52
+\multicolbaselineskip=\skip53
+\partial@page=\box27
+\last@line=\box28
+\mult@rightbox=\box29
+\mult@grightbox=\box30
+\mult@gfirstbox=\box31
+\mult@firstbox=\box32
+\@tempa=\box33
+\@tempa=\box34
+\@tempa=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\c@columnbadness=\count95
+\c@finalcolumnbadness=\count96
+\last@try=\dimen110
+\multicolovershoot=\dimen111
+\multicolundershoot=\dimen112
+\mult@nat@firstbox=\box50
+\colbreak@box=\box51
+)
+(/usr/share/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count97
+\float@exts=\toks15
+\float@box=\box52
+\@float@everytoks=\toks16
+\@floatcapt=\box53
+)
+(/usr/share/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
+
+(/usr/share/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+)
+LaTeX Info: Redefining \oldstylenums on input line 266.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 281.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 282.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 283.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 284.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 285.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 286.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 287.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 288.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 289.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 290.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 291.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 292.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 293.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 294.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 295.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 296.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 297.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 298.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 299.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 300.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 301.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 302.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 303.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 304.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 305.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 306.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 307.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 308.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 309.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 310.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 311.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 312.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 313.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 314.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 315.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 316.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 317.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 318.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 319.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 320.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 321.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 322.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 323.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 324.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 325.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 326.
+)
+(/usr/share/texmf-dist/tex/latex/base/alltt.sty
+Package: alltt 1997/06/16 v2.0g defines alltt environment
+)
+(/usr/share/texmf-dist/tex/latex/psnfss/times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(/usr/share/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2006/05/05 v1.1b Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+
+(/usr/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2006/03/30 v1.1i UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encodingT1
+
+(/usr/share/texmf-dist/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2006/03/30 v1.1i UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encodingOT1
+
+(/usr/share/texmf-dist/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2006/03/30 v1.1i UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encodingOMS
+
+(/usr/share/texmf-dist/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2006/03/30 v1.1i UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+Now handling font encoding TS1 ...
+... processing UTF-8 mapping file for font encodingTS1
+
+(/usr/share/texmf-dist/tex/latex/base/ts1enc.dfu
+File: ts1enc.dfu 2006/03/30 v1.1i UTF-8 support for inputenc
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AC (decimal 172)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B1 (decimal 177)
+   defining Unicode char U+00B2 (decimal 178)
+   defining Unicode char U+00B3 (decimal 179)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00B9 (decimal 185)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00D7 (decimal 215)
+   defining Unicode char U+00F7 (decimal 247)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+02C7 (decimal 711)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+02DD (decimal 733)
+   defining Unicode char U+0E3F (decimal 3647)
+   defining Unicode char U+2016 (decimal 8214)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+203B (decimal 8251)
+   defining Unicode char U+203D (decimal 8253)
+   defining Unicode char U+2044 (decimal 8260)
+   defining Unicode char U+204E (decimal 8270)
+   defining Unicode char U+2052 (decimal 8274)
+   defining Unicode char U+20A1 (decimal 8353)
+   defining Unicode char U+20A4 (decimal 8356)
+   defining Unicode char U+20A6 (decimal 8358)
+   defining Unicode char U+20A9 (decimal 8361)
+   defining Unicode char U+20AB (decimal 8363)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+20B1 (decimal 8369)
+   defining Unicode char U+2103 (decimal 8451)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2117 (decimal 8471)
+   defining Unicode char U+211E (decimal 8478)
+   defining Unicode char U+2120 (decimal 8480)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+2127 (decimal 8487)
+   defining Unicode char U+212E (decimal 8494)
+   defining Unicode char U+2190 (decimal 8592)
+   defining Unicode char U+2191 (decimal 8593)
+   defining Unicode char U+2192 (decimal 8594)
+   defining Unicode char U+2193 (decimal 8595)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2422 (decimal 9250)
+   defining Unicode char U+25E6 (decimal 9702)
+   defining Unicode char U+25EF (decimal 9711)
+   defining Unicode char U+266A (decimal 9834)
+)
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+)) (./doxygen.sty
+Package: doxygen 
+
+(/usr/share/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2005/08/06 v4.2 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count98
+\calc@Bcount=\count99
+\calc@Adimen=\dimen113
+\calc@Bdimen=\dimen114
+\calc@Askip=\skip54
+\calc@Bskip=\skip55
+LaTeX Info: Redefining \setlength on input line 75.
+LaTeX Info: Redefining \addtolength on input line 76.
+\calc@Ccount=\count100
+\calc@Cskip=\skip56
+)
+(/usr/share/texmf-dist/tex/latex/tools/array.sty
+Package: array 2005/08/23 v2.4b Tabular extension package (FMi)
+\col@sep=\dimen115
+\extrarowheight=\dimen116
+\NC@list=\toks19
+\extratabsurround=\skip57
+\backup@length=\skip58
+)
+\tmplength=\skip59
+)
+(/usr/share/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+))
+\@indexfile=\write3
+\openout3 = `refman.idx'.
+
+
+Writing index file refman.idx
+(./refman.aux (./namespacelib.aux) (./namespacemvc.aux) (./classAdminModel.aux)
+(./classBrowseController.aux) (./classBrowseModel.aux)
+(./classErrorController.aux) (./classGalleria__Auth.aux)
+(./classGalleria__Auth__Model.aux) (./classGalleria__Auth__Object.aux)
+(./classGalleria__Auto__Configure.aux) (./classGalleria__Auto__Load.aux)
+(./classGalleria__Configuration.aux)
+(./classGalleria__Configuration__Object.aux) (./classGalleria__Controller.aux)
+(./classGalleria__Database.aux) (./classGalleria__Database__Pdo.aux)
+(./classGalleria__Element__Category.aux) (./classGalleria__Image.aux)
+(./classGalleria__Image__Object.aux) (./classGalleria__Model.aux)
+(./classGalleria__Model__Collection.aux) (./classGalleria__Requests.aux)
+(./classGalleria__Requests__Gets.aux) (./classGalleria__Requests__Posts.aux)
+(./classGalleria__Session.aux) (./classGalleria__Site.aux)
+(./classGalleria__View.aux) (./classGalleria__View__Categories.aux)
+(./classGalleria__View__Pictures.aux) (./classGalleria__View__Stats.aux)
+(./classGalleria__View__Tags.aux) (./classGalleria__Viewelement.aux)
+(./classHelpController.aux) (./classImagesController.aux)
+(./classImagesModel.aux) (./classIndexController.aux) (./classIndexModel.aux)
+(./classJsonController.aux) (./classJsonModel.aux) (./classLoginController.aux)
+(./classProfileController.aux) (./classProfileModel.aux)
+(./classSearchController.aux) (./classSearchModel.aux)
+(./classTagController.aux) (./classTagModel.aux) (./database_8dist_8php.aux)
+(./config_2database_8php.aux) (./lib_2database_8php.aux) (./site_8dist_8php.aux
+) (./index_8php.aux) (./auth_8php.aux) (./auth_2model_8php.aux)
+(./model_8php.aux) (./auth_2object_8php.aux) (./configuration_2object_8php.aux)
+(./image_2object_8php.aux) (./configure_8php.aux) (./load_8php.aux)
+(./configuration_8php.aux) (./controller_8php.aux) (./pdo_8php.aux)
+(./category_8php.aux) (./image_8php.aux) (./collection_8php.aux)
+(./requests_8php.aux) (./gets_8php.aux) (./posts_8php.aux) (./session_8php.aux)
+(./site_8php.aux) (./view_8php.aux) (./categories_8php.aux)
+(./pictures_8php.aux) (./stats_8php.aux) (./tags_8php.aux)
+(./viewelement_8php.aux) (./admincontroller_8php.aux)
+(./browsecontroller_8php.aux) (./errorcontroller_8php.aux)
+(./helpcontroller_8php.aux) (./imagescontroller_8php.aux)
+(./indexcontroller_8php.aux) (./jsoncontroller_8php.aux)
+(./logincontroller_8php.aux) (./profilecontroller_8php.aux)
+(./searchcontroller_8php.aux) (./tagcontroller_8php.aux) (./adminmodel_8php.aux
+) (./browsemodel_8php.aux) (./imagesmodel_8php.aux) (./indexmodel_8php.aux)
+(./jsonmodel_8php.aux) (./profilemodel_8php.aux) (./searchmodel_8php.aux)
+(./tagmodel_8php.aux))
+\openout1 = `refman.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 16.
+ (/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 16.
+
+(/usr/share/texmf-dist/tex/latex/psnfss/t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+) [1
+
+
+{//var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
+
+]
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 29.
+ (./refman.toc
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 1.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 2.
+ [1
+
+]
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 421.
+ [2]
+Underfull \vbox (badness 1389) has occurred while \output is active []
+
+ [3])
+\tf@toc=\write4
+\openout4 = `refman.toc'.
+
+
+[4]
+Chapter 1.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 32.
+(./namespaces.tex
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 1.
+) [1
+
+
+] [2
+
+]
+Chapter 2.
+(./hierarchy.tex [3]) [4]
+Chapter 3.
+(./annotated.tex [5
+
+]) [6]
+Chapter 4.
+(./files.tex [7
+
+]) [8]
+Chapter 5.
+(./namespacedata.tex
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 7.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 11.
+ (/usr/share/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+) [9
+
+])
+[10]
+\openout2 = `namespacelib.aux'.
+
+ (./namespacelib.tex [11
+
+] [12] [13] [14] [15]) [16]
+\openout2 = `namespacemvc.aux'.
+
+ (./namespacemvc.tex
+[17
+
+
+] [18] [19]) [20]
+Chapter 6.
+(./classAdminController.tex
+<classAdminController__inherit__graph.pdf, id=88, 112.42pt x 88.33pt>
+File: classAdminController__inherit__graph.pdf Graphic file (type pdf)
+
+<use classAdminController__inherit__graph.pdf>
+<classAdminController__coll__graph.pdf, id=89, 112.42pt x 88.33pt>
+File: classAdminController__coll__graph.pdf Graphic file (type pdf)
+
+<use classAdminController__coll__graph.pdf>
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 20.
+
+(/usr/share/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+) [21
+
+
+ <./classAdminController__inherit__graph.pdf> <./classAdminController__coll__gr
+aph.pdf>]
+<classAdminController_9cb5a488078ec322d8c798e9dcf1100e_cgraph.pdf, id=103, 592.
+2125pt x 104.39pt>
+File: classAdminController_9cb5a488078ec322d8c798e9dcf1100e_cgraph.pdf Graphic 
+file (type pdf)
+
+<use classAdminController_9cb5a488078ec322d8c798e9dcf1100e_cgraph.pdf>
+<classAdminController_1e9ce2435289ede5f6fb1ea05e3d49fd_cgraph.pdf, id=104, 592.
+2125pt x 142.5325pt>
+File: classAdminController_1e9ce2435289ede5f6fb1ea05e3d49fd_cgraph.pdf Graphic 
+file (type pdf)
+
+<use classAdminController_1e9ce2435289ede5f6fb1ea05e3d49fd_cgraph.pdf> [22 <./c
+lassAdminController_9cb5a488078ec322d8c798e9dcf1100e_cgraph.pdf> <./classAdminC
+ontroller_1e9ce2435289ede5f6fb1ea05e3d49fd_cgraph.pdf>]
+<classAdminController_f670c8e0e7cd716546804ccd09a7a535_cgraph.pdf, id=118, 465.
+74pt x 104.39pt>
+File: classAdminController_f670c8e0e7cd716546804ccd09a7a535_cgraph.pdf Graphic 
+file (type pdf)
+
+<use classAdminController_f670c8e0e7cd716546804ccd09a7a535_cgraph.pdf>
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 122.
+
+<classAdminController_ce0fcab9a05e12f09a4d611bf97747a3_cgraph.pdf, id=119, 375.
+4025pt x 28.105pt>
+File: classAdminController_ce0fcab9a05e12f09a4d611bf97747a3_cgraph.pdf Graphic 
+file (type pdf)
+
+<use classAdminController_ce0fcab9a05e12f09a4d611bf97747a3_cgraph.pdf> [23 <./c
+lassAdminController_f670c8e0e7cd716546804ccd09a7a535_cgraph.pdf> <./classAdminC
+ontroller_ce0fcab9a05e12f09a4d611bf97747a3_cgraph.pdf>]
+<classAdminController_48ed1d1cf33c6f5b3c197598dff69453_cgraph.pdf, id=134, 363.
+3575pt x 142.5325pt>
+File: classAdminController_48ed1d1cf33c6f5b3c197598dff69453_cgraph.pdf Graphic 
+file (type pdf)
+
+<use classAdminController_48ed1d1cf33c6f5b3c197598dff69453_cgraph.pdf> [24 <./c
+lassAdminController_48ed1d1cf33c6f5b3c197598dff69453_cgraph.pdf>]) [25]
+\openout2 = `classAdminModel.aux'.
+
+
+(./classAdminModel.tex
+<classAdminModel__inherit__graph.pdf, id=147, 146.5475pt x 146.5475pt>
+File: classAdminModel__inherit__graph.pdf Graphic file (type pdf)
+
+<use classAdminModel__inherit__graph.pdf>
+<classAdminModel__coll__graph.pdf, id=148, 146.5475pt x 146.5475pt>
+File: classAdminModel__coll__graph.pdf Graphic file (type pdf)
+
+<use classAdminModel__coll__graph.pdf> [26
+
+ <./classAdminModel__inherit__graph.pdf> <./classAdminModel__coll__graph.pdf>]
+<classAdminModel_37d7155b3073e4f342efb352c52bd6c9_cgraph.pdf, id=162, 519.9425p
+t x 66.2475pt>
+File: classAdminModel_37d7155b3073e4f342efb352c52bd6c9_cgraph.pdf Graphic file 
+(type pdf)
+
+<use classAdminModel_37d7155b3073e4f342efb352c52bd6c9_cgraph.pdf>
+<classAdminModel_197b6812c5ed44b955812b233f11b723_cgraph.pdf, id=163, 511.9125p
+t x 66.2475pt>
+File: classAdminModel_197b6812c5ed44b955812b233f11b723_cgraph.pdf Graphic file 
+(type pdf)
+
+<use classAdminModel_197b6812c5ed44b955812b233f11b723_cgraph.pdf>
+<classAdminModel_b47fb15614534e57ae7014ea15b82d1c_cgraph.pdf, id=164, 529.98pt 
+x 28.105pt>
+File: classAdminModel_b47fb15614534e57ae7014ea15b82d1c_cgraph.pdf Graphic file 
+(type pdf)
+ <use classAdminModel_b47fb15614534e57ae7014ea15b82d1c_cgraph.pdf>
+[27 <./classAdminModel_37d7155b3073e4f342efb352c52bd6c9_cgraph.pdf> <./classAdm
+inModel_197b6812c5ed44b955812b233f11b723_cgraph.pdf>]
+<classAdminModel_f22b59c4fcd97e25b2691ce38b84d6a1_cgraph.pdf, id=178, 536.0025p
+t x 28.105pt>
+File: classAdminModel_f22b59c4fcd97e25b2691ce38b84d6a1_cgraph.pdf Graphic file 
+(type pdf)
+
+<use classAdminModel_f22b59c4fcd97e25b2691ce38b84d6a1_cgraph.pdf>
+Underfull \hbox (badness 10000) in paragraph at lines 158--159
+[]\T1/ptm/m/n/10 References Galleria_-Model_-Collection._-addChangelog(), Galle
+ria_-Model._-getConnection(), and
+ []
+
+
+<classAdminModel_f153f2209c7e5920bccea143b3c9ead2_cgraph.pdf, id=179, 772.8875p
+t x 104.39pt>
+File: classAdminModel_f153f2209c7e5920bccea143b3c9ead2_cgraph.pdf Graphic file 
+(type pdf)
+
+<use classAdminModel_f153f2209c7e5920bccea143b3c9ead2_cgraph.pdf> [28 <./classA
+dminModel_b47fb15614534e57ae7014ea15b82d1c_cgraph.pdf> <./classAdminModel_f22b5
+9c4fcd97e25b2691ce38b84d6a1_cgraph.pdf>]
+<classAdminModel_7304af18167fddfe7aaaf140ad420201_cgraph.pdf, id=193, 503.8825p
+t x 66.2475pt>
+File: classAdminModel_7304af18167fddfe7aaaf140ad420201_cgraph.pdf Graphic file 
+(type pdf)
+
+<use classAdminModel_7304af18167fddfe7aaaf140ad420201_cgraph.pdf>) [29 <./class
+AdminModel_f153f2209c7e5920bccea143b3c9ead2_cgraph.pdf> <./classAdminModel_7304
+af18167fddfe7aaaf140ad420201_cgraph.pdf>]
+\openout2 = `classBrowseController.aux'.
+
+ (./classBrowseController.tex
+<classBrowseController__inherit__graph.pdf, id=207, 112.42pt x 88.33pt>
+File: classBrowseController__inherit__graph.pdf Graphic file (type pdf)
+
+<use classBrowseController__inherit__graph.pdf>
+<classBrowseController__coll__graph.pdf, id=208, 112.42pt x 88.33pt>
+File: classBrowseController__coll__graph.pdf Graphic file (type pdf)
+
+<use classBrowseController__coll__graph.pdf>
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
+[]\T1/ptm/m/n/10 References Galleria_-Controller._-getModel(), Galleria_-Elemen
+t_-Category.create(), and Galleria_-
+ []
+
+
+<classBrowseController_c12a5cf382694a070e902cb5555d9726_cgraph.pdf, id=209, 381
+.425pt x 104.39pt>
+File: classBrowseController_c12a5cf382694a070e902cb5555d9726_cgraph.pdf Graphic
+ file (type pdf)
+
+<use classBrowseController_c12a5cf382694a070e902cb5555d9726_cgraph.pdf>)
+[30
+
+
+ <./classBrowseController__inherit__graph.pdf> <./classBrowseController__coll__
+graph.pdf> <./classBrowseController_c12a5cf382694a070e902cb5555d9726_cgraph.pdf
+>]
+\openout2 = `classBrowseModel.aux'.
+
+ (./classBrowseModel.tex
+<classBrowseModel__inherit__graph.pdf, id=228, 146.5475pt x 146.5475pt>
+File: classBrowseModel__inherit__graph.pdf Graphic file (type pdf)
+
+<use classBrowseModel__inherit__graph.pdf>
+<classBrowseModel__coll__graph.pdf, id=229, 146.5475pt x 146.5475pt>
+File: classBrowseModel__coll__graph.pdf Graphic file (type pdf)
+
+<use classBrowseModel__coll__graph.pdf>
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
+[]\T1/ptm/m/n/10 References Galleria_-Model._-fetchObjects(), Galleria_-Model._
+-getConnection(), Galleria_-Model._-
+ []
+
+[31
+
+
+ <./classBrowseModel__inherit__graph.pdf> <./classBrowseModel__coll__graph.pdf>
+]
+<classBrowseModel_40951007c4372d4c9d8d6d109f2db256_cgraph.pdf, id=244, 525.965p
+t x 180.675pt>
+File: classBrowseModel_40951007c4372d4c9d8d6d109f2db256_cgraph.pdf Graphic file
+ (type pdf)
+
+<use classBrowseModel_40951007c4372d4c9d8d6d109f2db256_cgraph.pdf>
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
+[]\T1/ptm/m/n/10 References Galleria_-Model._-fetchObjects(), Galleria_-Model._
+-getConnection(), Galleria_-Model._-
+ []
+
+
+<classBrowseModel_d78c84da8514a13e4d4a6666946ae66b_cgraph.pdf, id=245, 540.0175
+pt x 180.675pt>
+File: classBrowseModel_d78c84da8514a13e4d4a6666946ae66b_cgraph.pdf Graphic file
+ (type pdf)
+
+<use classBrowseModel_d78c84da8514a13e4d4a6666946ae66b_cgraph.pdf> [32 <./class
+BrowseModel_40951007c4372d4c9d8d6d109f2db256_cgraph.pdf> <./classBrowseModel_d7
+8c84da8514a13e4d4a6666946ae66b_cgraph.pdf>]
+<classBrowseModel_b31c252cd1e458582767c917bc7d3c8d_cgraph.pdf, id=259, 533.995p
+t x 142.5325pt>
+File: classBrowseModel_b31c252cd1e458582767c917bc7d3c8d_cgraph.pdf Graphic file
+ (type pdf)
+
+<use classBrowseModel_b31c252cd1e458582767c917bc7d3c8d_cgraph.pdf>) [33 <./clas
+sBrowseModel_b31c252cd1e458582767c917bc7d3c8d_cgraph.pdf>]
+\openout2 = `classErrorController.aux'.
+
+
+(./classErrorController.tex
+<classErrorController__inherit__graph.pdf, id=268, 112.42pt x 88.33pt>
+File: classErrorController__inherit__graph.pdf Graphic file (type pdf)
+
+<use classErrorController__inherit__graph.pdf>
+<classErrorController__coll__graph.pdf, id=269, 112.42pt x 88.33pt>
+File: classErrorController__coll__graph.pdf Graphic file (type pdf)
+
+<use classErrorController__coll__graph.pdf>) [34
+
+
+ <./classErrorController__inherit__graph.pdf> <./classErrorController__coll__gr
+aph.pdf>]
+\openout2 = `classGalleria__Auth.aux'.
+
+
+(./classGalleria__Auth.tex
+<classGalleria__Auth_57fdce8d1415ef742cb3e77fd2c560fa_cgraph.pdf, id=283, 273.0
+2pt x 28.105pt>
+File: classGalleria__Auth_57fdce8d1415ef742cb3e77fd2c560fa_cgraph.pdf Graphic f
+ile (type pdf)
+
+<use classGalleria__Auth_57fdce8d1415ef742cb3e77fd2c560fa_cgraph.pdf>
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
+[]\T1/ptm/m/n/10 Referenced by Pro-file-Con-troller.before(), Login-Con-troller
+.before(), Ad-min-Con-troller.before(),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
+\T1/ptm/m/n/10 Im-ages-Model.checkPermission(), Json-Con-troller.getAction(), B
+rowse-Model.getCategories(),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
+\T1/ptm/m/n/10 Browse-Model.getCatName(), Im-ages-Model.getImageInfo(), In-dex-
+Model.getLatestPictures(), Tag-
+ []
+
+
+Underfull \hbox (badness 3646) in paragraph at lines 68--69
+\T1/ptm/m/n/10 Model.getPics(), Browse-Model.getPictures(), Galleria_-Model_-Co
+llection.getSearchPictures(), In-dex-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
+\T1/ptm/m/n/10 Model.getStats(), Galleria_-Model_-Collection.getTags(), Galleri
+a_-View_-Tags.lists(), and Json-Con-
+ []
+
+[35
+
+
+ <./classGalleria__Auth_57fdce8d1415ef742cb3e77fd2c560fa_cgraph.pdf>]
+<classGalleria__Auth_a09d4e4651ca36a7b5f9c044fe87f86e_cgraph.pdf, id=292, 285.0
+65pt x 28.105pt>
+File: classGalleria__Auth_a09d4e4651ca36a7b5f9c044fe87f86e_cgraph.pdf Graphic f
+ile (type pdf)
+
+<use classGalleria__Auth_a09d4e4651ca36a7b5f9c044fe87f86e_cgraph.pdf>
+Underfull \hbox (badness 7777) in paragraph at lines 94--95
+[]\T1/ptm/m/n/10 Referenced by Ad-min-Model.addPicture(), Json-Model.addTag(), 
+Ad-min-Con-troller.before(), Json-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
+\T1/ptm/m/n/10 Model.changeCat(), Json-Model.changeDesc(), Json-Model.changePg(
+), Json-Model.changeYear(),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
+\T1/ptm/m/n/10 Im-ages-Model.checkPermission(), Json-Model.deletePicTag(), Json
+-Con-troller.getAction(), Browse-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
+\T1/ptm/m/n/10 Model.getCategories(), Browse-Model.getCatName(), Im-ages-Model.
+getImageInfo(), In-dex-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
+\T1/ptm/m/n/10 Model.getLatestPictures(), Tag-Model.getPics(), Browse-Model.get
+Pictures(), Galleria_-Model_-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
+\T1/ptm/m/n/10 Collection.getSearchPictures(), In-dex-Model.getStats(), Galleri
+a_-Model_-Collection.getTags(), Pro-
+ []
+
+
+Underfull \hbox (badness 1642) in paragraph at lines 94--95
+\T1/ptm/m/n/10 file-Con-troller.indexAction(), Galleria_-View_-Tags.lists(), Js
+on-Model.pictureVisibility(), and Json-Con-
+ []
+
+
+<classGalleria__Auth_2346b7b64e31f68b4cbc2466171acf7f_cgraph.pdf, id=293, 289.0
+8pt x 28.105pt>
+File: classGalleria__Auth_2346b7b64e31f68b4cbc2466171acf7f_cgraph.pdf Graphic f
+ile (type pdf)
+
+<use classGalleria__Auth_2346b7b64e31f68b4cbc2466171acf7f_cgraph.pdf>
+<classGalleria__Auth_1b733028a0220b8138a557cecf685938_cgraph.pdf, id=294, 271.0
+125pt x 28.105pt>
+File: classGalleria__Auth_1b733028a0220b8138a557cecf685938_cgraph.pdf Graphic f
+ile (type pdf)
+
+<use classGalleria__Auth_1b733028a0220b8138a557cecf685938_cgraph.pdf> [36 <./cl
+assGalleria__Auth_a09d4e4651ca36a7b5f9c044fe87f86e_cgraph.pdf> <./classGalleria
+__Auth_2346b7b64e31f68b4cbc2466171acf7f_cgraph.pdf> <./classGalleria__Auth_1b73
+3028a0220b8138a557cecf685938_cgraph.pdf>]
+<classGalleria__Auth_050cc44e71597a426c0fbc0559919334_cgraph.pdf, id=313, 256.9
+6pt x 28.105pt>
+File: classGalleria__Auth_050cc44e71597a426c0fbc0559919334_cgraph.pdf Graphic f
+ile (type pdf)
+
+<use classGalleria__Auth_050cc44e71597a426c0fbc0559919334_cgraph.pdf>) [37 <./c
+lassGalleria__Auth_050cc44e71597a426c0fbc0559919334_cgraph.pdf>]
+\openout2 = `classGalleria__Auth__Model.aux'.
+
+
+(./classGalleria__Auth__Model.tex
+<classGalleria__Auth__Model__inherit__graph.pdf, id=323, 122.4575pt x 88.33pt>
+File: classGalleria__Auth__Model__inherit__graph.pdf Graphic file (type pdf)
+
+<use classGalleria__Auth__Model__inherit__graph.pdf>
+<classGalleria__Auth__Model__coll__graph.pdf, id=324, 122.4575pt x 88.33pt>
+File: classGalleria__Auth__Model__coll__graph.pdf Graphic file (type pdf)
+
+<use classGalleria__Auth__Model__coll__graph.pdf> [38
+
+
+ <./classGalleria__Auth__Model__inherit__graph.pdf> <./classGalleria__Auth__Mod
+el__coll__graph.pdf>]
+<classGalleria__Auth__Model_3617549ac129ca747e844265733c3c4d_cgraph.pdf, id=338
+, 750.805pt x 66.2475pt>
+File: classGalleria__Auth__Model_3617549ac129ca747e844265733c3c4d_cgraph.pdf Gr
+aphic file (type pdf)
+
+<use classGalleria__Auth__Model_3617549ac129ca747e844265733c3c4d_cgraph.pdf>
+<classGalleria__Auth__Model_9d4d064f261c6833ac1485e6268cc478_cgraph.pdf, id=339
+, 574.145pt x 66.2475pt>
+File: classGalleria__Auth__Model_9d4d064f261c6833ac1485e6268cc478_cgraph.pdf Gr
+aphic file (type pdf)
+
+<use classGalleria__Auth__Model_9d4d064f261c6833ac1485e6268cc478_cgraph.pdf>
+<classGalleria__Auth__Model_461191ea3283396bc9de3c0b5c09a947_cgraph.pdf, id=340
+, 562.1pt x 66.2475pt>
+File: classGalleria__Auth__Model_461191ea3283396bc9de3c0b5c09a947_cgraph.pdf Gr
+aphic file (type pdf)
+
+<use classGalleria__Auth__Model_461191ea3283396bc9de3c0b5c09a947_cgraph.pdf>
+[39 <./classGalleria__Auth__Model_3617549ac129ca747e844265733c3c4d_cgraph.pdf> 
+<./classGalleria__Auth__Model_9d4d064f261c6833ac1485e6268cc478_cgraph.pdf>]
+<classGalleria__Auth__Model_a4d6cdf10bfb94225e77046a92f03491_cgraph.pdf, id=354
+, 754.82pt x 66.2475pt>
+File: classGalleria__Auth__Model_a4d6cdf10bfb94225e77046a92f03491_cgraph.pdf Gr
+aphic file (type pdf)
+
+<use classGalleria__Auth__Model_a4d6cdf10bfb94225e77046a92f03491_cgraph.pdf>)
+[40 <./classGalleria__Auth__Model_461191ea3283396bc9de3c0b5c09a947_cgraph.pdf> 
+<./classGalleria__Auth__Model_a4d6cdf10bfb94225e77046a92f03491_cgraph.pdf>]
+\openout2 = `classGalleria__Auth__Object.aux'.
+
+
+(./classGalleria__Auth__Object.tex [41
+
+
+] [42] [43]) [44]
+\openout2 = `classGalleria__Auto__Configure.aux'.
+
+
+(./classGalleria__Auto__Configure.tex
+<classGalleria__Auto__Configure_a08249ee343327bab20e42dfcb24fb8c_cgraph.pdf, id
+=381, 519.9425pt x 28.105pt>
+File: classGalleria__Auto__Configure_a08249ee343327bab20e42dfcb24fb8c_cgraph.pd
+f Graphic file (type pdf)
+
+<use classGalleria__Auto__Configure_a08249ee343327bab20e42dfcb24fb8c_cgraph.pdf
+> [45
+
+
+ <./classGalleria__Auto__Configure_a08249ee343327bab20e42dfcb24fb8c_cgraph.pdf>
+]) [46]
+\openout2 = `classGalleria__Auto__Load.aux'.
+
+ (./classGalleria__Auto__Load.tex) [47
+
+
+]
+\openout2 = `classGalleria__Configuration.aux'.
+
+
+(./classGalleria__Configuration.tex
+<classGalleria__Configuration_958a3a30c77a81617c9ac6bc8528f1cc_cgraph.pdf, id=3
+96, 299.1175pt x 28.105pt>
+File: classGalleria__Configuration_958a3a30c77a81617c9ac6bc8528f1cc_cgraph.pdf 
+Graphic file (type pdf)
+
+<use classGalleria__Configuration_958a3a30c77a81617c9ac6bc8528f1cc_cgraph.pdf>
+<classGalleria__Configuration_da5cc8edbe25f48cce70cd9116f56f15_cgraph.pdf, id=3
+97, 299.1175pt x 28.105pt>
+File: classGalleria__Configuration_da5cc8edbe25f48cce70cd9116f56f15_cgraph.pdf 
+Graphic file (type pdf)
+
+<use classGalleria__Configuration_da5cc8edbe25f48cce70cd9116f56f15_cgraph.pdf>
+[48
+
+
+ <./classGalleria__Configuration_958a3a30c77a81617c9ac6bc8528f1cc_cgraph.pdf>])
+ [49 <./classGalleria__Configuration_da5cc8edbe25f48cce70cd9116f56f15_cgraph.pd
+f>]
+\openout2 = `classGalleria__Configuration__Object.aux'.
+
+ (./classGalleria__Configuration__Object.tex [50
+
+
+]) [51]
+\openout2 = `classGalleria__Controller.aux'.
+
+
+(./classGalleria__Controller.tex
+<classGalleria__Controller__inherit__graph.pdf, id=421, 246.9225pt x 409.53pt>
+File: classGalleria__Controller__inherit__graph.pdf Graphic file (type pdf)
+
+<use classGalleria__Controller__inherit__graph.pdf> [52
+
+
+ <./classGalleria__Controller__inherit__graph.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 96--98
+[]\T1/ptm/m/n/10 Referenced by AdminController._-insertPicture(), Im-agesCon-tr
+oller.fileAction(), Json-Con-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--98
+\T1/ptm/m/n/10 troller.getAction(), Tag-Con-troller.indexAction(), Search-Con-t
+roller.indexAction(), Pro-file-Con-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--98
+\T1/ptm/m/n/10 troller.indexAction(), In-dex-Con-troller.indexAction(), Im-ages
+Con-troller.indexAction(), BrowseC-on-
+ []
+
+[53]
+Underfull \hbox (badness 10000) in paragraph at lines 133--135
+\T1/ptm/m/n/10 Json-Con-troller.getAction(), Tag-Con-troller.indexAction(), Sea
+rch-Con-troller.indexAction(), Pro-file-
+ []
+
+
+Underfull \hbox (badness 7081) in paragraph at lines 133--135
+\T1/ptm/m/n/10 Con-troller.indexAction(), Json-Con-troller.indexAction(), In-de
+x-Con-troller.indexAction(), Im-agesCon-
+ []
+
+
+Underfull \hbox (badness 2302) in paragraph at lines 133--135
+\T1/ptm/m/n/10 troller.indexAction(), BrowseC-on-troller.indexAction(), Ad-min-
+Con-troller.picturecontrolAction(), Json-
+ []
+
+[54]
+<classGalleria__Controller_85535f60f84606126eb133e2f473c7e0_cgraph.pdf, id=436,
+ 333.245pt x 28.105pt>
+File: classGalleria__Controller_85535f60f84606126eb133e2f473c7e0_cgraph.pdf Gra
+phic file (type pdf)
+
+<use classGalleria__Controller_85535f60f84606126eb133e2f473c7e0_cgraph.pdf>
+[55 <./classGalleria__Controller_85535f60f84606126eb133e2f473c7e0_cgraph.pdf>])
+[56]
+\openout2 = `classGalleria__Database.aux'.
+
+ (./classGalleria__Database.tex) [57
+
+
+]
+\openout2 = `classGalleria__Database__Pdo.aux'.
+
+ (./classGalleria__Database__Pdo.tex)
+[58
+
+
+]
+\openout2 = `classGalleria__Element__Category.aux'.
+
+ (./classGalleria__Element__Category.tex [59
+
+
+]
+<classGalleria__Element__Category_cae9df423b4dc2b0e2626e30a2434839_cgraph.pdf, 
+id=458, 437.635pt x 28.105pt>
+File: classGalleria__Element__Category_cae9df423b4dc2b0e2626e30a2434839_cgraph.
+pdf Graphic file (type pdf)
+
+<use classGalleria__Element__Category_cae9df423b4dc2b0e2626e30a2434839_cgraph.p
+df> [60 <./classGalleria__Element__Category_cae9df423b4dc2b0e2626e30a2434839_cg
+raph.pdf>] [61]
+<classGalleria__Element__Category_9880a17fe4a98c009c3e0179d1b87bfc_cgraph.pdf, 
+id=471, 441.65pt x 66.2475pt>
+File: classGalleria__Element__Category_9880a17fe4a98c009c3e0179d1b87bfc_cgraph.
+pdf Graphic file (type pdf)
+
+<use classGalleria__Element__Category_9880a17fe4a98c009c3e0179d1b87bfc_cgraph.p
+df> [62 <./classGalleria__Element__Category_9880a17fe4a98c009c3e0179d1b87bfc_cg
+raph.pdf>]
+<classGalleria__Element__Category_e89ba84568ec919c3e08185c54963b0f_cgraph.pdf, 
+id=480, 469.755pt x 66.2475pt>
+File: classGalleria__Element__Category_e89ba84568ec919c3e08185c54963b0f_cgraph.
+pdf Graphic file (type pdf)
+
+<use classGalleria__Element__Category_e89ba84568ec919c3e08185c54963b0f_cgraph.p
+df> [63 <./classGalleria__Element__Category_e89ba84568ec919c3e08185c54963b0f_cg
+raph.pdf>]
+<classGalleria__Element__Category_c7cc29d8154a5a338f5e813dd602e841_cgraph.pdf, 
+id=490, 451.6875pt x 142.5325pt>
+File: classGalleria__Element__Category_c7cc29d8154a5a338f5e813dd602e841_cgraph.
+pdf Graphic file (type pdf)
+
+<use classGalleria__Element__Category_c7cc29d8154a5a338f5e813dd602e841_cgraph.p
+df> [64 <./classGalleria__Element__Category_c7cc29d8154a5a338f5e813dd602e841_cg
+raph.pdf>]) [65]
+\openout2 = `classGalleria__Image.aux'.
+
+ (./classGalleria__Image.tex [66
+
+
+] [67]) [68]
+\openout2 = `classGalleria__Image__Object.aux'.
+
+
+(./classGalleria__Image__Object.tex [69
+
+
+] [70]) [71]
+\openout2 = `classGalleria__Model.aux'.
+
+ (./classGalleria__Model.tex <classGalleria__Model__inherit__graph.pdf, id=521,
+ 385.44pt x 295.1025pt>
+File: classGalleria__Model__inherit__graph.pdf Graphic file (type pdf)
+
+<use classGalleria__Model__inherit__graph.pdf> [72
+
+
+ <./classGalleria__Model__inherit__graph.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
+\T1/ptm/m/n/10 deleteEmptyTags(), Galleria_-Auth_-Model._-getGroups(), JsonMode
+l._-getTagId(), Galleria_-Auth_-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
+\T1/ptm/m/n/10 Im-ages-Model.checkPermission(), Json-Model.deleteCat(), Json-Mo
+del.deleteGroup(), Json-
+ []
+
+
+Underfull \hbox (badness 2689) in paragraph at lines 42--43
+\T1/ptm/m/n/10 Model.deletePic(), Json-Model.deletePicTag(), Json-Model.deleteU
+ser(), Json-Model.delUserInGroup(),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
+\T1/ptm/m/n/10 Im-ages-Model.fileFound(), Browse-Model.getCategories(), Browse-
+Model.getCatName(), Galleria_-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
+\T1/ptm/m/n/10 Model_-Collection.getCats(), Json-Model.getChangelog(), Galleria
+_-Auth_-Model.getData(), Ad-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
+\T1/ptm/m/n/10 min-Model.getGroups(), Galleria_-Model_-Collection.getGroups(), 
+Json-Model.getGroupsFromCat(),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
+\T1/ptm/m/n/10 Json-Model.getGroupsFromUser(), Im-ages-Model.getImageInfo(), Im
+-ages-Model.getImageTags(), In-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
+\T1/ptm/m/n/10 dex-Model.getLatestPictures(), Json-Model.getPgs(), Tag-Model.ge
+tPics(), Ad-min-Model.getPics(),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
+\T1/ptm/m/n/10 Browse-Model.getPictures(), Galleria_-Model_-Collection.getSearc
+hPictures(), In-dex-Model.getStats(),
+ []
+
+
+Underfull \hbox (badness 3209) in paragraph at lines 42--43
+\T1/ptm/m/n/10 Tag-Model.getTagName(), Galleria_-Model_-Collection.getTags(), P
+ro-file-Model.getUserPics(), Ad-min-
+ []
+
+
+<classGalleria__Model_614cb85e8e133ba7b9630849f273dfff_cgraph.pdf, id=530, 353.
+32pt x 28.105pt>
+File: classGalleria__Model_614cb85e8e133ba7b9630849f273dfff_cgraph.pdf Graphic 
+file (type pdf)
+
+<use classGalleria__Model_614cb85e8e133ba7b9630849f273dfff_cgraph.pdf>
+Underfull \hbox (badness 10000) in paragraph at lines 69--71
+[]\T1/ptm/m/n/10 Referenced by Galleria_-Auth_-Model._-getGroups(), Galleria_-A
+uth_-Model._-getUserData(), Im-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--71
+\T1/ptm/m/n/10 ages-Model.fileFound(), Browse-Model.getCategories(), Galleria_-
+Model_-Collection.getCats(), Json-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--71
+\T1/ptm/m/n/10 Model.getChangelog(), Ad-min-Model.getGroups(), Galleria_-Model_
+-Collection.getGroups(), Json-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--71
+\T1/ptm/m/n/10 Model.getGroupsFromCat(), Json-Model.getGroupsFromUser(), Im-age
+s-Model.getImageTags(), In-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--71
+\T1/ptm/m/n/10 dex-Model.getLatestPictures(), Json-Model.getPgs(), Tag-Model.ge
+tPics(), Ad-min-Model.getPics(),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--71
+\T1/ptm/m/n/10 Browse-Model.getPictures(), Galleria_-Model_-Collection.getSearc
+hPictures(), Galleria_-Model_-
+ []
+
+[73 <./classGalleria__Model_614cb85e8e133ba7b9630849f273dfff_cgraph.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
+[]\T1/ptm/m/n/10 Referenced by Im-ages-Model.checkPermission(), Browse-Model.ge
+tCategories(), Browse-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
+\T1/ptm/m/n/10 Model.getCatName(), Im-ages-Model.getImageInfo(), In-dex-Model.g
+etLatestPictures(), Tag-
+ []
+
+
+Underfull \hbox (badness 3646) in paragraph at lines 87--88
+\T1/ptm/m/n/10 Model.getPics(), Browse-Model.getPictures(), Galleria_-Model_-Co
+llection.getSearchPictures(), In-dex-
+ []
+
+) [74]
+\openout2 = `classGalleria__Model__Collection.aux'.
+
+ (./classGalleria__Model__Collection.tex
+<classGalleria__Model__Collection__inherit__graph.pdf, id=543, 385.44pt x 295.1
+025pt>
+File: classGalleria__Model__Collection__inherit__graph.pdf Graphic file (type p
+df)
+ <use classGalleria__Model__Collection__inherit__graph.pdf>
+<classGalleria__Model__Collection__coll__graph.pdf, id=544, 146.5475pt x 88.33p
+t>
+File: classGalleria__Model__Collection__coll__graph.pdf Graphic file (type pdf)
+
+ <use classGalleria__Model__Collection__coll__graph.pdf> [75
+
+
+ <./classGalleria__Model__Collection__inherit__graph.pdf> <./classGalleria__Mod
+el__Collection__coll__graph.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
+[]\T1/ptm/m/n/10 References Galleria_-Model._-fetchObjects(), Galleria_-Model._
+-getConnection(), Galleria_-Model._-
+ []
+
+
+<classGalleria__Model__Collection_02f3483cc54bddf1f12ac4e9bf0098a4_cgraph.pdf, 
+id=558, 618.31pt x 180.675pt>
+File: classGalleria__Model__Collection_02f3483cc54bddf1f12ac4e9bf0098a4_cgraph.
+pdf Graphic file (type pdf)
+
+<use classGalleria__Model__Collection_02f3483cc54bddf1f12ac4e9bf0098a4_cgraph.p
+df>
+<classGalleria__Model__Collection_a55a2ca06f0609522c58b0a99b283aaf_cgraph.pdf, 
+id=559, 568.1225pt x 66.2475pt>
+File: classGalleria__Model__Collection_a55a2ca06f0609522c58b0a99b283aaf_cgraph.
+pdf Graphic file (type pdf)
+
+<use classGalleria__Model__Collection_a55a2ca06f0609522c58b0a99b283aaf_cgraph.p
+df> [76 <./classGalleria__Model__Collection_02f3483cc54bddf1f12ac4e9bf0098a4_cg
+raph.pdf>]
+<classGalleria__Model__Collection_024df98b624b14ff9a2ae67b69d92973_cgraph.pdf, 
+id=568, 582.175pt x 66.2475pt>
+File: classGalleria__Model__Collection_024df98b624b14ff9a2ae67b69d92973_cgraph.
+pdf Graphic file (type pdf)
+
+<use classGalleria__Model__Collection_024df98b624b14ff9a2ae67b69d92973_cgraph.p
+df>
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
+[]\T1/ptm/m/n/10 References Galleria_-Model._-fetchObjects(), Galleria_-Model._
+-getConnection(), Galleria_-Model._-
+ []
+
+
+<classGalleria__Model__Collection_b6b9b7c2e5d38d94e38e61f0cf294c2f_cgraph.pdf, 
+id=569, 568.1225pt x 180.675pt>
+File: classGalleria__Model__Collection_b6b9b7c2e5d38d94e38e61f0cf294c2f_cgraph.
+pdf Graphic file (type pdf)
+
+<use classGalleria__Model__Collection_b6b9b7c2e5d38d94e38e61f0cf294c2f_cgraph.p
+df> [77 <./classGalleria__Model__Collection_a55a2ca06f0609522c58b0a99b283aaf_cg
+raph.pdf> <./classGalleria__Model__Collection_024df98b624b14ff9a2ae67b69d92973_
+cgraph.pdf> <./classGalleria__Model__Collection_b6b9b7c2e5d38d94e38e61f0cf294c2
+f_cgraph.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 156--157
+[]\T1/ptm/m/n/10 Referenced by Ad-min-Model.addPicture(), Json-Model.addTag(), 
+Json-Model.changeCat(), Json-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--157
+\T1/ptm/m/n/10 Model.changeDesc(), Json-Model.changePg(), Json-Model.changeYear
+(), Json-Model.deletePicTag(),
+ []
+
+
+<classGalleria__Model__Collection_004098db076da1d83b9658c53595e2ce_cgraph.pdf, 
+id=588, 606.265pt x 28.105pt>
+File: classGalleria__Model__Collection_004098db076da1d83b9658c53595e2ce_cgraph.
+pdf Graphic file (type pdf)
+
+<use classGalleria__Model__Collection_004098db076da1d83b9658c53595e2ce_cgraph.p
+df>) [78 <./classGalleria__Model__Collection_004098db076da1d83b9658c53595e2ce_c
+graph.pdf>]
+\openout2 = `classGalleria__Requests.aux'.
+
+ (./classGalleria__Requests.tex [79
+
+
+]) [80]
+\openout2 = `classGalleria__Requests__Gets.aux'.
+
+
+(./classGalleria__Requests__Gets.tex [81
+
+
+]) [82]
+\openout2 = `classGalleria__Requests__Posts.aux'.
+
+
+(./classGalleria__Requests__Posts.tex [83
+
+
+]) [84]
+\openout2 = `classGalleria__Session.aux'.
+
+ (./classGalleria__Session.tex
+[85
+
+
+]) [86]
+\openout2 = `classGalleria__Site.aux'.
+
+ (./classGalleria__Site.tex [87
+
+
+]
+<classGalleria__Site_4182ad469dc58ec4b50164c7b227af8d_cgraph.pdf, id=626, 301.1
+25pt x 28.105pt>
+File: classGalleria__Site_4182ad469dc58ec4b50164c7b227af8d_cgraph.pdf Graphic f
+ile (type pdf)
+
+<use classGalleria__Site_4182ad469dc58ec4b50164c7b227af8d_cgraph.pdf> [88 <./cl
+assGalleria__Site_4182ad469dc58ec4b50164c7b227af8d_cgraph.pdf>]) [89]
+\openout2 = `classGalleria__View.aux'.
+
+
+(./classGalleria__View.tex [90
+
+
+] [91]) [92]
+\openout2 = `classGalleria__View__Categories.aux'.
+
+
+(./classGalleria__View__Categories.tex
+<classGalleria__View__Categories__inherit__graph.pdf, id=648, 144.54pt x 88.33p
+t>
+File: classGalleria__View__Categories__inherit__graph.pdf Graphic file (type pd
+f)
+ <use classGalleria__View__Categories__inherit__graph.pdf>
+<classGalleria__View__Categories__coll__graph.pdf, id=649, 144.54pt x 88.33pt>
+File: classGalleria__View__Categories__coll__graph.pdf Graphic file (type pdf)
+
+<use classGalleria__View__Categories__coll__graph.pdf> [93
+
+
+ <./classGalleria__View__Categories__inherit__graph.pdf> <./classGalleria__View
+__Categories__coll__graph.pdf>]) [94]
+\openout2 = `classGalleria__View__Pictures.aux'.
+
+ (./classGalleria__View__Pictures.tex
+<classGalleria__View__Pictures__inherit__graph.pdf, id=666, 130.4875pt x 88.33p
+t>
+File: classGalleria__View__Pictures__inherit__graph.pdf Graphic file (type pdf)
+
+ <use classGalleria__View__Pictures__inherit__graph.pdf>
+<classGalleria__View__Pictures__coll__graph.pdf, id=667, 130.4875pt x 88.33pt>
+File: classGalleria__View__Pictures__coll__graph.pdf Graphic file (type pdf)
+
+<use classGalleria__View__Pictures__coll__graph.pdf> [95
+
+
+ <./classGalleria__View__Pictures__inherit__graph.pdf> <./classGalleria__View__
+Pictures__coll__graph.pdf>]
+<classGalleria__View__Pictures_deb54198a7499ed967b70a9374f61ebd_cgraph.pdf, id=
+681, 369.38pt x 28.105pt>
+File: classGalleria__View__Pictures_deb54198a7499ed967b70a9374f61ebd_cgraph.pdf
+ Graphic file (type pdf)
+
+<use classGalleria__View__Pictures_deb54198a7499ed967b70a9374f61ebd_cgraph.pdf>
+) [96 <./classGalleria__View__Pictures_deb54198a7499ed967b70a9374f61ebd_cgraph.
+pdf>]
+\openout2 = `classGalleria__View__Stats.aux'.
+
+ (./classGalleria__View__Stats.tex
+<classGalleria__View__Stats__inherit__graph.pdf, id=690, 126.4725pt x 88.33pt>
+File: classGalleria__View__Stats__inherit__graph.pdf Graphic file (type pdf)
+
+<use classGalleria__View__Stats__inherit__graph.pdf>
+<classGalleria__View__Stats__coll__graph.pdf, id=691, 126.4725pt x 88.33pt>
+File: classGalleria__View__Stats__coll__graph.pdf Graphic file (type pdf)
+
+<use classGalleria__View__Stats__coll__graph.pdf> [97
+
+
+ <./classGalleria__View__Stats__inherit__graph.pdf> <./classGalleria__View__Sta
+ts__coll__graph.pdf>])
+[98]
+\openout2 = `classGalleria__View__Tags.aux'.
+
+ (./classGalleria__View__Tags.tex
+<classGalleria__View__Tags__inherit__graph.pdf, id=709, 126.4725pt x 88.33pt>
+File: classGalleria__View__Tags__inherit__graph.pdf Graphic file (type pdf)
+
+<use classGalleria__View__Tags__inherit__graph.pdf>
+<classGalleria__View__Tags__coll__graph.pdf, id=710, 126.4725pt x 88.33pt>
+File: classGalleria__View__Tags__coll__graph.pdf Graphic file (type pdf)
+
+<use classGalleria__View__Tags__coll__graph.pdf> [99
+
+
+ <./classGalleria__View__Tags__inherit__graph.pdf> <./classGalleria__View__Tags
+__coll__graph.pdf>]
+<classGalleria__View__Tags_0add0141b5ada33c802aa6264eb218b3_cgraph.pdf, id=724,
+ 453.695pt x 66.2475pt>
+File: classGalleria__View__Tags_0add0141b5ada33c802aa6264eb218b3_cgraph.pdf Gra
+phic file (type pdf)
+
+<use classGalleria__View__Tags_0add0141b5ada33c802aa6264eb218b3_cgraph.pdf>)
+[100 <./classGalleria__View__Tags_0add0141b5ada33c802aa6264eb218b3_cgraph.pdf>]
+\openout2 = `classGalleria__Viewelement.aux'.
+
+(./classGalleria__Viewelement.tex
+<classGalleria__Viewelement__inherit__graph.pdf, id=733, 301.125pt x 142.5325pt
+>
+File: classGalleria__Viewelement__inherit__graph.pdf Graphic file (type pdf)
+ <use classGalleria__Viewelement__inherit__graph.pdf>) [101
+
+
+ <./classGalleria__Viewelement__inherit__graph.pdf>]
+\openout2 = `classHelpController.aux'.
+
+ (./classHelpController.tex
+<classHelpController__inherit__graph.pdf, id=742, 112.42pt x 88.33pt>
+File: classHelpController__inherit__graph.pdf Graphic file (type pdf)
+
+<use classHelpController__inherit__graph.pdf>
+<classHelpController__coll__graph.pdf, id=743, 112.42pt x 88.33pt>
+File: classHelpController__coll__graph.pdf Graphic file (type pdf)
+
+<use classHelpController__coll__graph.pdf>) [102
+
+
+ <./classHelpController__inherit__graph.pdf> <./classHelpController__coll__grap
+h.pdf>]
+\openout2 = `classImagesController.aux'.
+
+
+(./classImagesController.tex
+<classImagesController__inherit__graph.pdf, id=757, 112.42pt x 88.33pt>
+File: classImagesController__inherit__graph.pdf Graphic file (type pdf)
+
+<use classImagesController__inherit__graph.pdf>
+<classImagesController__coll__graph.pdf, id=758, 112.42pt x 88.33pt>
+File: classImagesController__coll__graph.pdf Graphic file (type pdf)
+
+<use classImagesController__coll__graph.pdf>
+<classImagesController_a02f71d36e50145429275bae193ba6f8_cgraph.pdf, id=759, 357
+.335pt x 66.2475pt>
+File: classImagesController_a02f71d36e50145429275bae193ba6f8_cgraph.pdf Graphic
+ file (type pdf)
+
+<use classImagesController_a02f71d36e50145429275bae193ba6f8_cgraph.pdf>
+[103
+
+
+ <./classImagesController__inherit__graph.pdf> <./classImagesController__coll__
+graph.pdf> <./classImagesController_a02f71d36e50145429275bae193ba6f8_cgraph.pdf
+>]
+<classImagesController_e85225008713a833f25eca01070fc4fe_cgraph.pdf, id=779, 367
+.3725pt x 256.96pt>
+File: classImagesController_e85225008713a833f25eca01070fc4fe_cgraph.pdf Graphic
+ file (type pdf)
+
+<use classImagesController_e85225008713a833f25eca01070fc4fe_cgraph.pdf>)
+[104 <./classImagesController_e85225008713a833f25eca01070fc4fe_cgraph.pdf>]
+\openout2 = `classImagesModel.aux'.
+
+
+(./classImagesModel.tex
+<classImagesModel__inherit__graph.pdf, id=788, 146.5475pt x 146.5475pt>
+File: classImagesModel__inherit__graph.pdf Graphic file (type pdf)
+
+<use classImagesModel__inherit__graph.pdf>
+<classImagesModel__coll__graph.pdf, id=789, 146.5475pt x 146.5475pt>
+File: classImagesModel__coll__graph.pdf Graphic file (type pdf)
+
+<use classImagesModel__coll__graph.pdf> [105
+
+
+ <./classImagesModel__inherit__graph.pdf> <./classImagesModel__coll__graph.pdf>
+]
+<classImagesModel_1f2993d2b8a0bf2736ade7970ed6a1e1_cgraph.pdf, id=803, 536.0025
+pt x 142.5325pt>
+File: classImagesModel_1f2993d2b8a0bf2736ade7970ed6a1e1_cgraph.pdf Graphic file
+ (type pdf)
+
+<use classImagesModel_1f2993d2b8a0bf2736ade7970ed6a1e1_cgraph.pdf>
+<classImagesModel_d71ce9d4c549199ac980c24af042accf_cgraph.pdf, id=804, 540.0175
+pt x 66.2475pt>
+File: classImagesModel_d71ce9d4c549199ac980c24af042accf_cgraph.pdf Graphic file
+ (type pdf)
+
+<use classImagesModel_d71ce9d4c549199ac980c24af042accf_cgraph.pdf>
+<classImagesModel_529cf5302210b54f2f38e7bdc66ece6c_cgraph.pdf, id=805, 515.9275
+pt x 66.2475pt>
+File: classImagesModel_529cf5302210b54f2f38e7bdc66ece6c_cgraph.pdf Graphic file
+ (type pdf)
+
+<use classImagesModel_529cf5302210b54f2f38e7bdc66ece6c_cgraph.pdf> [106 <./clas
+sImagesModel_1f2993d2b8a0bf2736ade7970ed6a1e1_cgraph.pdf> <./classImagesModel_d
+71ce9d4c549199ac980c24af042accf_cgraph.pdf>]
+<classImagesModel_f5bcf93f596feb0717c2227c7b5eedb1_cgraph.pdf, id=819, 554.07pt
+ x 142.5325pt>
+File: classImagesModel_f5bcf93f596feb0717c2227c7b5eedb1_cgraph.pdf Graphic file
+ (type pdf)
+
+<use classImagesModel_f5bcf93f596feb0717c2227c7b5eedb1_cgraph.pdf>) [107 <./cla
+ssImagesModel_529cf5302210b54f2f38e7bdc66ece6c_cgraph.pdf> <./classImagesModel_
+f5bcf93f596feb0717c2227c7b5eedb1_cgraph.pdf>]
+\openout2 = `classIndexController.aux'.
+
+ (./classIndexController.tex
+<classIndexController__inherit__graph.pdf, id=833, 112.42pt x 88.33pt>
+File: classIndexController__inherit__graph.pdf Graphic file (type pdf)
+
+<use classIndexController__inherit__graph.pdf>
+<classIndexController__coll__graph.pdf, id=834, 112.42pt x 88.33pt>
+File: classIndexController__coll__graph.pdf Graphic file (type pdf)
+
+<use classIndexController__coll__graph.pdf>
+<classIndexController_c276caea218a4e9283c6d1d7317e66e0_cgraph.pdf, id=835, 347.
+2975pt x 66.2475pt>
+File: classIndexController_c276caea218a4e9283c6d1d7317e66e0_cgraph.pdf Graphic 
+file (type pdf)
+
+<use classIndexController_c276caea218a4e9283c6d1d7317e66e0_cgraph.pdf>)
+[108
+
+
+ <./classIndexController__inherit__graph.pdf> <./classIndexController__coll__gr
+aph.pdf> <./classIndexController_c276caea218a4e9283c6d1d7317e66e0_cgraph.pdf>]
+\openout2 = `classIndexModel.aux'.
+
+ (./classIndexModel.tex
+<classIndexModel__inherit__graph.pdf, id=854, 146.5475pt x 146.5475pt>
+File: classIndexModel__inherit__graph.pdf Graphic file (type pdf)
+
+<use classIndexModel__inherit__graph.pdf>
+<classIndexModel__coll__graph.pdf, id=855, 146.5475pt x 146.5475pt>
+File: classIndexModel__coll__graph.pdf Graphic file (type pdf)
+
+<use classIndexModel__coll__graph.pdf>
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
+[]\T1/ptm/m/n/10 References Galleria_-Model._-fetchObjects(), Galleria_-Model._
+-getConnection(), Galleria_-Model._-
+ []
+
+
+<classIndexModel_f26b8c0fb120d50602c24fe1a1817292_cgraph.pdf, id=856, 548.0475p
+t x 180.675pt>
+File: classIndexModel_f26b8c0fb120d50602c24fe1a1817292_cgraph.pdf Graphic file 
+(type pdf)
+
+<use classIndexModel_f26b8c0fb120d50602c24fe1a1817292_cgraph.pdf> [109
+
+
+ <./classIndexModel__inherit__graph.pdf> <./classIndexModel__coll__graph.pdf>]
+<classIndexModel_663be11207a8ff64aa0bbb268ad015b1_cgraph.pdf, id=871, 503.8825p
+t x 142.5325pt>
+File: classIndexModel_663be11207a8ff64aa0bbb268ad015b1_cgraph.pdf Graphic file 
+(type pdf)
+
+<use classIndexModel_663be11207a8ff64aa0bbb268ad015b1_cgraph.pdf>) [110 <./clas
+sIndexModel_f26b8c0fb120d50602c24fe1a1817292_cgraph.pdf> <./classIndexModel_663
+be11207a8ff64aa0bbb268ad015b1_cgraph.pdf>]
+\openout2 = `classJsonController.aux'.
+
+ (./classJsonController.tex
+<classJsonController__inherit__graph.pdf, id=885, 112.42pt x 88.33pt>
+File: classJsonController__inherit__graph.pdf Graphic file (type pdf)
+
+<use classJsonController__inherit__graph.pdf>
+<classJsonController__coll__graph.pdf, id=886, 112.42pt x 88.33pt>
+File: classJsonController__coll__graph.pdf Graphic file (type pdf)
+
+<use classJsonController__coll__graph.pdf>
+<classJsonController_f7aef10009e19696a6c903d138f88a5e_cgraph.pdf, id=887, 329.2
+3pt x 28.105pt>
+File: classJsonController_f7aef10009e19696a6c903d138f88a5e_cgraph.pdf Graphic f
+ile (type pdf)
+
+<use classJsonController_f7aef10009e19696a6c903d138f88a5e_cgraph.pdf> [111
+
+
+ <./classJsonController__inherit__graph.pdf> <./classJsonController__coll__grap
+h.pdf> <./classJsonController_f7aef10009e19696a6c903d138f88a5e_cgraph.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
+[]\T1/ptm/m/n/10 References Galleria_-Controller._-getModel(), Galleria_-Elemen
+t_-Category.create(), Galleria_-
+ []
+
+
+Underfull \hbox (badness 4713) in paragraph at lines 74--75
+\T1/ptm/m/n/10 Auth.getObject(), Galleria_-Controller.getView(), Galleria_-Elem
+ent_-Category.howMany(), Galleria_-
+ []
+
+
+<classJsonController_6924ccaeb485c3b40e55b4cb763faf79_cgraph.pdf, id=906, 618.3
+1pt x 314.17375pt>
+File: classJsonController_6924ccaeb485c3b40e55b4cb763faf79_cgraph.pdf Graphic f
+ile (type pdf)
+
+<use classJsonController_6924ccaeb485c3b40e55b4cb763faf79_cgraph.pdf>
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
+[]\T1/ptm/m/n/10 References Galleria_-Controller._-getModel(), _-parseCatGroups
+(), _-parseCatsToArray(), Galleria_-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
+\T1/ptm/m/n/10 Image.deleteFiles(), Galleria_-Auth.getObject(), Galleria_-Contr
+oller.getView(), and Galleria_-
+ []
+
+
+<classJsonController_79d897382e05189e189a3249d62c9c44_cgraph.pdf, id=907, 505.8
+9pt x 256.96pt>
+File: classJsonController_79d897382e05189e189a3249d62c9c44_cgraph.pdf Graphic f
+ile (type pdf)
+
+<use classJsonController_79d897382e05189e189a3249d62c9c44_cgraph.pdf> [112 <./c
+lassJsonController_6924ccaeb485c3b40e55b4cb763faf79_cgraph.pdf> <./classJsonCon
+troller_79d897382e05189e189a3249d62c9c44_cgraph.pdf>]
+<classJsonController_551bb2fa61f3c738987afaaaa37e9344_cgraph.pdf, id=921, 305.1
+4pt x 28.105pt>
+File: classJsonController_551bb2fa61f3c738987afaaaa37e9344_cgraph.pdf Graphic f
+ile (type pdf)
+
+<use classJsonController_551bb2fa61f3c738987afaaaa37e9344_cgraph.pdf>) [113 <./
+classJsonController_551bb2fa61f3c738987afaaaa37e9344_cgraph.pdf>]
+\openout2 = `classJsonModel.aux'.
+
+
+(./classJsonModel.tex
+<classJsonModel__inherit__graph.pdf, id=930, 146.5475pt x 146.5475pt>
+File: classJsonModel__inherit__graph.pdf Graphic file (type pdf)
+
+<use classJsonModel__inherit__graph.pdf>
+<classJsonModel__coll__graph.pdf, id=931, 146.5475pt x 146.5475pt>
+File: classJsonModel__coll__graph.pdf Graphic file (type pdf)
+
+<use classJsonModel__coll__graph.pdf> [114
+
+
+ <./classJsonModel__inherit__graph.pdf> <./classJsonModel__coll__graph.pdf>]
+<classJsonModel_6844ca7057ffd876899bdae9e6fc91e3_cgraph.pdf, id=945, 509.905pt 
+x 28.105pt>
+File: classJsonModel_6844ca7057ffd876899bdae9e6fc91e3_cgraph.pdf Graphic file (
+type pdf)
+ <use classJsonModel_6844ca7057ffd876899bdae9e6fc91e3_cgraph.pdf>
+<classJsonModel_9e63a88b49207db1203e19821decf93d_cgraph.pdf, id=946, 513.92pt x
+ 28.105pt>
+File: classJsonModel_9e63a88b49207db1203e19821decf93d_cgraph.pdf Graphic file (
+type pdf)
+ <use classJsonModel_9e63a88b49207db1203e19821decf93d_cgraph.pdf>
+[115 <./classJsonModel_6844ca7057ffd876899bdae9e6fc91e3_cgraph.pdf>]
+<classJsonModel_247eb183c9cb1f28d30d0f9195b51349_cgraph.pdf, id=956, 536.0025pt
+ x 28.105pt>
+File: classJsonModel_247eb183c9cb1f28d30d0f9195b51349_cgraph.pdf Graphic file (
+type pdf)
+ <use classJsonModel_247eb183c9cb1f28d30d0f9195b51349_cgraph.pdf>
+<classJsonModel_2c82d6f4fb97f4aae9256a3a1cc4b6a0_cgraph.pdf, id=957, 531.9875pt
+ x 28.105pt>
+File: classJsonModel_2c82d6f4fb97f4aae9256a3a1cc4b6a0_cgraph.pdf Graphic file (
+type pdf)
+ <use classJsonModel_2c82d6f4fb97f4aae9256a3a1cc4b6a0_cgraph.pdf>
+[116 <./classJsonModel_9e63a88b49207db1203e19821decf93d_cgraph.pdf> <./classJso
+nModel_247eb183c9cb1f28d30d0f9195b51349_cgraph.pdf> <./classJsonModel_2c82d6f4f
+b97f4aae9256a3a1cc4b6a0_cgraph.pdf>]
+<classJsonModel_961794ed1c7fdf1448c3cd5c6c314bf6_cgraph.pdf, id=976, 556.0775pt
+ x 66.2475pt>
+File: classJsonModel_961794ed1c7fdf1448c3cd5c6c314bf6_cgraph.pdf Graphic file (
+type pdf)
+ <use classJsonModel_961794ed1c7fdf1448c3cd5c6c314bf6_cgraph.pdf>
+<classJsonModel_33cec069274573cc08a95380ddedb45d_cgraph.pdf, id=977, 531.9875pt
+ x 66.2475pt>
+File: classJsonModel_33cec069274573cc08a95380ddedb45d_cgraph.pdf Graphic file (
+type pdf)
+ <use classJsonModel_33cec069274573cc08a95380ddedb45d_cgraph.pdf>
+[117 <./classJsonModel_961794ed1c7fdf1448c3cd5c6c314bf6_cgraph.pdf> <./classJso
+nModel_33cec069274573cc08a95380ddedb45d_cgraph.pdf>]
+<classJsonModel_c7dc1d6b3cdefdbe6d998861e661a964_cgraph.pdf, id=991, 515.9275pt
+ x 28.105pt>
+File: classJsonModel_c7dc1d6b3cdefdbe6d998861e661a964_cgraph.pdf Graphic file (
+type pdf)
+ <use classJsonModel_c7dc1d6b3cdefdbe6d998861e661a964_cgraph.pdf>
+<classJsonModel_aef5fd91794dd52dd5183f319ffd6205_cgraph.pdf, id=992, 515.9275pt
+ x 28.105pt>
+File: classJsonModel_aef5fd91794dd52dd5183f319ffd6205_cgraph.pdf Graphic file (
+type pdf)
+ <use classJsonModel_aef5fd91794dd52dd5183f319ffd6205_cgraph.pdf>
+[118 <./classJsonModel_c7dc1d6b3cdefdbe6d998861e661a964_cgraph.pdf> <./classJso
+nModel_aef5fd91794dd52dd5183f319ffd6205_cgraph.pdf>]
+<classJsonModel_dd03cce82736a4d0c5eb78ca1904a274_cgraph.pdf, id=1006, 501.875pt
+ x 66.2475pt>
+File: classJsonModel_dd03cce82736a4d0c5eb78ca1904a274_cgraph.pdf Graphic file (
+type pdf)
+ <use classJsonModel_dd03cce82736a4d0c5eb78ca1904a274_cgraph.pdf>
+<classJsonModel_a782f3718c9ab8eb4899dee374f05dfc_cgraph.pdf, id=1007, 491.8375p
+t x 28.105pt>
+File: classJsonModel_a782f3718c9ab8eb4899dee374f05dfc_cgraph.pdf Graphic file (
+type pdf)
+ <use classJsonModel_a782f3718c9ab8eb4899dee374f05dfc_cgraph.pdf>
+<classJsonModel_640024eed0b06570ba3f700911f6615e_cgraph.pdf, id=1008, 503.8825p
+t x 28.105pt>
+File: classJsonModel_640024eed0b06570ba3f700911f6615e_cgraph.pdf Graphic file (
+type pdf)
+ <use classJsonModel_640024eed0b06570ba3f700911f6615e_cgraph.pdf>
+[119 <./classJsonModel_dd03cce82736a4d0c5eb78ca1904a274_cgraph.pdf> <./classJso
+nModel_a782f3718c9ab8eb4899dee374f05dfc_cgraph.pdf>]
+<classJsonModel_108451085085e5cdd7f959aec2c518e7_cgraph.pdf, id=1022, 550.055pt
+ x 66.2475pt>
+File: classJsonModel_108451085085e5cdd7f959aec2c518e7_cgraph.pdf Graphic file (
+type pdf)
+ <use classJsonModel_108451085085e5cdd7f959aec2c518e7_cgraph.pdf>
+[120 <./classJsonModel_640024eed0b06570ba3f700911f6615e_cgraph.pdf> <./classJso
+nModel_108451085085e5cdd7f959aec2c518e7_cgraph.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 461--462
+[]\T1/ptm/m/n/10 References Galleria_-Model_-Collection._-addChangelog(), Galle
+ria_-Model._-getConnection(), and
+ []
+
+
+<classJsonModel_82924979d39f51cbb6285ab728c4b73c_cgraph.pdf, id=1036, 768.8725p
+t x 104.39pt>
+File: classJsonModel_82924979d39f51cbb6285ab728c4b73c_cgraph.pdf Graphic file (
+type pdf)
+ <use classJsonModel_82924979d39f51cbb6285ab728c4b73c_cgraph.pdf>
+Underfull \hbox (badness 10000) in paragraph at lines 488--489
+[]\T1/ptm/m/n/10 References Galleria_-Model_-Collection._-addChangelog(), Galle
+ria_-Model._-getConnection(), and
+ []
+
+
+<classJsonModel_b39e947b3302af12653b9ccf2bfd856b_cgraph.pdf, id=1037, 756.8275p
+t x 104.39pt>
+File: classJsonModel_b39e947b3302af12653b9ccf2bfd856b_cgraph.pdf Graphic file (
+type pdf)
+ <use classJsonModel_b39e947b3302af12653b9ccf2bfd856b_cgraph.pdf>
+[121 <./classJsonModel_82924979d39f51cbb6285ab728c4b73c_cgraph.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 515--516
+[]\T1/ptm/m/n/10 References Galleria_-Model_-Collection._-addChangelog(), Galle
+ria_-Model._-getConnection(), and
+ []
+
+
+<classJsonModel_66ac503384b8ef309b95f03b432eaf46_cgraph.pdf, id=1047, 766.865pt
+ x 104.39pt>
+File: classJsonModel_66ac503384b8ef309b95f03b432eaf46_cgraph.pdf Graphic file (
+type pdf)
+ <use classJsonModel_66ac503384b8ef309b95f03b432eaf46_cgraph.pdf>
+Underfull \hbox (badness 10000) in paragraph at lines 542--543
+[]\T1/ptm/m/n/10 References Galleria_-Model_-Collection._-addChangelog(), Galle
+ria_-Model._-getConnection(), and
+ []
+
+
+<classJsonModel_30625fa69b928014605412cd64d7850f_cgraph.pdf, id=1048, 762.85pt 
+x 104.39pt>
+File: classJsonModel_30625fa69b928014605412cd64d7850f_cgraph.pdf Graphic file (
+type pdf)
+ <use classJsonModel_30625fa69b928014605412cd64d7850f_cgraph.pdf>
+[122 <./classJsonModel_b39e947b3302af12653b9ccf2bfd856b_cgraph.pdf> <./classJso
+nModel_66ac503384b8ef309b95f03b432eaf46_cgraph.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 569--570
+[]\T1/ptm/m/n/10 References Galleria_-Model_-Collection._-addChangelog(), _-add
+NewTag(), Galleria_-Model._-
+ []
+
+
+<classJsonModel_95c070cb30e20d7ed5cefbea3cb86f54_cgraph.pdf, id=1062, 744.7825p
+t x 180.675pt>
+File: classJsonModel_95c070cb30e20d7ed5cefbea3cb86f54_cgraph.pdf Graphic file (
+type pdf)
+
+<use classJsonModel_95c070cb30e20d7ed5cefbea3cb86f54_cgraph.pdf> [123 <./classJ
+sonModel_30625fa69b928014605412cd64d7850f_cgraph.pdf> <./classJsonModel_95c070c
+b30e20d7ed5cefbea3cb86f54_cgraph.pdf>]
+<classJsonModel_ef9e1562f684f8f182b8b2c1cad3e8c7_cgraph.pdf, id=1076, 517.935pt
+ x 28.105pt>
+File: classJsonModel_ef9e1562f684f8f182b8b2c1cad3e8c7_cgraph.pdf Graphic file (
+type pdf)
+ <use classJsonModel_ef9e1562f684f8f182b8b2c1cad3e8c7_cgraph.pdf>
+<classJsonModel_8e31586c69ee3ca51585c0c37d78eae3_cgraph.pdf, id=1077, 503.8825p
+t x 28.105pt>
+File: classJsonModel_8e31586c69ee3ca51585c0c37d78eae3_cgraph.pdf Graphic file (
+type pdf)
+ <use classJsonModel_8e31586c69ee3ca51585c0c37d78eae3_cgraph.pdf>
+Underfull \hbox (badness 10000) in paragraph at lines 654--655
+[]\T1/ptm/m/n/10 References Galleria_-Model_-Collection._-addChangelog(), Galle
+ria_-Model._-getConnection(), and
+ []
+
+
+<classJsonModel_f356dde0befac8cf2aae3ac17e3758d5_cgraph.pdf, id=1078, 780.9175p
+t x 104.39pt>
+File: classJsonModel_f356dde0befac8cf2aae3ac17e3758d5_cgraph.pdf Graphic file (
+type pdf)
+ <use classJsonModel_f356dde0befac8cf2aae3ac17e3758d5_cgraph.pdf>
+[124 <./classJsonModel_ef9e1562f684f8f182b8b2c1cad3e8c7_cgraph.pdf> <./classJso
+nModel_8e31586c69ee3ca51585c0c37d78eae3_cgraph.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 681--682
+[]\T1/ptm/m/n/10 References Galleria_-Model_-Collection._-addChangelog(), _-del
+eteEmptyTags(), Galleria_-Model._-
+ []
+
+
+<classJsonModel_183f81fec0df1cfd7c5540f0e419f24e_cgraph.pdf, id=1092, 770.88pt 
+x 142.5325pt>
+File: classJsonModel_183f81fec0df1cfd7c5540f0e419f24e_cgraph.pdf Graphic file (
+type pdf)
+ <use classJsonModel_183f81fec0df1cfd7c5540f0e419f24e_cgraph.pdf>
+[125 <./classJsonModel_f356dde0befac8cf2aae3ac17e3758d5_cgraph.pdf> <./classJso
+nModel_183f81fec0df1cfd7c5540f0e419f24e_cgraph.pdf>]
+<classJsonModel_8f7d1bda56546bdf59fb2072fc68201e_cgraph.pdf, id=1106, 546.04pt 
+x 28.105pt>
+File: classJsonModel_8f7d1bda56546bdf59fb2072fc68201e_cgraph.pdf Graphic file (
+type pdf)
+ <use classJsonModel_8f7d1bda56546bdf59fb2072fc68201e_cgraph.pdf>
+<classJsonModel_b170bc900564b7aff804066556651d1a_cgraph.pdf, id=1107, 694.595pt
+ x 47.17625pt>
+File: classJsonModel_b170bc900564b7aff804066556651d1a_cgraph.pdf Graphic file (
+type pdf)
+
+<use classJsonModel_b170bc900564b7aff804066556651d1a_cgraph.pdf>
+<classJsonModel_b4f990cecbc3f28959864ac48bd04aa9_cgraph.pdf, id=1108, 523.9575p
+t x 66.2475pt>
+File: classJsonModel_b4f990cecbc3f28959864ac48bd04aa9_cgraph.pdf Graphic file (
+type pdf)
+
+<use classJsonModel_b4f990cecbc3f28959864ac48bd04aa9_cgraph.pdf> [126 <./classJ
+sonModel_8f7d1bda56546bdf59fb2072fc68201e_cgraph.pdf> <./classJsonModel_b170bc9
+00564b7aff804066556651d1a_cgraph.pdf> <./classJsonModel_b4f990cecbc3f28959864ac
+48bd04aa9_cgraph.pdf>]
+<classJsonModel_2a01bcda3d706603b1a653734ef48c58_cgraph.pdf, id=1127, 489.83pt 
+x 66.2475pt>
+File: classJsonModel_2a01bcda3d706603b1a653734ef48c58_cgraph.pdf Graphic file (
+type pdf)
+ <use classJsonModel_2a01bcda3d706603b1a653734ef48c58_cgraph.pdf>)
+[127 <./classJsonModel_2a01bcda3d706603b1a653734ef48c58_cgraph.pdf>]
+\openout2 = `classLoginController.aux'.
+
+
+(./classLoginController.tex
+<classLoginController__inherit__graph.pdf, id=1137, 112.42pt x 88.33pt>
+File: classLoginController__inherit__graph.pdf Graphic file (type pdf)
+
+<use classLoginController__inherit__graph.pdf>
+<classLoginController__coll__graph.pdf, id=1138, 112.42pt x 88.33pt>
+File: classLoginController__coll__graph.pdf Graphic file (type pdf)
+
+<use classLoginController__coll__graph.pdf>
+<classLoginController_fcf8e5c46888020b6ee212bac2538adc_cgraph.pdf, id=1139, 443
+.6575pt x 28.105pt>
+File: classLoginController_fcf8e5c46888020b6ee212bac2538adc_cgraph.pdf Graphic 
+file (type pdf)
+
+<use classLoginController_fcf8e5c46888020b6ee212bac2538adc_cgraph.pdf> [128
+
+
+ <./classLoginController__inherit__graph.pdf> <./classLoginController__coll__gr
+aph.pdf>]
+<classLoginController_a2b718965894d8af89129573a7ec6309_cgraph.pdf, id=1153, 443
+.6575pt x 28.105pt>
+File: classLoginController_a2b718965894d8af89129573a7ec6309_cgraph.pdf Graphic 
+file (type pdf)
+
+<use classLoginController_a2b718965894d8af89129573a7ec6309_cgraph.pdf>)
+[129 <./classLoginController_fcf8e5c46888020b6ee212bac2538adc_cgraph.pdf> <./cl
+assLoginController_a2b718965894d8af89129573a7ec6309_cgraph.pdf>]
+\openout2 = `classProfileController.aux'.
+
+
+(./classProfileController.tex
+<classProfileController__inherit__graph.pdf, id=1167, 112.42pt x 88.33pt>
+File: classProfileController__inherit__graph.pdf Graphic file (type pdf)
+
+<use classProfileController__inherit__graph.pdf>
+<classProfileController__coll__graph.pdf, id=1168, 112.42pt x 88.33pt>
+File: classProfileController__coll__graph.pdf Graphic file (type pdf)
+
+<use classProfileController__coll__graph.pdf>
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
+[]\T1/ptm/m/n/10 References Galleria_-Controller._-getModel(), Galleria_-Auth.g
+etObject(), and Galleria_-
+ []
+
+
+<classProfileController_74c7f1dbe600e32945b6bb2d2f82452e_cgraph.pdf, id=1169, 5
+01.875pt x 104.39pt>
+File: classProfileController_74c7f1dbe600e32945b6bb2d2f82452e_cgraph.pdf Graphi
+c file (type pdf)
+
+<use classProfileController_74c7f1dbe600e32945b6bb2d2f82452e_cgraph.pdf>
+[130
+
+
+ <./classProfileController__inherit__graph.pdf> <./classProfileController__coll
+__graph.pdf> <./classProfileController_74c7f1dbe600e32945b6bb2d2f82452e_cgraph.
+pdf>]
+<classProfileController_548ce11de304afe07e7d069345403e3a_cgraph.pdf, id=1188, 4
+65.74pt x 66.2475pt>
+File: classProfileController_548ce11de304afe07e7d069345403e3a_cgraph.pdf Graphi
+c file (type pdf)
+
+<use classProfileController_548ce11de304afe07e7d069345403e3a_cgraph.pdf>)
+[131 <./classProfileController_548ce11de304afe07e7d069345403e3a_cgraph.pdf>]
+\openout2 = `classProfileModel.aux'.
+
+
+(./classProfileModel.tex
+<classProfileModel__inherit__graph.pdf, id=1197, 146.5475pt x 146.5475pt>
+File: classProfileModel__inherit__graph.pdf Graphic file (type pdf)
+
+<use classProfileModel__inherit__graph.pdf>
+<classProfileModel__coll__graph.pdf, id=1198, 146.5475pt x 146.5475pt>
+File: classProfileModel__coll__graph.pdf Graphic file (type pdf)
+
+<use classProfileModel__coll__graph.pdf> [132
+
+
+ <./classProfileModel__inherit__graph.pdf> <./classProfileModel__coll__graph.pd
+f>]
+<classProfileModel_c7ef238b61a2cc391773b4c636eb8f55_cgraph.pdf, id=1212, 515.92
+75pt x 28.105pt>
+File: classProfileModel_c7ef238b61a2cc391773b4c636eb8f55_cgraph.pdf Graphic fil
+e (type pdf)
+
+<use classProfileModel_c7ef238b61a2cc391773b4c636eb8f55_cgraph.pdf>
+<classProfileModel_209e4ead16fd0966ae0232b2e1a7b99d_cgraph.pdf, id=1213, 523.95
+75pt x 66.2475pt>
+File: classProfileModel_209e4ead16fd0966ae0232b2e1a7b99d_cgraph.pdf Graphic fil
+e (type pdf)
+
+<use classProfileModel_209e4ead16fd0966ae0232b2e1a7b99d_cgraph.pdf>) [133 <./cl
+assProfileModel_c7ef238b61a2cc391773b4c636eb8f55_cgraph.pdf> <./classProfileMod
+el_209e4ead16fd0966ae0232b2e1a7b99d_cgraph.pdf>]
+\openout2 = `classSearchController.aux'.
+
+ (./classSearchController.tex
+<classSearchController__inherit__graph.pdf, id=1228, 112.42pt x 88.33pt>
+File: classSearchController__inherit__graph.pdf Graphic file (type pdf)
+
+<use classSearchController__inherit__graph.pdf>
+<classSearchController__coll__graph.pdf, id=1229, 112.42pt x 88.33pt>
+File: classSearchController__coll__graph.pdf Graphic file (type pdf)
+
+<use classSearchController__coll__graph.pdf>
+<classSearchController_23220fa63c8d9c3ccad8c50cd6a7195e_cgraph.pdf, id=1230, 35
+5.3275pt x 66.2475pt>
+File: classSearchController_23220fa63c8d9c3ccad8c50cd6a7195e_cgraph.pdf Graphic
+ file (type pdf)
+
+<use classSearchController_23220fa63c8d9c3ccad8c50cd6a7195e_cgraph.pdf>)
+[134
+
+
+ <./classSearchController__inherit__graph.pdf> <./classSearchController__coll__
+graph.pdf> <./classSearchController_23220fa63c8d9c3ccad8c50cd6a7195e_cgraph.pdf
+>]
+\openout2 = `classSearchModel.aux'.
+
+ (./classSearchModel.tex
+<classSearchModel__inherit__graph.pdf, id=1249, 146.5475pt x 146.5475pt>
+File: classSearchModel__inherit__graph.pdf Graphic file (type pdf)
+
+<use classSearchModel__inherit__graph.pdf>
+<classSearchModel__coll__graph.pdf, id=1250, 146.5475pt x 146.5475pt>
+File: classSearchModel__coll__graph.pdf Graphic file (type pdf)
+
+<use classSearchModel__coll__graph.pdf>) [135
+
+
+ <./classSearchModel__inherit__graph.pdf> <./classSearchModel__coll__graph.pdf>
+]
+\openout2 = `classTagController.aux'.
+
+ (./classTagController.tex
+<classTagController__inherit__graph.pdf, id=1264, 112.42pt x 88.33pt>
+File: classTagController__inherit__graph.pdf Graphic file (type pdf)
+
+<use classTagController__inherit__graph.pdf>
+<classTagController__coll__graph.pdf, id=1265, 112.42pt x 88.33pt>
+File: classTagController__coll__graph.pdf Graphic file (type pdf)
+
+<use classTagController__coll__graph.pdf>
+<classTagController_3fc537f4d4a5b09ee8608a508151d6cc_cgraph.pdf, id=1266, 339.2
+675pt x 66.2475pt>
+File: classTagController_3fc537f4d4a5b09ee8608a508151d6cc_cgraph.pdf Graphic fi
+le (type pdf)
+
+<use classTagController_3fc537f4d4a5b09ee8608a508151d6cc_cgraph.pdf>) [136
+
+
+ <./classTagController__inherit__graph.pdf> <./classTagController__coll__graph.
+pdf> <./classTagController_3fc537f4d4a5b09ee8608a508151d6cc_cgraph.pdf>]
+\openout2 = `classTagModel.aux'.
+
+
+(./classTagModel.tex
+<classTagModel__inherit__graph.pdf, id=1285, 146.5475pt x 146.5475pt>
+File: classTagModel__inherit__graph.pdf Graphic file (type pdf)
+
+<use classTagModel__inherit__graph.pdf>
+<classTagModel__coll__graph.pdf, id=1286, 146.5475pt x 146.5475pt>
+File: classTagModel__coll__graph.pdf Graphic file (type pdf)
+
+<use classTagModel__coll__graph.pdf>
+<classTagModel_33ed8846746b4db91b538171cf6c5669_cgraph.pdf, id=1287, 515.9275pt
+ x 28.105pt>
+File: classTagModel_33ed8846746b4db91b538171cf6c5669_cgraph.pdf Graphic file (t
+ype pdf)
+ <use classTagModel_33ed8846746b4db91b538171cf6c5669_cgraph.pdf>
+[137
+
+
+ <./classTagModel__inherit__graph.pdf> <./classTagModel__coll__graph.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
+[]\T1/ptm/m/n/10 References Galleria_-Model._-fetchObjects(), Galleria_-Model._
+-getConnection(), Galleria_-Model._-
+ []
+
+
+<classTagModel_49a371996b0e0684a5689abd6c160843_cgraph.pdf, id=1301, 489.83pt x
+ 180.675pt>
+File: classTagModel_49a371996b0e0684a5689abd6c160843_cgraph.pdf Graphic file (t
+ype pdf)
+ <use classTagModel_49a371996b0e0684a5689abd6c160843_cgraph.pdf>)
+[138 <./classTagModel_33ed8846746b4db91b538171cf6c5669_cgraph.pdf> <./classTagM
+odel_49a371996b0e0684a5689abd6c160843_cgraph.pdf>]
+Chapter 7.
+(./bootstrap_8php.tex [139
+
+
+] [140]) [141]
+\openout2 = `database_8dist_8php.aux'.
+
+ (./database_8dist_8php.tex) [142
+
+]
+\openout2 = `config_2database_8php.aux'.
+
+
+(./config_2database_8php.tex) [143
+
+
+]
+\openout2 = `lib_2database_8php.aux'.
+
+ (./lib_2database_8php.tex) [144
+
+
+]
+\openout2 = `site_8dist_8php.aux'.
+
+
+(./site_8dist_8php.tex) [145
+
+
+]
+\openout2 = `index_8php.aux'.
+
+ (./index_8php.tex) [146
+
+
+]
+\openout2 = `auth_8php.aux'.
+
+ (./auth_8php.tex)
+[147
+
+
+]
+\openout2 = `auth_2model_8php.aux'.
+
+ (./auth_2model_8php.tex) [148
+
+
+]
+\openout2 = `model_8php.aux'.
+
+ (./model_8php.tex) [149
+
+
+]
+\openout2 = `auth_2object_8php.aux'.
+
+
+(./auth_2object_8php.tex) [150
+
+
+]
+\openout2 = `configuration_2object_8php.aux'.
+
+ (./configuration_2object_8php.tex) [151
+
+
+]
+\openout2 = `image_2object_8php.aux'.
+
+
+(./image_2object_8php.tex) [152
+
+
+]
+\openout2 = `configure_8php.aux'.
+
+ (./configure_8php.tex) [153
+
+
+]
+\openout2 = `load_8php.aux'.
+
+ (./load_8php.tex) [154
+
+
+]
+\openout2 = `configuration_8php.aux'.
+
+ (./configuration_8php.tex) [155
+
+
+]
+\openout2 = `controller_8php.aux'.
+
+ (./controller_8php.tex) [156
+
+
+]
+\openout2 = `pdo_8php.aux'.
+
+
+(./pdo_8php.tex) [157
+
+
+]
+\openout2 = `category_8php.aux'.
+
+ (./category_8php.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[]\T1/ptm/b/n/14.4 /var/www/galleria/data/lib/element/category.php File Ref-er-
+
+ []
+
+) [158
+
+
+]
+\openout2 = `image_8php.aux'.
+
+ (./image_8php.tex) [159
+
+
+]
+\openout2 = `collection_8php.aux'.
+
+ (./collection_8php.tex) [160
+
+
+]
+\openout2 = `requests_8php.aux'.
+
+
+(./requests_8php.tex) [161
+
+
+]
+\openout2 = `gets_8php.aux'.
+
+ (./gets_8php.tex) [162
+
+
+]
+\openout2 = `posts_8php.aux'.
+
+ (./posts_8php.tex) [163
+
+
+]
+\openout2 = `session_8php.aux'.
+
+
+(./session_8php.tex) [164
+
+
+]
+\openout2 = `site_8php.aux'.
+
+ (./site_8php.tex) [165
+
+
+]
+\openout2 = `view_8php.aux'.
+
+ (./view_8php.tex) [166
+
+
+]
+\openout2 = `categories_8php.aux'.
+
+
+(./categories_8php.tex) [167
+
+
+]
+\openout2 = `pictures_8php.aux'.
+
+ (./pictures_8php.tex) [168
+
+
+]
+\openout2 = `stats_8php.aux'.
+
+ (./stats_8php.tex)
+[169
+
+
+]
+\openout2 = `tags_8php.aux'.
+
+ (./tags_8php.tex) [170
+
+
+]
+\openout2 = `viewelement_8php.aux'.
+
+ (./viewelement_8php.tex) [171
+
+
+]
+\openout2 = `admincontroller_8php.aux'.
+
+
+(./admincontroller_8php.tex
+Overfull \hbox (5.29187pt too wide) in paragraph at lines 1--1
+[]\T1/ptm/b/n/14.4 /var/www/galleria/data/site/mvc/controller/admincontroller.p
+hp
+ []
+
+) [172
+
+
+]
+\openout2 = `browsecontroller_8php.aux'.
+
+ (./browsecontroller_8php.tex
+Overfull \hbox (9.66951pt too wide) in paragraph at lines 1--1
+[]\T1/ptm/b/n/14.4 /var/www/galleria/data/site/mvc/controller/browsecontroller.
+php
+ []
+
+) [173
+
+
+]
+\openout2 = `errorcontroller_8php.aux'.
+
+ (./errorcontroller_8php.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[]\T1/ptm/b/n/14.4 /var/www/galleria/data/site/mvc/controller/errorcontroller.p
+hp
+ []
+
+) [174
+
+
+]
+\openout2 = `helpcontroller_8php.aux'.
+
+ (./helpcontroller_8php.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[]\T1/ptm/b/n/14.4 /var/www/galleria/data/site/mvc/controller/helpcontroller.ph
+p
+ []
+
+) [175
+
+
+]
+\openout2 = `imagescontroller_8php.aux'.
+
+ (./imagescontroller_8php.tex
+Overfull \hbox (8.47423pt too wide) in paragraph at lines 1--1
+[]\T1/ptm/b/n/14.4 /var/www/galleria/data/site/mvc/controller/imagescontroller.
+php
+ []
+
+) [176
+
+
+]
+\openout2 = `indexcontroller_8php.aux'.
+
+ (./indexcontroller_8php.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[]\T1/ptm/b/n/14.4 /var/www/galleria/data/site/mvc/controller/indexcontroller.p
+hp
+ []
+
+) [177
+
+
+]
+\openout2 = `jsoncontroller_8php.aux'.
+
+ (./jsoncontroller_8php.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[]\T1/ptm/b/n/14.4 /var/www/galleria/data/site/mvc/controller/jsoncontroller.ph
+p
+ []
+
+) [178
+
+
+]
+\openout2 = `logincontroller_8php.aux'.
+
+ (./logincontroller_8php.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[]\T1/ptm/b/n/14.4 /var/www/galleria/data/site/mvc/controller/logincontroller.p
+hp
+ []
+
+) [179
+
+
+]
+\openout2 = `profilecontroller_8php.aux'.
+
+ (./profilecontroller_8php.tex
+Overfull \hbox (5.82465pt too wide) in paragraph at lines 1--1
+[]\T1/ptm/b/n/14.4 /var/www/galleria/data/site/mvc/controller/profilecontroller
+.php
+ []
+
+) [180
+
+
+]
+\openout2 = `searchcontroller_8php.aux'.
+
+ (./searchcontroller_8php.tex
+Overfull \hbox (5.81026pt too wide) in paragraph at lines 1--1
+[]\T1/ptm/b/n/14.4 /var/www/galleria/data/site/mvc/controller/searchcontroller.
+php
+ []
+
+) [181
+
+
+]
+\openout2 = `tagcontroller_8php.aux'.
+
+ (./tagcontroller_8php.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[]\T1/ptm/b/n/14.4 /var/www/galleria/data/site/mvc/controller/tagcontroller.php
+
+ []
+
+) [182
+
+
+]
+\openout2 = `adminmodel_8php.aux'.
+
+ (./adminmodel_8php.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[]\T1/ptm/b/n/14.4 /var/www/galleria/data/site/mvc/model/adminmodel.php File
+ []
+
+) [183
+
+
+]
+\openout2 = `browsemodel_8php.aux'.
+
+ (./browsemodel_8php.tex
+Underfull \hbox (badness 4954) in paragraph at lines 1--1
+[]\T1/ptm/b/n/14.4 /var/www/galleria/data/site/mvc/model/browsemodel.php File
+ []
+
+) [184
+
+
+]
+\openout2 = `imagesmodel_8php.aux'.
+
+ (./imagesmodel_8php.tex
+Underfull \hbox (badness 7558) in paragraph at lines 1--1
+[]\T1/ptm/b/n/14.4 /var/www/galleria/data/site/mvc/model/imagesmodel.php File
+ []
+
+) [185
+
+
+]
+\openout2 = `indexmodel_8php.aux'.
+
+ (./indexmodel_8php.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[]\T1/ptm/b/n/14.4 /var/www/galleria/data/site/mvc/model/indexmodel.php File
+ []
+
+) [186
+
+
+]
+\openout2 = `jsonmodel_8php.aux'.
+
+ (./jsonmodel_8php.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[]\T1/ptm/b/n/14.4 /var/www/galleria/data/site/mvc/model/jsonmodel.php File
+ []
+
+) [187
+
+
+]
+\openout2 = `profilemodel_8php.aux'.
+
+ (./profilemodel_8php.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[]\T1/ptm/b/n/14.4 /var/www/galleria/data/site/mvc/model/profilemodel.php File
+ []
+
+) [188
+
+
+]
+\openout2 = `searchmodel_8php.aux'.
+
+ (./searchmodel_8php.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[]\T1/ptm/b/n/14.4 /var/www/galleria/data/site/mvc/model/searchmodel.php File
+ []
+
+) [189
+
+
+]
+\openout2 = `tagmodel_8php.aux'.
+
+ (./tagmodel_8php.tex) [190
+
+
+] (./refman.ind
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+[]\T1/ptm/m/n/10 /var/www/galleria/data/config/database.dist.php,
+ []
+
+
+Overfull \hbox (1.27423pt too wide) in paragraph at lines 14--15
+[]\T1/ptm/m/n/10 /var/www/galleria/data/lib/configuration/object.php,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+[]\T1/ptm/m/n/10 /var/www/galleria/data/lib/element/category.php,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
+[]\T1/ptm/m/n/10 /var/www/galleria/data/lib/model/collection.php,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+[]\T1/ptm/m/n/10 /var/www/galleria/data/lib/view/categories.php,
+ []
+
+
+Overfull \hbox (49.0433pt too wide) in paragraph at lines 34--36
+[]\T1/ptm/m/n/10 /var/www/galleria/data/site/mvc/controller/admincontroller.php
+,
+ []
+
+
+Overfull \hbox (52.67334pt too wide) in paragraph at lines 36--38
+[]\T1/ptm/m/n/10 /var/www/galleria/data/site/mvc/controller/browsecontroller.ph
+p,
+ []
+
+
+Overfull \hbox (43.47339pt too wide) in paragraph at lines 38--40
+[]\T1/ptm/m/n/10 /var/www/galleria/data/site/mvc/controller/errorcontroller.php
+,
+ []
+
+
+Overfull \hbox (41.26341pt too wide) in paragraph at lines 40--42
+[]\T1/ptm/m/n/10 /var/www/galleria/data/site/mvc/controller/helpcontroller.php,
+
+ []
+
+
+Overfull \hbox (52.37314pt too wide) in paragraph at lines 42--44
+[]\T1/ptm/m/n/10 /var/www/galleria/data/site/mvc/controller/imagescontroller.ph
+p,
+ []
+
+
+Overfull \hbox (46.11351pt too wide) in paragraph at lines 44--46
+[]\T1/ptm/m/n/10 /var/www/galleria/data/site/mvc/controller/indexcontroller.php
+,
+ []
+
+
+Overfull \hbox (40.71336pt too wide) in paragraph at lines 46--48
+[]\T1/ptm/m/n/10 /var/www/galleria/data/site/mvc/controller/jsoncontroller.php,
+
+ []
+
+
+Overfull \hbox (44.60336pt too wide) in paragraph at lines 48--50
+[]\T1/ptm/m/n/10 /var/www/galleria/data/site/mvc/controller/logincontroller.php
+,
+ []
+
+
+Overfull \hbox (50.1533pt too wide) in paragraph at lines 50--52
+[]\T1/ptm/m/n/10 /var/www/galleria/data/site/mvc/controller/profilecontroller.p
+hp,
+ []
+
+
+Overfull \hbox (49.58325pt too wide) in paragraph at lines 52--54
+[]\T1/ptm/m/n/10 /var/www/galleria/data/site/mvc/controller/searchcontroller.ph
+p,
+ []
+
+
+Overfull \hbox (36.26341pt too wide) in paragraph at lines 54--56
+[]\T1/ptm/m/n/10 /var/www/galleria/data/site/mvc/controller/tagcontroller.php,
+ []
+
+
+Overfull \hbox (21.83374pt too wide) in paragraph at lines 56--57
+[]\T1/ptm/m/n/10 /var/www/galleria/data/site/mvc/model/adminmodel.php,
+ []
+
+
+Overfull \hbox (25.46378pt too wide) in paragraph at lines 57--58
+[]\T1/ptm/m/n/10 /var/www/galleria/data/site/mvc/model/browsemodel.php,
+ []
+
+
+Overfull \hbox (25.16357pt too wide) in paragraph at lines 58--59
+[]\T1/ptm/m/n/10 /var/www/galleria/data/site/mvc/model/imagesmodel.php,
+ []
+
+
+Overfull \hbox (18.90395pt too wide) in paragraph at lines 59--60
+[]\T1/ptm/m/n/10 /var/www/galleria/data/site/mvc/model/indexmodel.php,
+ []
+
+
+Overfull \hbox (13.5038pt too wide) in paragraph at lines 60--61
+[]\T1/ptm/m/n/10 /var/www/galleria/data/site/mvc/model/jsonmodel.php,
+ []
+
+
+Overfull \hbox (22.94374pt too wide) in paragraph at lines 61--62
+[]\T1/ptm/m/n/10 /var/www/galleria/data/site/mvc/model/profilemodel.php,
+ []
+
+
+Overfull \hbox (22.37369pt too wide) in paragraph at lines 62--63
+[]\T1/ptm/m/n/10 /var/www/galleria/data/site/mvc/model/searchmodel.php,
+ []
+
+
+Overfull \hbox (9.05385pt too wide) in paragraph at lines 63--64
+[]\T1/ptm/m/n/10 /var/www/galleria/data/site/mvc/model/tagmodel.php,
+ []
+
+[191
+
+
+] [192]
+Underfull \hbox (badness 10000) in paragraph at lines 275--276
+[]| \T1/ptm/m/n/10 PATH_-DATA_-SITE_-MVC_-CONTROLLER,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 278--279
+[]| \T1/ptm/m/n/10 PATH_-DATA_-SITE_-MVC_-VIEW_-LAYOUT,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--280
+[]| \T1/ptm/m/n/10 PATH_-DATA_-SITE_-MVC_-VIEW_-SCRIPTS,
+ []
+
+[193] [194] [195] [196] [197] [198]) (./refman.aux (./namespacelib.aux)
+(./namespacemvc.aux) (./classAdminModel.aux) (./classBrowseController.aux)
+(./classBrowseModel.aux) (./classErrorController.aux)
+(./classGalleria__Auth.aux) (./classGalleria__Auth__Model.aux)
+(./classGalleria__Auth__Object.aux) (./classGalleria__Auto__Configure.aux)
+(./classGalleria__Auto__Load.aux) (./classGalleria__Configuration.aux)
+(./classGalleria__Configuration__Object.aux) (./classGalleria__Controller.aux)
+(./classGalleria__Database.aux) (./classGalleria__Database__Pdo.aux)
+(./classGalleria__Element__Category.aux) (./classGalleria__Image.aux)
+(./classGalleria__Image__Object.aux) (./classGalleria__Model.aux)
+(./classGalleria__Model__Collection.aux) (./classGalleria__Requests.aux)
+(./classGalleria__Requests__Gets.aux) (./classGalleria__Requests__Posts.aux)
+(./classGalleria__Session.aux) (./classGalleria__Site.aux)
+(./classGalleria__View.aux) (./classGalleria__View__Categories.aux)
+(./classGalleria__View__Pictures.aux) (./classGalleria__View__Stats.aux)
+(./classGalleria__View__Tags.aux) (./classGalleria__Viewelement.aux)
+(./classHelpController.aux) (./classImagesController.aux)
+(./classImagesModel.aux) (./classIndexController.aux) (./classIndexModel.aux)
+(./classJsonController.aux) (./classJsonModel.aux) (./classLoginController.aux)
+(./classProfileController.aux) (./classProfileModel.aux)
+(./classSearchController.aux) (./classSearchModel.aux)
+(./classTagController.aux) (./classTagModel.aux) (./database_8dist_8php.aux)
+(./config_2database_8php.aux) (./lib_2database_8php.aux) (./site_8dist_8php.aux
+) (./index_8php.aux) (./auth_8php.aux) (./auth_2model_8php.aux)
+(./model_8php.aux) (./auth_2object_8php.aux) (./configuration_2object_8php.aux)
+(./image_2object_8php.aux) (./configure_8php.aux) (./load_8php.aux)
+(./configuration_8php.aux) (./controller_8php.aux) (./pdo_8php.aux)
+(./category_8php.aux) (./image_8php.aux) (./collection_8php.aux)
+(./requests_8php.aux) (./gets_8php.aux) (./posts_8php.aux) (./session_8php.aux)
+(./site_8php.aux) (./view_8php.aux) (./categories_8php.aux)
+(./pictures_8php.aux) (./stats_8php.aux) (./tags_8php.aux)
+(./viewelement_8php.aux) (./admincontroller_8php.aux)
+(./browsecontroller_8php.aux) (./errorcontroller_8php.aux)
+(./helpcontroller_8php.aux) (./imagescontroller_8php.aux)
+(./indexcontroller_8php.aux) (./jsoncontroller_8php.aux)
+(./logincontroller_8php.aux) (./profilecontroller_8php.aux)
+(./searchcontroller_8php.aux) (./tagcontroller_8php.aux) (./adminmodel_8php.aux
+) (./browsemodel_8php.aux) (./imagesmodel_8php.aux) (./indexmodel_8php.aux)
+(./jsonmodel_8php.aux) (./profilemodel_8php.aux) (./searchmodel_8php.aux)
+(./tagmodel_8php.aux)) ) 
+Here is how much of TeX's memory you used:
+ 3949 strings out of 495069
+ 100385 string characters out of 1183034
+ 115212 words of memory out of 3000000
+ 6257 multiletter control sequences out of 10000+50000
+ 41948 words of font info for 44 fonts, out of 3000000 for 5000
+ 28 hyphenation exceptions out of 8191
+ 37i,12n,43p,1545b,411s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</us
+r/share/texmf-dist/fonts/type1/bluesky/cm/cmmi10.pfb></usr/share/texmf-dist/fon
+ts/type1/bluesky/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/u
+crr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/t
+exmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/
+urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on refman.pdf (204 pages, 1058750 bytes).
+PDF statistics:
+ 1536 PDF objects out of 1728 (max. 8388607)
+ 0 named destinations out of 1000 (max. 131072)
+ 711 words of extra memory for PDF output out of 10000 (max. 10000000)
+

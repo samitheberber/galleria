@@ -1,0 +1,199 @@
+\section{Galleria\_\-Auth\_\-Object Class Reference}
+\label{classGalleria__Auth__Object}\index{Galleria\_\-Auth\_\-Object@{Galleria\_\-Auth\_\-Object}}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf \_\-\_\-construct} (\$id, \$username, \$usergroups, \$name)
+\item 
+{\bf logged} ()
+\item 
+{\bf isInAdminGroup} ()
+\item 
+{\bf getUid} ()
+\item 
+{\bf getUsergroups} ()
+\item 
+{\bf getSQLGroups} ()
+\item 
+{\bf hasGroups} ()
+\item 
+{\bf update} (\$username, \$groups, \$name)
+\item 
+{\bf getName} ()
+\item 
+{\bf getUsername} ()
+\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+{\bf \$\_\-id}
+\item 
+{\bf \$\_\-username}
+\item 
+{\bf \$\_\-usergroups}
+\item 
+{\bf \$\_\-name}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 19 of file object.php.
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Galleria\_\-Auth\_\-Object@{Galleria\_\-Auth\_\-Object}!\_\-\_\-construct@{\_\-\_\-construct}}
+\index{\_\-\_\-construct@{\_\-\_\-construct}!Galleria_Auth_Object@{Galleria\_\-Auth\_\-Object}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Auth\_\-Object.\_\-\_\-construct (\$ {\em id}, \$ {\em username}, \$ {\em usergroups}, \$ {\em name})}\label{classGalleria__Auth__Object_03788555b0f602e9b1fbe1ce3c2db3da}
+
+
+\#@- Creates object.
+
+This function is the constructor of \doxyref{Galleria\_\-Auth\_\-Object}{p.}{classGalleria__Auth__Object}.  public \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em integer}]\$id \item[{\em string}]\$username \item[{\em array}]\$usergroups \item[{\em string}]\$name \end{description}
+\end{Desc}
+
+
+Definition at line 57 of file object.php.
+
+\subsection{Member Function Documentation}
+\index{Galleria\_\-Auth\_\-Object@{Galleria\_\-Auth\_\-Object}!logged@{logged}}
+\index{logged@{logged}!Galleria_Auth_Object@{Galleria\_\-Auth\_\-Object}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Auth\_\-Object.logged ()}\label{classGalleria__Auth__Object_23367d3719a16b7d92e5651b2b007aa3}
+
+
+Is user logged in?
+
+Returns information about if user is logged in.  public \begin{Desc}
+\item[Returns:]boolean \end{Desc}
+
+
+Definition at line 72 of file object.php.\index{Galleria\_\-Auth\_\-Object@{Galleria\_\-Auth\_\-Object}!isInAdminGroup@{isInAdminGroup}}
+\index{isInAdminGroup@{isInAdminGroup}!Galleria_Auth_Object@{Galleria\_\-Auth\_\-Object}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Auth\_\-Object.isInAdminGroup ()}\label{classGalleria__Auth__Object_2178e1db48f6be9d6ff9916c74dae4e6}
+
+
+Is user in admin group?
+
+Returns information about if user is administrator.  public \begin{Desc}
+\item[Returns:]boolean \end{Desc}
+
+
+Definition at line 84 of file object.php.\index{Galleria\_\-Auth\_\-Object@{Galleria\_\-Auth\_\-Object}!getUid@{getUid}}
+\index{getUid@{getUid}!Galleria_Auth_Object@{Galleria\_\-Auth\_\-Object}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Auth\_\-Object.getUid ()}\label{classGalleria__Auth__Object_ee48cca4ab87e203a59bfb60a4ffdb70}
+
+
+Gives user id.
+
+Returns id of user.  public \begin{Desc}
+\item[Returns:]integer \end{Desc}
+
+
+Definition at line 102 of file object.php.\index{Galleria\_\-Auth\_\-Object@{Galleria\_\-Auth\_\-Object}!getUsergroups@{getUsergroups}}
+\index{getUsergroups@{getUsergroups}!Galleria_Auth_Object@{Galleria\_\-Auth\_\-Object}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Auth\_\-Object.getUsergroups ()}\label{classGalleria__Auth__Object_a1d323bc429b51356e27c6a0268134f1}
+
+
+Gives groups of user.
+
+Returns all groups where user is in.  public \begin{Desc}
+\item[Returns:]array \end{Desc}
+
+
+Definition at line 114 of file object.php.\index{Galleria\_\-Auth\_\-Object@{Galleria\_\-Auth\_\-Object}!getSQLGroups@{getSQLGroups}}
+\index{getSQLGroups@{getSQLGroups}!Galleria_Auth_Object@{Galleria\_\-Auth\_\-Object}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Auth\_\-Object.getSQLGroups ()}\label{classGalleria__Auth__Object_a8ae9f5683b211e8f69616b1b54f3ec2}
+
+
+Gives groups of user.
+
+Return all groups where user is in, but in sql-related string.  public \begin{Desc}
+\item[Returns:]string \end{Desc}
+
+
+Definition at line 130 of file object.php.\index{Galleria\_\-Auth\_\-Object@{Galleria\_\-Auth\_\-Object}!hasGroups@{hasGroups}}
+\index{hasGroups@{hasGroups}!Galleria_Auth_Object@{Galleria\_\-Auth\_\-Object}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Auth\_\-Object.hasGroups ()}\label{classGalleria__Auth__Object_4a15dab9806cf5eeed709d95a43e1bf1}
+
+
+Has groups?
+
+Return boolean for if user has groups.  public \begin{Desc}
+\item[Returns:]boolean \end{Desc}
+
+
+Definition at line 142 of file object.php.\index{Galleria\_\-Auth\_\-Object@{Galleria\_\-Auth\_\-Object}!update@{update}}
+\index{update@{update}!Galleria_Auth_Object@{Galleria\_\-Auth\_\-Object}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Auth\_\-Object.update (\$ {\em username}, \$ {\em groups}, \$ {\em name})}\label{classGalleria__Auth__Object_01f1802e065e9e6e514b38b5a63d387f}
+
+
+Updates object.
+
+Updates this object with new values, that could be changed.  public \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em string}]\$username \item[{\em array}]\$groups \item[{\em string}]\$name \end{description}
+\end{Desc}
+
+
+Definition at line 156 of file object.php.\index{Galleria\_\-Auth\_\-Object@{Galleria\_\-Auth\_\-Object}!getName@{getName}}
+\index{getName@{getName}!Galleria_Auth_Object@{Galleria\_\-Auth\_\-Object}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Auth\_\-Object.getName ()}\label{classGalleria__Auth__Object_c2ec34d1f9199956d0f37c9829efc489}
+
+
+Give name.
+
+This function returns name of current user.  public \begin{Desc}
+\item[Returns:]string \end{Desc}
+
+
+Definition at line 170 of file object.php.\index{Galleria\_\-Auth\_\-Object@{Galleria\_\-Auth\_\-Object}!getUsername@{getUsername}}
+\index{getUsername@{getUsername}!Galleria_Auth_Object@{Galleria\_\-Auth\_\-Object}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Auth\_\-Object.getUsername ()}\label{classGalleria__Auth__Object_daa0989b59e4867b30632ce53357e084}
+
+
+Give username.
+
+This function returns username of current user.  public \begin{Desc}
+\item[Returns:]string \end{Desc}
+
+
+Definition at line 182 of file object.php.
+
+\subsection{Member Data Documentation}
+\index{Galleria\_\-Auth\_\-Object@{Galleria\_\-Auth\_\-Object}!\$\_\-id@{\$\_\-id}}
+\index{\$\_\-id@{\$\_\-id}!Galleria_Auth_Object@{Galleria\_\-Auth\_\-Object}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Auth\_\-Object.\$\_\-id\hspace{0.3cm}{\tt  [protected]}}\label{classGalleria__Auth__Object_272eacaaf5101e7ef01071b67915591f}
+
+
+
+
+Definition at line 29 of file object.php.\index{Galleria\_\-Auth\_\-Object@{Galleria\_\-Auth\_\-Object}!\$\_\-username@{\$\_\-username}}
+\index{\$\_\-username@{\$\_\-username}!Galleria_Auth_Object@{Galleria\_\-Auth\_\-Object}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Auth\_\-Object.\$\_\-username\hspace{0.3cm}{\tt  [protected]}}\label{classGalleria__Auth__Object_c370a01de634e22f5aa48c7c10e63892}
+
+
+
+
+Definition at line 34 of file object.php.\index{Galleria\_\-Auth\_\-Object@{Galleria\_\-Auth\_\-Object}!\$\_\-usergroups@{\$\_\-usergroups}}
+\index{\$\_\-usergroups@{\$\_\-usergroups}!Galleria_Auth_Object@{Galleria\_\-Auth\_\-Object}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Auth\_\-Object.\$\_\-usergroups\hspace{0.3cm}{\tt  [protected]}}\label{classGalleria__Auth__Object_c84cf59220b177d8445243d5a031b330}
+
+
+
+
+Definition at line 39 of file object.php.\index{Galleria\_\-Auth\_\-Object@{Galleria\_\-Auth\_\-Object}!\$\_\-name@{\$\_\-name}}
+\index{\$\_\-name@{\$\_\-name}!Galleria_Auth_Object@{Galleria\_\-Auth\_\-Object}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Auth\_\-Object.\$\_\-name\hspace{0.3cm}{\tt  [protected]}}\label{classGalleria__Auth__Object_73388ef8e48557f7e65769806682e0f2}
+
+
+
+
+Definition at line 44 of file object.php.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/var/www/galleria/data/lib/auth/{\bf object.php}\end{CompactItemize}

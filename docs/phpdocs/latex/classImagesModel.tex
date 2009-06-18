@@ -1,0 +1,148 @@
+\section{ImagesModel Class Reference}
+\label{classImagesModel}\index{ImagesModel@{ImagesModel}}
+Inheritance diagram for ImagesModel:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=91pt]{classImagesModel__inherit__graph}
+\end{center}
+\end{figure}
+Collaboration diagram for ImagesModel:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=91pt]{classImagesModel__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf getImageInfo} (\$pid)
+\item 
+{\bf getImageTags} (\$pid)
+\item 
+{\bf fileFound} (\$pid)
+\item 
+{\bf checkPermission} (\$pid)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 19 of file imagesmodel.php.
+
+\subsection{Member Function Documentation}
+\index{ImagesModel@{ImagesModel}!getImageInfo@{getImageInfo}}
+\index{getImageInfo@{getImageInfo}!ImagesModel@{ImagesModel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}ImagesModel.getImageInfo (\$ {\em pid})}\label{classImagesModel_1f2993d2b8a0bf2736ade7970ed6a1e1}
+
+
+Gives image info.
+
+This function gets image information from database and returns it.  public \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em integer}]\$pid \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]\doxyref{Galleria\_\-Image\_\-Object}{p.}{classGalleria__Image__Object} \end{Desc}
+
+
+Definition at line 30 of file imagesmodel.php.
+
+References Galleria\_\-Model.\_\-getConnection(), Galleria\_\-Model.\_\-prepareIn(), Galleria\_\-Auth.getObject(), and Galleria\_\-Auth.isLogged().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classImagesModel_1f2993d2b8a0bf2736ade7970ed6a1e1_cgraph}
+\end{center}
+\end{figure}
+\index{ImagesModel@{ImagesModel}!getImageTags@{getImageTags}}
+\index{getImageTags@{getImageTags}!ImagesModel@{ImagesModel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}ImagesModel.getImageTags (\$ {\em pid})}\label{classImagesModel_d71ce9d4c549199ac980c24af042accf}
+
+
+Gives image tags.
+
+This function gets image related tags from database and retruns them.  public \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em integer}]\$pid \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]array \end{Desc}
+
+
+Definition at line 57 of file imagesmodel.php.
+
+References Galleria\_\-Model.\_\-fetchObjects(), and Galleria\_\-Model.\_\-getConnection().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=287pt]{classImagesModel_d71ce9d4c549199ac980c24af042accf_cgraph}
+\end{center}
+\end{figure}
+\index{ImagesModel@{ImagesModel}!fileFound@{fileFound}}
+\index{fileFound@{fileFound}!ImagesModel@{ImagesModel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}ImagesModel.fileFound (\$ {\em pid})}\label{classImagesModel_529cf5302210b54f2f38e7bdc66ece6c}
+
+
+Is file found?
+
+This function checks if file is set in database.  public \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em integer}]\$pid \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]boolean \end{Desc}
+
+
+Definition at line 73 of file imagesmodel.php.
+
+References Galleria\_\-Model.\_\-fetchObjects(), and Galleria\_\-Model.\_\-getConnection().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=275pt]{classImagesModel_529cf5302210b54f2f38e7bdc66ece6c_cgraph}
+\end{center}
+\end{figure}
+\index{ImagesModel@{ImagesModel}!checkPermission@{checkPermission}}
+\index{checkPermission@{checkPermission}!ImagesModel@{ImagesModel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}ImagesModel.checkPermission (\$ {\em pid})}\label{classImagesModel_f5bcf93f596feb0717c2227c7b5eedb1}
+
+
+Check permission.
+
+This function checks if user has permission to see selected picture.  public \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em integer}]\$pid \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]boolean \end{Desc}
+
+
+Definition at line 89 of file imagesmodel.php.
+
+References Galleria\_\-Model.\_\-getConnection(), Galleria\_\-Model.\_\-prepareIn(), Galleria\_\-Auth.getObject(), and Galleria\_\-Auth.isLogged().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{classImagesModel_f5bcf93f596feb0717c2227c7b5eedb1_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/var/www/galleria/data/site/mvc/model/{\bf imagesmodel.php}\end{CompactItemize}

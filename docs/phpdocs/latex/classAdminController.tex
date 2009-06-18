@@ -1,0 +1,216 @@
+\section{AdminController Class Reference}
+\label{classAdminController}\index{AdminController@{AdminController}}
+Inheritance diagram for AdminController:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=74pt]{classAdminController__inherit__graph}
+\end{center}
+\end{figure}
+Collaboration diagram for AdminController:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=74pt]{classAdminController__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf indexAction} ()
+\item 
+{\bf usercontrolAction} ()
+\item 
+{\bf picturecontrolAction} ()
+\item 
+{\bf before} ()
+\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf \_\-modifyUsers} (\$users, \$groups)
+\item 
+{\bf \_\-modifyGroups} (\$gid, \$groups)
+\item 
+{\bf \_\-insertPicture} (\$picdata)
+\item 
+{\bf \_\-imageInfo} (\$file)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 19 of file admincontroller.php.
+
+\subsection{Member Function Documentation}
+\index{AdminController@{AdminController}!indexAction@{indexAction}}
+\index{indexAction@{indexAction}!AdminController@{AdminController}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}AdminController.indexAction ()}\label{classAdminController_8c2e221bab6e362ff45a8b03a7b13410}
+
+
+Index page.
+
+Index page action. Sets up Admin index page.  public 
+
+Definition at line 28 of file admincontroller.php.\index{AdminController@{AdminController}!usercontrolAction@{usercontrolAction}}
+\index{usercontrolAction@{usercontrolAction}!AdminController@{AdminController}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}AdminController.usercontrolAction ()}\label{classAdminController_9cb5a488078ec322d8c798e9dcf1100e}
+
+
+User control page.
+
+This page handles all user and group related functionality.  public 
+
+Definition at line 38 of file admincontroller.php.
+
+References Galleria\_\-Controller.\_\-getModel(), \_\-modifyUsers(), and Galleria\_\-Controller.getView().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{classAdminController_9cb5a488078ec322d8c798e9dcf1100e_cgraph}
+\end{center}
+\end{figure}
+\index{AdminController@{AdminController}!picturecontrolAction@{picturecontrolAction}}
+\index{picturecontrolAction@{picturecontrolAction}!AdminController@{AdminController}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}AdminController.picturecontrolAction ()}\label{classAdminController_1e9ce2435289ede5f6fb1ea05e3d49fd}
+
+
+Picture control page.
+
+This function handles inserted pictures.  public 
+
+Definition at line 68 of file admincontroller.php.
+
+References Galleria\_\-Controller.\_\-getModel(), \_\-insertPicture(), and Galleria\_\-Controller.getView().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{classAdminController_1e9ce2435289ede5f6fb1ea05e3d49fd_cgraph}
+\end{center}
+\end{figure}
+\index{AdminController@{AdminController}!before@{before}}
+\index{before@{before}!AdminController@{AdminController}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}AdminController.before ()}\label{classAdminController_f670c8e0e7cd716546804ccd09a7a535}
+
+
+Do these before.
+
+This function checks if user has right to be in these pages.  public \begin{Desc}
+\item[Returns:]boolean \end{Desc}
+
+
+Reimplemented from {\bf Galleria\_\-Controller} \doxyref{}{p.}{classGalleria__Controller_ee0f1709a351728850747f48a956ef18}.
+
+Definition at line 84 of file admincontroller.php.
+
+References Galleria\_\-Auth.getObject(), Galleria\_\-Auth.isLogged(), and Galleria\_\-Controller.setNext().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{classAdminController_f670c8e0e7cd716546804ccd09a7a535_cgraph}
+\end{center}
+\end{figure}
+\index{AdminController@{AdminController}!\_\-modifyUsers@{\_\-modifyUsers}}
+\index{\_\-modifyUsers@{\_\-modifyUsers}!AdminController@{AdminController}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}AdminController.\_\-modifyUsers (\$ {\em users}, \$ {\em groups})\hspace{0.3cm}{\tt  [protected]}}\label{classAdminController_ce0fcab9a05e12f09a4d611bf97747a3}
+
+
+Modify users.
+
+This function formats users.  private \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em array}]\$users \item[{\em array}]\$groups \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]array \end{Desc}
+
+
+Definition at line 104 of file admincontroller.php.
+
+References \_\-modifyGroups().
+
+Referenced by usercontrolAction().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{classAdminController_ce0fcab9a05e12f09a4d611bf97747a3_cgraph}
+\end{center}
+\end{figure}
+\index{AdminController@{AdminController}!\_\-modifyGroups@{\_\-modifyGroups}}
+\index{\_\-modifyGroups@{\_\-modifyGroups}!AdminController@{AdminController}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}AdminController.\_\-modifyGroups (\$ {\em gid}, \$ {\em groups})\hspace{0.3cm}{\tt  [protected]}}\label{classAdminController_c35030aca76917e29288b870ecfac4ef}
+
+
+Modifies groups.
+
+This function formats groups.  private \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em integer}]\$gid \item[{\em array}]\$groups \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]stdClass \end{Desc}
+
+
+Definition at line 138 of file admincontroller.php.
+
+Referenced by \_\-modifyUsers().\index{AdminController@{AdminController}!\_\-insertPicture@{\_\-insertPicture}}
+\index{\_\-insertPicture@{\_\-insertPicture}!AdminController@{AdminController}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}AdminController.\_\-insertPicture (\$ {\em picdata})\hspace{0.3cm}{\tt  [protected]}}\label{classAdminController_48ed1d1cf33c6f5b3c197598dff69453}
+
+
+Insert picture.
+
+This function inserts picture into tmp file.  private \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em array}]\$picdata  PATH\_\-DATA\_\-SITE\_\-IMAGES \end{description}
+\end{Desc}
+
+
+Definition at line 159 of file admincontroller.php.
+
+References Galleria\_\-Controller.\_\-getModel(), \_\-imageInfo(), Galleria\_\-Controller.getView(), and Galleria\_\-Image.transform().
+
+Referenced by picturecontrolAction().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{classAdminController_48ed1d1cf33c6f5b3c197598dff69453_cgraph}
+\end{center}
+\end{figure}
+\index{AdminController@{AdminController}!\_\-imageInfo@{\_\-imageInfo}}
+\index{\_\-imageInfo@{\_\-imageInfo}!AdminController@{AdminController}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}AdminController.\_\-imageInfo (\$ {\em file})\hspace{0.3cm}{\tt  [protected]}}\label{classAdminController_7e4e6d1ad5238837c57a18a0bf342a71}
+
+
+Gives image information.
+
+This function gives information about specific image.  private \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em string}]\$file \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]stdClass \end{Desc}
+
+
+Definition at line 184 of file admincontroller.php.
+
+Referenced by \_\-insertPicture().
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/var/www/galleria/data/site/mvc/controller/{\bf admincontroller.php}\end{CompactItemize}

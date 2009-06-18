@@ -1,0 +1,165 @@
+\section{JsonController Class Reference}
+\label{classJsonController}\index{JsonController@{JsonController}}
+Inheritance diagram for JsonController:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=74pt]{classJsonController__inherit__graph}
+\end{center}
+\end{figure}
+Collaboration diagram for JsonController:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=74pt]{classJsonController__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf indexAction} ()
+\item 
+{\bf getAction} ()
+\item 
+{\bf postAction} ()
+\item 
+{\bf before} ()
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf \_\-parseCatGroups} (\$data)
+\item 
+{\bf \_\-parseCatsToArray} (\$cats, \$parent=null)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 19 of file jsoncontroller.php.
+
+\subsection{Member Function Documentation}
+\index{JsonController@{JsonController}!indexAction@{indexAction}}
+\index{indexAction@{indexAction}!JsonController@{JsonController}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}JsonController.indexAction ()}\label{classJsonController_f7aef10009e19696a6c903d138f88a5e}
+
+
+Index page.
+
+Index page action. Sets up Json index page.  public 
+
+Definition at line 28 of file jsoncontroller.php.
+
+References Galleria\_\-Controller.getView().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{classJsonController_f7aef10009e19696a6c903d138f88a5e_cgraph}
+\end{center}
+\end{figure}
+\index{JsonController@{JsonController}!getAction@{getAction}}
+\index{getAction@{getAction}!JsonController@{JsonController}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}JsonController.getAction ()}\label{classJsonController_6924ccaeb485c3b40e55b4cb763faf79}
+
+
+Get page.
+
+Get page action. Handles all get requests.  public 
+
+Definition at line 48 of file jsoncontroller.php.
+
+References Galleria\_\-Controller.\_\-getModel(), Galleria\_\-Element\_\-Category.create(), Galleria\_\-Auth.getObject(), Galleria\_\-Controller.getView(), Galleria\_\-Element\_\-Category.howMany(), Galleria\_\-Auth.isLogged(), and Galleria\_\-Element\_\-Category.jsonFormat().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{classJsonController_6924ccaeb485c3b40e55b4cb763faf79_cgraph}
+\end{center}
+\end{figure}
+\index{JsonController@{JsonController}!postAction@{postAction}}
+\index{postAction@{postAction}!JsonController@{JsonController}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}JsonController.postAction ()}\label{classJsonController_79d897382e05189e189a3249d62c9c44}
+
+
+Post page.
+
+Post page action. Handles all post requests.  public 
+
+Definition at line 116 of file jsoncontroller.php.
+
+References Galleria\_\-Controller.\_\-getModel(), \_\-parseCatGroups(), \_\-parseCatsToArray(), Galleria\_\-Image.deleteFiles(), Galleria\_\-Auth.getObject(), Galleria\_\-Controller.getView(), and Galleria\_\-Auth.isLogged().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{classJsonController_79d897382e05189e189a3249d62c9c44_cgraph}
+\end{center}
+\end{figure}
+\index{JsonController@{JsonController}!before@{before}}
+\index{before@{before}!JsonController@{JsonController}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}JsonController.before ()}\label{classJsonController_551bb2fa61f3c738987afaaaa37e9344}
+
+
+Do before.
+
+Does these things before any action. Unsets layout rendering.  public 
+
+Reimplemented from {\bf Galleria\_\-Controller} \doxyref{}{p.}{classGalleria__Controller_ee0f1709a351728850747f48a956ef18}.
+
+Definition at line 177 of file jsoncontroller.php.
+
+References Galleria\_\-Controller.getView().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=170pt]{classJsonController_551bb2fa61f3c738987afaaaa37e9344_cgraph}
+\end{center}
+\end{figure}
+\index{JsonController@{JsonController}!\_\-parseCatGroups@{\_\-parseCatGroups}}
+\index{\_\-parseCatGroups@{\_\-parseCatGroups}!JsonController@{JsonController}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}JsonController.\_\-parseCatGroups (\$ {\em data})\hspace{0.3cm}{\tt  [private]}}\label{classJsonController_2fcb60f4c769a56f1d255f873cf71df3}
+
+
+Parse category groups.
+
+This function parses groups for categories.  private \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em string}]\$\doxyref{data}{p.}{namespacedata} \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]array \end{Desc}
+
+
+Definition at line 191 of file jsoncontroller.php.
+
+Referenced by postAction().\index{JsonController@{JsonController}!\_\-parseCatsToArray@{\_\-parseCatsToArray}}
+\index{\_\-parseCatsToArray@{\_\-parseCatsToArray}!JsonController@{JsonController}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}JsonController.\_\-parseCatsToArray (\$ {\em cats}, \$ {\em parent} = {\tt null})\hspace{0.3cm}{\tt  [private]}}\label{classJsonController_c4bd3cf8ff618dba2c9cb62bda87fd93}
+
+
+Parse Cats 2 Array.
+
+This function parses categories to array.  private \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em array}]\$cats \item[{\em integer}]\$parent \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]array \end{Desc}
+
+
+Definition at line 209 of file jsoncontroller.php.
+
+Referenced by postAction().
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/var/www/galleria/data/site/mvc/controller/{\bf jsoncontroller.php}\end{CompactItemize}

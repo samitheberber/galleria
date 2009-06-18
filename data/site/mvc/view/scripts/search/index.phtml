@@ -1,0 +1,29 @@
+<form action="<?php echo $html_url;?>search/" method="get" id="ajaxsearch">
+    <fieldset>
+
+        <legend>Picture Search</legend>
+
+        <label for="search_text">Text</label>
+        <input type="text" name="search_text" id="search_text" <?php if ($view->stext): echo 'value="' . $view->stext . '" '; endif;?>/>
+
+        <label for="search_pg">Photographer</label>
+        <input type="text" name="search_pg" id="search_pg" <?php if ($view->spg): echo 'value="' . $view->spg . '" '; endif;?>/>
+
+        <label for="search_year">Year</label>
+        <input type="text" name="search_year" id="search_year" <?php if ($view->syear): echo 'value="' . $view->syear . '" '; endif;?>/>
+
+        <input type="submit" type="search" id="search_submit" />
+
+    </fieldset>
+</form>
+
+<?php
+if ($view->data) { ?>
+<div id="searchcontent">
+<?php
+foreach ($view->data as $pic) {
+    echo '<a href="' . $html_url . 'images/?id=' . $pic->pid . '"><img src="' . $html_url . 'images/file/?size=s&amp;id=' . $pic->pid . '" alt="' . $pic->desc . '" /></a>';
+}
+?>
+</div>
+<?php } ?>

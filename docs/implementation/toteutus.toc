@@ -1,0 +1,17 @@
+\select@language {finnish}
+\contentsline {section}{\numberline {1}Johdanto}{1}
+\contentsline {subsection}{\numberline {1.1}J\"arjestelm\"an tarkoitus}{1}
+\contentsline {subsection}{\numberline {1.2}Toimintaymp\"arist\"o}{1}
+\contentsline {subsection}{\numberline {1.3}Rajaukset}{1}
+\contentsline {subsection}{\numberline {1.4}Toteutusymp\"arist\"o}{2}
+\contentsline {section}{\numberline {2}Ohjemiston yleisrakenne}{3}
+\contentsline {section}{\numberline {3}J\"arjestelm\"an komponentit}{4}
+\contentsline {section}{\numberline {4}Asennustiedot}{5}
+\contentsline {subsection}{\numberline {4.1}Tiedostojen hakeminen}{5}
+\contentsline {subsection}{\numberline {4.2}Asetusten luominen}{5}
+\contentsline {subsection}{\numberline {4.3}Tietokannan alustaminen}{5}
+\contentsline {subsection}{\numberline {4.4}Valmis k\"aytt\"o\"on}{6}
+\contentsline {section}{\numberline {5}K\"aynnistys- / k\"aytt\"oohjeet}{7}
+\contentsline {section}{Liitteet}{}
+ \contentsline {section}{\hspace {0.5cm}1 Suunnitteludokumentti}{}
+ \contentsline {section}{\hspace {0.5cm}2 Referenssimanuaali}{}

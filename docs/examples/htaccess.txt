@@ -1,0 +1,9 @@
+# Example .htaccess
+
+RewriteEngine on
+RewriteBase /~username/galleria
+RewriteRule !\.(js|ico|gif|jpg|png|css|html)$ index.php
+
+# Secure HTTP
+RewriteCond %{HTTPS} !=on
+RewriteRule ^.*$ https://%{SERVER_NAME}%{REQUEST_URI} [R,L]

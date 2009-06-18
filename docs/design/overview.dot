@@ -1,0 +1,41 @@
+strict digraph Overview {
+    galleria [
+        label="Galleria"
+        peripheries=2
+    ]
+
+    {
+        rank=same;
+        visitor [
+            label="Vierailija"
+        ]
+
+        ruser [
+            label="Rekisteröitynyt käyttäjä"
+        ]
+
+        admin [
+            label="Ylläpitäjä"
+        ]
+    }
+
+    admin->ruser [
+        label="<<Extends>>"
+    ]
+
+    ruser->visitor [
+        label="<<Extends>>"
+    ]
+
+    visitor->galleria [
+        label="Kuvien selaaminen\lKuvien hakeminen\lKuvien tietojen katsominen\lApusivun lukeminen\l"
+    ]
+
+    ruser->galleria [
+        label="Rajattujen kuvien katsominen\lProfiili\l"
+    ]
+
+    admin->galleria [
+        label="Käyttäjähallinta\lKuvien hallinta\lKategorioiden hallinta\l"
+    ]
+}

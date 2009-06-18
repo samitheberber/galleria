@@ -1,0 +1,149 @@
+\section{Galleria\_\-Auth Class Reference}
+\label{classGalleria__Auth}\index{Galleria\_\-Auth@{Galleria\_\-Auth}}
+\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+static {\bf tryLog} (\$username, \$password)
+\item 
+static {\bf isLogged} ()
+\item 
+static {\bf getObject} ()
+\item 
+static {\bf logOut} ()
+\item 
+static {\bf init} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 19 of file auth.php.
+
+\subsection{Member Function Documentation}
+\index{Galleria\_\-Auth@{Galleria\_\-Auth}!tryLog@{tryLog}}
+\index{tryLog@{tryLog}!Galleria_Auth@{Galleria\_\-Auth}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static Galleria\_\-Auth.tryLog (\$ {\em username}, \$ {\em password})\hspace{0.3cm}{\tt  [static]}}\label{classGalleria__Auth_57fdce8d1415ef742cb3e77fd2c560fa}
+
+
+The logging function.
+
+This is the function, which should be used on logging in.  public
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em string}]\$username \item[{\em string}]\$password \end{description}
+\end{Desc}
+
+
+Definition at line 31 of file auth.php.
+
+References Galleria\_\-Session.set().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{classGalleria__Auth_57fdce8d1415ef742cb3e77fd2c560fa_cgraph}
+\end{center}
+\end{figure}
+\index{Galleria\_\-Auth@{Galleria\_\-Auth}!isLogged@{isLogged}}
+\index{isLogged@{isLogged}!Galleria_Auth@{Galleria\_\-Auth}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static Galleria\_\-Auth.isLogged ()\hspace{0.3cm}{\tt  [static]}}\label{classGalleria__Auth_a09d4e4651ca36a7b5f9c044fe87f86e}
+
+
+Checks if already logged in.
+
+This function checks if user is already logged in and returns the information.  public
+
+\begin{Desc}
+\item[Returns:]boolean \end{Desc}
+
+
+Definition at line 50 of file auth.php.
+
+References Galleria\_\-Session.get().
+
+Referenced by ProfileController.before(), LoginController.before(), AdminController.before(), ImagesModel.checkPermission(), JsonController.getAction(), BrowseModel.getCategories(), BrowseModel.getCatName(), ImagesModel.getImageInfo(), IndexModel.getLatestPictures(), TagModel.getPics(), BrowseModel.getPictures(), Galleria\_\-Model\_\-Collection.getSearchPictures(), IndexModel.getStats(), Galleria\_\-Model\_\-Collection.getTags(), Galleria\_\-View\_\-Tags.lists(), and JsonController.postAction().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{classGalleria__Auth_a09d4e4651ca36a7b5f9c044fe87f86e_cgraph}
+\end{center}
+\end{figure}
+\index{Galleria\_\-Auth@{Galleria\_\-Auth}!getObject@{getObject}}
+\index{getObject@{getObject}!Galleria_Auth@{Galleria\_\-Auth}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static Galleria\_\-Auth.getObject ()\hspace{0.3cm}{\tt  [static]}}\label{classGalleria__Auth_2346b7b64e31f68b4cbc2466171acf7f}
+
+
+Gives auth object.
+
+This function returns auth object.  public
+
+\begin{Desc}
+\item[Returns:]\doxyref{Galleria\_\-Auth\_\-Object}{p.}{classGalleria__Auth__Object} \end{Desc}
+
+
+Definition at line 64 of file auth.php.
+
+References Galleria\_\-Session.get().
+
+Referenced by AdminModel.addPicture(), JsonModel.addTag(), AdminController.before(), JsonModel.changeCat(), JsonModel.changeDesc(), JsonModel.changePg(), JsonModel.changeYear(), ImagesModel.checkPermission(), JsonModel.deletePicTag(), JsonController.getAction(), BrowseModel.getCategories(), BrowseModel.getCatName(), ImagesModel.getImageInfo(), IndexModel.getLatestPictures(), TagModel.getPics(), BrowseModel.getPictures(), Galleria\_\-Model\_\-Collection.getSearchPictures(), IndexModel.getStats(), Galleria\_\-Model\_\-Collection.getTags(), ProfileController.indexAction(), Galleria\_\-View\_\-Tags.lists(), JsonModel.pictureVisibility(), and JsonController.postAction().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{classGalleria__Auth_2346b7b64e31f68b4cbc2466171acf7f_cgraph}
+\end{center}
+\end{figure}
+\index{Galleria\_\-Auth@{Galleria\_\-Auth}!logOut@{logOut}}
+\index{logOut@{logOut}!Galleria_Auth@{Galleria\_\-Auth}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static Galleria\_\-Auth.logOut ()\hspace{0.3cm}{\tt  [static]}}\label{classGalleria__Auth_1b733028a0220b8138a557cecf685938}
+
+
+Logs out.
+
+This function logs out by deleting auth object from session.  public 
+
+Definition at line 76 of file auth.php.
+
+References Galleria\_\-Session.del().
+
+Referenced by LoginController.outAction().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=153pt]{classGalleria__Auth_1b733028a0220b8138a557cecf685938_cgraph}
+\end{center}
+\end{figure}
+\index{Galleria\_\-Auth@{Galleria\_\-Auth}!init@{init}}
+\index{init@{init}!Galleria_Auth@{Galleria\_\-Auth}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static Galleria\_\-Auth.init ()\hspace{0.3cm}{\tt  [static]}}\label{classGalleria__Auth_050cc44e71597a426c0fbc0559919334}
+
+
+Initialize auth object.
+
+This function gets new information for auth object and updates it.  public 
+
+Definition at line 88 of file auth.php.
+
+References Galleria\_\-Session.set().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=146pt]{classGalleria__Auth_050cc44e71597a426c0fbc0559919334_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/var/www/galleria/data/lib/{\bf auth.php}\end{CompactItemize}

@@ -1,0 +1,853 @@
+\begin{theindex}
+
+  \item {/var/www/galleria/data/bootstrap.php}, 139
+  \item {/var/www/galleria/data/config/database.dist.php}, 142
+  \item {/var/www/galleria/data/config/database.php}, 143
+  \item {/var/www/galleria/data/config/site.dist.php}, 145
+  \item {/var/www/galleria/data/html/index.php}, 146
+  \item {/var/www/galleria/data/lib/auth.php}, 147
+  \item {/var/www/galleria/data/lib/auth/model.php}, 148
+  \item {/var/www/galleria/data/lib/auth/object.php}, 150
+  \item {/var/www/galleria/data/lib/auto/configure.php}, 153
+  \item {/var/www/galleria/data/lib/auto/load.php}, 154
+  \item {/var/www/galleria/data/lib/configuration.php}, 155
+  \item {/var/www/galleria/data/lib/configuration/object.php}, 151
+  \item {/var/www/galleria/data/lib/controller.php}, 156
+  \item {/var/www/galleria/data/lib/database.php}, 144
+  \item {/var/www/galleria/data/lib/database/pdo.php}, 157
+  \item {/var/www/galleria/data/lib/element/category.php}, 158
+  \item {/var/www/galleria/data/lib/image.php}, 159
+  \item {/var/www/galleria/data/lib/image/object.php}, 152
+  \item {/var/www/galleria/data/lib/model.php}, 149
+  \item {/var/www/galleria/data/lib/model/collection.php}, 160
+  \item {/var/www/galleria/data/lib/requests.php}, 161
+  \item {/var/www/galleria/data/lib/requests/gets.php}, 162
+  \item {/var/www/galleria/data/lib/requests/posts.php}, 163
+  \item {/var/www/galleria/data/lib/session.php}, 164
+  \item {/var/www/galleria/data/lib/site.php}, 165
+  \item {/var/www/galleria/data/lib/view.php}, 166
+  \item {/var/www/galleria/data/lib/view/categories.php}, 167
+  \item {/var/www/galleria/data/lib/view/pictures.php}, 168
+  \item {/var/www/galleria/data/lib/view/stats.php}, 169
+  \item {/var/www/galleria/data/lib/view/tags.php}, 170
+  \item {/var/www/galleria/data/lib/viewelement.php}, 171
+  \item {/var/www/galleria/data/site/mvc/controller/admincontroller.php}, 
+		172
+  \item {/var/www/galleria/data/site/mvc/controller/browsecontroller.php}, 
+		173
+  \item {/var/www/galleria/data/site/mvc/controller/errorcontroller.php}, 
+		174
+  \item {/var/www/galleria/data/site/mvc/controller/helpcontroller.php}, 
+		175
+  \item {/var/www/galleria/data/site/mvc/controller/imagescontroller.php}, 
+		176
+  \item {/var/www/galleria/data/site/mvc/controller/indexcontroller.php}, 
+		177
+  \item {/var/www/galleria/data/site/mvc/controller/jsoncontroller.php}, 
+		178
+  \item {/var/www/galleria/data/site/mvc/controller/logincontroller.php}, 
+		179
+  \item {/var/www/galleria/data/site/mvc/controller/profilecontroller.php}, 
+		180
+  \item {/var/www/galleria/data/site/mvc/controller/searchcontroller.php}, 
+		181
+  \item {/var/www/galleria/data/site/mvc/controller/tagcontroller.php}, 
+		182
+  \item {/var/www/galleria/data/site/mvc/model/adminmodel.php}, 183
+  \item {/var/www/galleria/data/site/mvc/model/browsemodel.php}, 184
+  \item {/var/www/galleria/data/site/mvc/model/imagesmodel.php}, 185
+  \item {/var/www/galleria/data/site/mvc/model/indexmodel.php}, 186
+  \item {/var/www/galleria/data/site/mvc/model/jsonmodel.php}, 187
+  \item {/var/www/galleria/data/site/mvc/model/profilemodel.php}, 188
+  \item {/var/www/galleria/data/site/mvc/model/searchmodel.php}, 189
+  \item {/var/www/galleria/data/site/mvc/model/tagmodel.php}, 190
+  \item {\$\_\-action}
+    \subitem {Galleria\_\-Controller}, 56
+  \item {\$\_\-cat}
+    \subitem {Galleria\_\-Image\_\-Object}, 71
+  \item {\$\_\-children}
+    \subitem {Galleria\_\-Element\_\-Category}, 64
+  \item {\$\_\-controller}
+    \subitem {Galleria\_\-Site}, 89
+  \item {\$\_\-desc}
+    \subitem {Galleria\_\-Image\_\-Object}, 71
+  \item {\$\_\-gets}
+    \subitem {Galleria\_\-Requests}, 80
+  \item {\$\_\-http\_\-url}
+    \subitem {Galleria\_\-Viewelement}, 101
+  \item {\$\_\-id}
+    \subitem {Galleria\_\-Auth\_\-Object}, 43
+    \subitem {Galleria\_\-Element\_\-Category}, 64
+    \subitem {Galleria\_\-Image\_\-Object}, 71
+  \item {\$\_\-layout}
+    \subitem {Galleria\_\-View}, 92
+  \item {\$\_\-model}
+    \subitem {Galleria\_\-Controller}, 56
+    \subitem {Galleria\_\-Site}, 89
+  \item {\$\_\-nact}
+    \subitem {Galleria\_\-Controller}, 56
+  \item {\$\_\-name}
+    \subitem {Galleria\_\-Auth\_\-Object}, 44
+    \subitem {Galleria\_\-Element\_\-Category}, 64
+  \item {\$\_\-ncont}
+    \subitem {Galleria\_\-Controller}, 56
+  \item {\$\_\-options}
+    \subitem {Galleria\_\-Configuration\_\-Object}, 50
+  \item {\$\_\-page}
+    \subitem {Galleria\_\-Site}, 89
+  \item {\$\_\-parent}
+    \subitem {Galleria\_\-Element\_\-Category}, 64
+  \item {\$\_\-pdo}
+    \subitem {Galleria\_\-Database}, 57
+  \item {\$\_\-pg}
+    \subitem {Galleria\_\-Image\_\-Object}, 71
+  \item {\$\_\-pics}
+    \subitem {Galleria\_\-Element\_\-Category}, 64
+  \item {\$\_\-posts}
+    \subitem {Galleria\_\-Requests}, 80
+  \item {\$\_\-redirect}
+    \subitem {Galleria\_\-Controller}, 56
+  \item {\$\_\-render}
+    \subitem {Galleria\_\-View}, 92
+  \item {\$\_\-requests}
+    \subitem {Galleria\_\-Controller}, 56
+    \subitem {Galleria\_\-Site}, 89
+  \item {\$\_\-shown}
+    \subitem {Galleria\_\-Image\_\-Object}, 71
+  \item {\$\_\-subpage}
+    \subitem {Galleria\_\-Site}, 89
+  \item {\$\_\-usergroups}
+    \subitem {Galleria\_\-Auth\_\-Object}, 44
+  \item {\$\_\-username}
+    \subitem {Galleria\_\-Auth\_\-Object}, 43
+  \item {\$\_\-values}
+    \subitem {Galleria\_\-Requests\_\-Gets}, 82
+    \subitem {Galleria\_\-Requests\_\-Posts}, 84
+  \item {\$\_\-variables}
+    \subitem {Galleria\_\-View}, 92
+  \item {\$\_\-view}
+    \subitem {Galleria\_\-Controller}, 56
+  \item {\$\_\-viewpath}
+    \subitem {Galleria\_\-Site}, 89
+  \item {\$\_\-year}
+    \subitem {Galleria\_\-Image\_\-Object}, 71
+  \item {\$webroot}
+    \subitem {bootstrap.php}, 141
+  \item {\_\-\_\-construct}
+    \subitem {Galleria\_\-Auth\_\-Object}, 41
+    \subitem {Galleria\_\-Configuration\_\-Object}, 50
+    \subitem {Galleria\_\-Controller}, 53
+    \subitem {Galleria\_\-Database\_\-Pdo}, 58
+    \subitem {Galleria\_\-Element\_\-Category}, 59
+    \subitem {Galleria\_\-Image\_\-Object}, 69
+    \subitem {Galleria\_\-Requests}, 79
+    \subitem {Galleria\_\-Requests\_\-Gets}, 81
+    \subitem {Galleria\_\-Requests\_\-Posts}, 83
+    \subitem {Galleria\_\-View}, 90
+  \item {\_\-\_\-get}
+    \subitem {Galleria\_\-Configuration\_\-Object}, 50
+    \subitem {Galleria\_\-Requests\_\-Gets}, 81
+    \subitem {Galleria\_\-Requests\_\-Posts}, 83
+    \subitem {Galleria\_\-View}, 91
+  \item {\_\-\_\-set}
+    \subitem {Galleria\_\-Requests\_\-Gets}, 81
+    \subitem {Galleria\_\-Requests\_\-Posts}, 83
+    \subitem {Galleria\_\-View}, 91
+  \item {\_\-\_\-toString}
+    \subitem {Galleria\_\-Element\_\-Category}, 60
+  \item {\_\-activateView}
+    \subitem {Galleria\_\-Site}, 88
+  \item {\_\-addChangelog}
+    \subitem {Galleria\_\-Model\_\-Collection}, 77
+  \item {\_\-addNewTag}
+    \subitem {JsonModel}, 123
+  \item {\_\-appendChildren}
+    \subitem {Galleria\_\-Element\_\-Category}, 63
+  \item {\_\-calcSize}
+    \subitem {Galleria\_\-View\_\-Tags}, 100
+  \item {\_\-catsToSqlString}
+    \subitem {JsonModel}, 120
+  \item {\_\-deleteEmptyTags}
+    \subitem {JsonModel}, 125
+  \item {\_\-distFileData}
+    \subitem {Galleria\_\-Auto\_\-Configure}, 46
+  \item {\_\-fetchObjects}
+    \subitem {Galleria\_\-Model}, 73
+  \item {\_\-fileExists}
+    \subitem {Galleria\_\-Auto\_\-Configure}, 45
+  \item {\_\-format}
+    \subitem {Galleria\_\-View\_\-Stats}, 97
+  \item {\_\-getConnection}
+    \subitem {Galleria\_\-Model}, 72
+  \item {\_\-getGroups}
+    \subitem {Galleria\_\-Auth\_\-Model}, 39
+  \item {\_\-getModel}
+    \subitem {Galleria\_\-Controller}, 53
+  \item {\_\-getTagId}
+    \subitem {JsonModel}, 124
+  \item {\_\-getUserData}
+    \subitem {Galleria\_\-Auth\_\-Model}, 39
+  \item {\_\-groupsToSqlString}
+    \subitem {JsonModel}, 120
+  \item {\_\-imageInfo}
+    \subitem {AdminController}, 24
+  \item {\_\-insertPicture}
+    \subitem {AdminController}, 24
+  \item {\_\-loadController}
+    \subitem {Galleria\_\-Site}, 88
+  \item {\_\-loadModel}
+    \subitem {Galleria\_\-Site}, 88
+  \item {\_\-loadView}
+    \subitem {Galleria\_\-Site}, 88
+  \item {\_\-modifyGroups}
+    \subitem {AdminController}, 23
+  \item {\_\-modifyUsers}
+    \subitem {AdminController}, 23
+  \item {\_\-parseCatGroups}
+    \subitem {JsonController}, 113
+  \item {\_\-parseCatsToArray}
+    \subitem {JsonController}, 113
+  \item {\_\-parseParams}
+    \subitem {Galleria\_\-Site}, 87
+  \item {\_\-prepareIn}
+    \subitem {Galleria\_\-Model}, 73
+  \item {\_\-quickRender}
+    \subitem {Galleria\_\-Site}, 87
+  \item {\_\-redir}
+    \subitem {Galleria\_\-Site}, 88
+  \item {\_\-userFileData}
+    \subitem {Galleria\_\-Auto\_\-Configure}, 46
+
+  \indexspace
+
+  \item {addCat}
+    \subitem {JsonModel}, 119
+  \item {addChild}
+    \subitem {Galleria\_\-Element\_\-Category}, 60
+  \item {addChildren}
+    \subitem {Galleria\_\-Element\_\-Category}, 60
+  \item {addNewGroup}
+    \subitem {AdminModel}, 28
+  \item {addNewUser}
+    \subitem {AdminModel}, 27
+  \item {addPicture}
+    \subitem {AdminModel}, 28
+  \item {addTag}
+    \subitem {JsonModel}, 123
+  \item {addUserInGroup}
+    \subitem {JsonModel}, 116
+  \item {AdminController}, 21
+    \subitem {\_\-imageInfo}, 24
+    \subitem {\_\-insertPicture}, 24
+    \subitem {\_\-modifyGroups}, 23
+    \subitem {\_\-modifyUsers}, 23
+    \subitem {before}, 22
+    \subitem {indexAction}, 22
+    \subitem {picturecontrolAction}, 22
+    \subitem {usercontrolAction}, 22
+  \item {adminList}
+    \subitem {Galleria\_\-View\_\-Categories}, 94
+  \item {AdminModel}, 26
+    \subitem {addNewGroup}, 28
+    \subitem {addNewUser}, 27
+    \subitem {addPicture}, 28
+    \subitem {getGroups}, 26
+    \subitem {getPics}, 29
+    \subitem {getUsers}, 27
+  \item {after}
+    \subitem {Galleria\_\-Controller}, 54
+
+  \indexspace
+
+  \item {before}
+    \subitem {AdminController}, 22
+    \subitem {Galleria\_\-Controller}, 54
+    \subitem {JsonController}, 113
+    \subitem {LoginController}, 129
+    \subitem {ProfileController}, 130
+  \item {bootstrap.php}
+    \subitem {\$webroot}, 141
+    \subitem {PATH\_\-DATA\_\-CONFIG}, 140
+    \subitem {PATH\_\-DATA\_\-LIB}, 140
+    \subitem {PATH\_\-DATA\_\-SITE}, 140
+    \subitem {PATH\_\-DATA\_\-SITE\_\-IMAGES}, 140
+    \subitem {PATH\_\-DATA\_\-SITE\_\-MVC}, 141
+    \subitem {PATH\_\-DATA\_\-SITE\_\-MVC\_\-CONTROLLER}, 141
+    \subitem {PATH\_\-DATA\_\-SITE\_\-MVC\_\-MODEL}, 141
+    \subitem {PATH\_\-DATA\_\-SITE\_\-MVC\_\-VIEW}, 141
+    \subitem {PATH\_\-DATA\_\-SITE\_\-MVC\_\-VIEW\_\-LAYOUT}, 141
+    \subitem {PATH\_\-DATA\_\-SITE\_\-MVC\_\-VIEW\_\-SCRIPTS}, 141
+    \subitem {PATH\_\-DATA\_\-SITE\_\-SESSIONS}, 141
+    \subitem {WWWROOT}, 141
+  \item {BrowseController}, 30
+    \subitem {indexAction}, 30
+  \item {BrowseModel}, 31
+    \subitem {getCategories}, 32
+    \subitem {getCatName}, 32
+    \subitem {getPictures}, 31
+
+  \indexspace
+
+  \item {changeCat}
+    \subitem {JsonModel}, 122
+  \item {changeDesc}
+    \subitem {JsonModel}, 121
+  \item {changePg}
+    \subitem {JsonModel}, 121
+  \item {changePw}
+    \subitem {ProfileModel}, 132
+  \item {changeYear}
+    \subitem {JsonModel}, 122
+  \item {checkPermission}
+    \subitem {ImagesModel}, 107
+  \item {configFiles}
+    \subitem {Galleria\_\-Auto\_\-Configure}, 45
+  \item {create}
+    \subitem {Galleria\_\-Element\_\-Category}, 62
+
+  \indexspace
+
+  \item {data}, 9
+  \item {del}
+    \subitem {Galleria\_\-Session}, 85
+  \item {deleteCat}
+    \subitem {JsonModel}, 119
+  \item {deleteFiles}
+    \subitem {Galleria\_\-Image}, 68
+  \item {deleteGroup}
+    \subitem {JsonModel}, 118
+  \item {deletePic}
+    \subitem {JsonModel}, 126
+  \item {deletePicTag}
+    \subitem {JsonModel}, 125
+  \item {deleteUser}
+    \subitem {JsonModel}, 115
+  \item {delUserInGroup}
+    \subitem {JsonModel}, 116
+
+  \indexspace
+
+  \item {ErrorController}, 34
+    \subitem {pagenotfoundAction}, 34
+
+  \indexspace
+
+  \item {fileAction}
+    \subitem {ImagesController}, 103
+  \item {fileFound}
+    \subitem {Galleria\_\-Image}, 67
+    \subitem {ImagesModel}, 106
+  \item {fileNotFound}
+    \subitem {Galleria\_\-Image}, 66
+  \item {format}
+    \subitem {Galleria\_\-View\_\-Pictures}, 95
+
+  \indexspace
+
+  \item {Galleria\_\-Auth}, 35
+    \subitem {getObject}, 36
+    \subitem {init}, 36
+    \subitem {isLogged}, 35
+    \subitem {logOut}, 36
+    \subitem {tryLog}, 35
+  \item {Galleria\_\-Auth\_\-Model}, 38
+    \subitem {\_\-getGroups}, 39
+    \subitem {\_\-getUserData}, 39
+    \subitem {getData}, 40
+    \subitem {logIn}, 38
+  \item {Galleria\_\-Auth\_\-Object}, 41
+    \subitem {\$\_\-id}, 43
+    \subitem {\$\_\-name}, 44
+    \subitem {\$\_\-usergroups}, 44
+    \subitem {\$\_\-username}, 43
+    \subitem {\_\-\_\-construct}, 41
+    \subitem {getName}, 43
+    \subitem {getSQLGroups}, 42
+    \subitem {getUid}, 42
+    \subitem {getUsergroups}, 42
+    \subitem {getUsername}, 43
+    \subitem {hasGroups}, 42
+    \subitem {isInAdminGroup}, 42
+    \subitem {logged}, 41
+    \subitem {update}, 43
+  \item {Galleria\_\-Auto\_\-Configure}, 45
+    \subitem {\_\-distFileData}, 46
+    \subitem {\_\-fileExists}, 45
+    \subitem {\_\-userFileData}, 46
+    \subitem {configFiles}, 45
+  \item {Galleria\_\-Auto\_\-Load}, 47
+    \subitem {start}, 47
+  \item {Galleria\_\-Configuration}, 48
+    \subitem {get}, 48
+    \subitem {set}, 48
+  \item {Galleria\_\-Configuration\_\-Object}, 50
+    \subitem {\$\_\-options}, 50
+    \subitem {\_\-\_\-construct}, 50
+    \subitem {\_\-\_\-get}, 50
+  \item {Galleria\_\-Controller}, 52
+    \subitem {\$\_\-action}, 56
+    \subitem {\$\_\-model}, 56
+    \subitem {\$\_\-nact}, 56
+    \subitem {\$\_\-ncont}, 56
+    \subitem {\$\_\-redirect}, 56
+    \subitem {\$\_\-requests}, 56
+    \subitem {\$\_\-view}, 56
+    \subitem {\_\-\_\-construct}, 53
+    \subitem {\_\-getModel}, 53
+    \subitem {after}, 54
+    \subitem {before}, 54
+    \subitem {getPage}, 55
+    \subitem {getSubpage}, 55
+    \subitem {getView}, 54
+    \subitem {isRedirected}, 55
+    \subitem {redirect}, 55
+    \subitem {setNext}, 54
+  \item {Galleria\_\-Database}, 57
+    \subitem {\$\_\-pdo}, 57
+    \subitem {getPDO}, 57
+    \subitem {init}, 57
+  \item {Galleria\_\-Database\_\-Pdo}, 58
+    \subitem {\_\-\_\-construct}, 58
+  \item {Galleria\_\-Element\_\-Category}, 59
+    \subitem {\$\_\-children}, 64
+    \subitem {\$\_\-id}, 64
+    \subitem {\$\_\-name}, 64
+    \subitem {\$\_\-parent}, 64
+    \subitem {\$\_\-pics}, 64
+    \subitem {\_\-\_\-construct}, 59
+    \subitem {\_\-\_\-toString}, 60
+    \subitem {\_\-appendChildren}, 63
+    \subitem {addChild}, 60
+    \subitem {addChildren}, 60
+    \subitem {create}, 62
+    \subitem {getChildren}, 61
+    \subitem {getCount}, 62
+    \subitem {getId}, 61
+    \subitem {getName}, 60
+    \subitem {getParent}, 61
+    \subitem {hasChildren}, 62
+    \subitem {hasPics}, 61
+    \subitem {howMany}, 63
+    \subitem {jsonFormat}, 63
+  \item {Galleria\_\-Image}, 66
+    \subitem {deleteFiles}, 68
+    \subitem {fileFound}, 67
+    \subitem {fileNotFound}, 66
+    \subitem {getData}, 66
+    \subitem {getFilesize}, 66
+    \subitem {permissionDenied}, 67
+    \subitem {transform}, 67
+  \item {Galleria\_\-Image\_\-Object}, 69
+    \subitem {\$\_\-cat}, 71
+    \subitem {\$\_\-desc}, 71
+    \subitem {\$\_\-id}, 71
+    \subitem {\$\_\-pg}, 71
+    \subitem {\$\_\-shown}, 71
+    \subitem {\$\_\-year}, 71
+    \subitem {\_\-\_\-construct}, 69
+    \subitem {getAlt}, 69
+    \subitem {getCat}, 70
+    \subitem {getDesc}, 70
+    \subitem {getId}, 69
+    \subitem {getPg}, 70
+    \subitem {getYear}, 70
+    \subitem {isShown}, 70
+  \item {Galleria\_\-Model}, 72
+    \subitem {\_\-fetchObjects}, 73
+    \subitem {\_\-getConnection}, 72
+    \subitem {\_\-prepareIn}, 73
+  \item {Galleria\_\-Model\_\-Collection}, 75
+    \subitem {\_\-addChangelog}, 77
+    \subitem {getCats}, 76
+    \subitem {getGroups}, 77
+    \subitem {getSearchPictures}, 76
+    \subitem {getTags}, 77
+  \item {Galleria\_\-Requests}, 79
+    \subitem {\$\_\-gets}, 80
+    \subitem {\$\_\-posts}, 80
+    \subitem {\_\-\_\-construct}, 79
+    \subitem {gets}, 79
+    \subitem {hasGet}, 80
+    \subitem {hasPost}, 80
+    \subitem {posts}, 79
+  \item {Galleria\_\-Requests\_\-Gets}, 81
+    \subitem {\$\_\-values}, 82
+    \subitem {\_\-\_\-construct}, 81
+    \subitem {\_\-\_\-get}, 81
+    \subitem {\_\-\_\-set}, 81
+  \item {Galleria\_\-Requests\_\-Posts}, 83
+    \subitem {\$\_\-values}, 84
+    \subitem {\_\-\_\-construct}, 83
+    \subitem {\_\-\_\-get}, 83
+    \subitem {\_\-\_\-set}, 83
+  \item {Galleria\_\-Session}, 85
+    \subitem {del}, 85
+    \subitem {get}, 85
+    \subitem {set}, 85
+  \item {Galleria\_\-Site}, 87
+    \subitem {\$\_\-controller}, 89
+    \subitem {\$\_\-model}, 89
+    \subitem {\$\_\-page}, 89
+    \subitem {\$\_\-requests}, 89
+    \subitem {\$\_\-subpage}, 89
+    \subitem {\$\_\-viewpath}, 89
+    \subitem {\_\-activateView}, 88
+    \subitem {\_\-loadController}, 88
+    \subitem {\_\-loadModel}, 88
+    \subitem {\_\-loadView}, 88
+    \subitem {\_\-parseParams}, 87
+    \subitem {\_\-quickRender}, 87
+    \subitem {\_\-redir}, 88
+    \subitem {render}, 87
+  \item {Galleria\_\-View}, 90
+    \subitem {\$\_\-layout}, 92
+    \subitem {\$\_\-render}, 92
+    \subitem {\$\_\-variables}, 92
+    \subitem {\_\-\_\-construct}, 90
+    \subitem {\_\-\_\-get}, 91
+    \subitem {\_\-\_\-set}, 91
+    \subitem {render}, 90
+    \subitem {renderLayout}, 91
+    \subitem {setRender}, 90
+    \subitem {setRenderLayout}, 91
+  \item {Galleria\_\-View\_\-Categories}, 93
+    \subitem {adminList}, 94
+    \subitem {info}, 93
+    \subitem {ulList}, 93
+  \item {Galleria\_\-View\_\-Pictures}, 95
+    \subitem {format}, 95
+    \subitem {info}, 95
+  \item {Galleria\_\-View\_\-Stats}, 97
+    \subitem {\_\-format}, 97
+    \subitem {info}, 97
+  \item {Galleria\_\-View\_\-Tags}, 99
+    \subitem {\_\-calcSize}, 100
+    \subitem {info}, 99
+    \subitem {lists}, 99
+  \item {Galleria\_\-Viewelement}, 101
+    \subitem {\$\_\-http\_\-url}, 101
+    \subitem {init}, 101
+  \item {get}
+    \subitem {Galleria\_\-Configuration}, 48
+    \subitem {Galleria\_\-Session}, 85
+  \item {getAction}
+    \subitem {JsonController}, 112
+  \item {getAlt}
+    \subitem {Galleria\_\-Image\_\-Object}, 69
+  \item {getCat}
+    \subitem {Galleria\_\-Image\_\-Object}, 70
+  \item {getCategories}
+    \subitem {BrowseModel}, 32
+  \item {getCatName}
+    \subitem {BrowseModel}, 32
+  \item {getCats}
+    \subitem {Galleria\_\-Model\_\-Collection}, 76
+  \item {getChangelog}
+    \subitem {JsonModel}, 126
+  \item {getChildren}
+    \subitem {Galleria\_\-Element\_\-Category}, 61
+  \item {getCount}
+    \subitem {Galleria\_\-Element\_\-Category}, 62
+  \item {getData}
+    \subitem {Galleria\_\-Auth\_\-Model}, 40
+    \subitem {Galleria\_\-Image}, 66
+  \item {getDesc}
+    \subitem {Galleria\_\-Image\_\-Object}, 70
+  \item {getFilesize}
+    \subitem {Galleria\_\-Image}, 66
+  \item {getGroups}
+    \subitem {AdminModel}, 26
+    \subitem {Galleria\_\-Model\_\-Collection}, 77
+  \item {getGroupsFromCat}
+    \subitem {JsonModel}, 120
+  \item {getGroupsFromUser}
+    \subitem {JsonModel}, 116
+  \item {getId}
+    \subitem {Galleria\_\-Element\_\-Category}, 61
+    \subitem {Galleria\_\-Image\_\-Object}, 69
+  \item {getImageInfo}
+    \subitem {ImagesModel}, 105
+  \item {getImageTags}
+    \subitem {ImagesModel}, 106
+  \item {getLatestPictures}
+    \subitem {IndexModel}, 109
+  \item {getName}
+    \subitem {Galleria\_\-Auth\_\-Object}, 43
+    \subitem {Galleria\_\-Element\_\-Category}, 60
+  \item {getObject}
+    \subitem {Galleria\_\-Auth}, 36
+  \item {getPage}
+    \subitem {Galleria\_\-Controller}, 55
+  \item {getParent}
+    \subitem {Galleria\_\-Element\_\-Category}, 61
+  \item {getPDO}
+    \subitem {Galleria\_\-Database}, 57
+  \item {getPg}
+    \subitem {Galleria\_\-Image\_\-Object}, 70
+  \item {getPgs}
+    \subitem {JsonModel}, 127
+  \item {getPics}
+    \subitem {AdminModel}, 29
+    \subitem {TagModel}, 138
+  \item {getPictures}
+    \subitem {BrowseModel}, 31
+  \item {gets}
+    \subitem {Galleria\_\-Requests}, 79
+  \item {getSearchPictures}
+    \subitem {Galleria\_\-Model\_\-Collection}, 76
+  \item {getSQLGroups}
+    \subitem {Galleria\_\-Auth\_\-Object}, 42
+  \item {getStats}
+    \subitem {IndexModel}, 110
+  \item {getSubpage}
+    \subitem {Galleria\_\-Controller}, 55
+  \item {getTagName}
+    \subitem {TagModel}, 137
+  \item {getTags}
+    \subitem {Galleria\_\-Model\_\-Collection}, 77
+  \item {getUid}
+    \subitem {Galleria\_\-Auth\_\-Object}, 42
+  \item {getUsergroups}
+    \subitem {Galleria\_\-Auth\_\-Object}, 42
+  \item {getUsername}
+    \subitem {Galleria\_\-Auth\_\-Object}, 43
+  \item {getUserPics}
+    \subitem {ProfileModel}, 133
+  \item {getUsers}
+    \subitem {AdminModel}, 27
+  \item {getView}
+    \subitem {Galleria\_\-Controller}, 54
+  \item {getYear}
+    \subitem {Galleria\_\-Image\_\-Object}, 70
+  \item {groupAdmin}
+    \subitem {JsonModel}, 117
+
+  \indexspace
+
+  \item {hasChildren}
+    \subitem {Galleria\_\-Element\_\-Category}, 62
+  \item {hasGet}
+    \subitem {Galleria\_\-Requests}, 80
+  \item {hasGroups}
+    \subitem {Galleria\_\-Auth\_\-Object}, 42
+  \item {hasPics}
+    \subitem {Galleria\_\-Element\_\-Category}, 61
+  \item {hasPost}
+    \subitem {Galleria\_\-Requests}, 80
+  \item {HelpController}, 102
+    \subitem {indexAction}, 102
+  \item {howMany}
+    \subitem {Galleria\_\-Element\_\-Category}, 63
+
+  \indexspace
+
+  \item {ImagesController}, 103
+    \subitem {fileAction}, 103
+    \subitem {indexAction}, 103
+  \item {ImagesModel}, 105
+    \subitem {checkPermission}, 107
+    \subitem {fileFound}, 106
+    \subitem {getImageInfo}, 105
+    \subitem {getImageTags}, 106
+  \item {indexAction}
+    \subitem {AdminController}, 22
+    \subitem {BrowseController}, 30
+    \subitem {HelpController}, 102
+    \subitem {ImagesController}, 103
+    \subitem {IndexController}, 108
+    \subitem {JsonController}, 111
+    \subitem {LoginController}, 128
+    \subitem {ProfileController}, 130
+    \subitem {SearchController}, 134
+    \subitem {TagController}, 136
+  \item {IndexController}, 108
+    \subitem {indexAction}, 108
+  \item {IndexModel}, 109
+    \subitem {getLatestPictures}, 109
+    \subitem {getStats}, 110
+  \item {info}
+    \subitem {Galleria\_\-View\_\-Categories}, 93
+    \subitem {Galleria\_\-View\_\-Pictures}, 95
+    \subitem {Galleria\_\-View\_\-Stats}, 97
+    \subitem {Galleria\_\-View\_\-Tags}, 99
+  \item {init}
+    \subitem {Galleria\_\-Auth}, 36
+    \subitem {Galleria\_\-Database}, 57
+    \subitem {Galleria\_\-Viewelement}, 101
+  \item {isInAdminGroup}
+    \subitem {Galleria\_\-Auth\_\-Object}, 42
+  \item {isLogged}
+    \subitem {Galleria\_\-Auth}, 35
+  \item {isRedirected}
+    \subitem {Galleria\_\-Controller}, 55
+  \item {isShown}
+    \subitem {Galleria\_\-Image\_\-Object}, 70
+
+  \indexspace
+
+  \item {JsonController}, 111
+    \subitem {\_\-parseCatGroups}, 113
+    \subitem {\_\-parseCatsToArray}, 113
+    \subitem {before}, 113
+    \subitem {getAction}, 112
+    \subitem {indexAction}, 111
+    \subitem {postAction}, 112
+  \item {jsonFormat}
+    \subitem {Galleria\_\-Element\_\-Category}, 63
+  \item {JsonModel}, 114
+    \subitem {\_\-addNewTag}, 123
+    \subitem {\_\-catsToSqlString}, 120
+    \subitem {\_\-deleteEmptyTags}, 125
+    \subitem {\_\-getTagId}, 124
+    \subitem {\_\-groupsToSqlString}, 120
+    \subitem {addCat}, 119
+    \subitem {addTag}, 123
+    \subitem {addUserInGroup}, 116
+    \subitem {changeCat}, 122
+    \subitem {changeDesc}, 121
+    \subitem {changePg}, 121
+    \subitem {changeYear}, 122
+    \subitem {deleteCat}, 119
+    \subitem {deleteGroup}, 118
+    \subitem {deletePic}, 126
+    \subitem {deletePicTag}, 125
+    \subitem {deleteUser}, 115
+    \subitem {delUserInGroup}, 116
+    \subitem {getChangelog}, 126
+    \subitem {getGroupsFromCat}, 120
+    \subitem {getGroupsFromUser}, 116
+    \subitem {getPgs}, 127
+    \subitem {groupAdmin}, 117
+    \subitem {pictureVisibility}, 124
+    \subitem {saveCatGroups}, 117
+    \subitem {saveCats}, 118
+    \subitem {userActivity}, 115
+
+  \indexspace
+
+  \item {lib}, 11
+  \item {lists}
+    \subitem {Galleria\_\-View\_\-Tags}, 99
+  \item {logged}
+    \subitem {Galleria\_\-Auth\_\-Object}, 41
+  \item {logIn}
+    \subitem {Galleria\_\-Auth\_\-Model}, 38
+  \item {LoginController}, 128
+    \subitem {before}, 129
+    \subitem {indexAction}, 128
+    \subitem {outAction}, 128
+  \item {logOut}
+    \subitem {Galleria\_\-Auth}, 36
+
+  \indexspace
+
+  \item {mvc}, 17
+
+  \indexspace
+
+  \item {outAction}
+    \subitem {LoginController}, 128
+
+  \indexspace
+
+  \item {pagenotfoundAction}
+    \subitem {ErrorController}, 34
+  \item {PATH\_\-DATA\_\-CONFIG}
+    \subitem {bootstrap.php}, 140
+  \item {PATH\_\-DATA\_\-LIB}
+    \subitem {bootstrap.php}, 140
+  \item {PATH\_\-DATA\_\-SITE}
+    \subitem {bootstrap.php}, 140
+  \item {PATH\_\-DATA\_\-SITE\_\-IMAGES}
+    \subitem {bootstrap.php}, 140
+  \item {PATH\_\-DATA\_\-SITE\_\-MVC}
+    \subitem {bootstrap.php}, 141
+  \item {PATH\_\-DATA\_\-SITE\_\-MVC\_\-CONTROLLER}
+    \subitem {bootstrap.php}, 141
+  \item {PATH\_\-DATA\_\-SITE\_\-MVC\_\-MODEL}
+    \subitem {bootstrap.php}, 141
+  \item {PATH\_\-DATA\_\-SITE\_\-MVC\_\-VIEW}
+    \subitem {bootstrap.php}, 141
+  \item {PATH\_\-DATA\_\-SITE\_\-MVC\_\-VIEW\_\-LAYOUT}
+    \subitem {bootstrap.php}, 141
+  \item {PATH\_\-DATA\_\-SITE\_\-MVC\_\-VIEW\_\-SCRIPTS}
+    \subitem {bootstrap.php}, 141
+  \item {PATH\_\-DATA\_\-SITE\_\-SESSIONS}
+    \subitem {bootstrap.php}, 141
+  \item {permissionDenied}
+    \subitem {Galleria\_\-Image}, 67
+  \item {picturecontrolAction}
+    \subitem {AdminController}, 22
+  \item {pictureVisibility}
+    \subitem {JsonModel}, 124
+  \item {postAction}
+    \subitem {JsonController}, 112
+  \item {posts}
+    \subitem {Galleria\_\-Requests}, 79
+  \item {ProfileController}, 130
+    \subitem {before}, 130
+    \subitem {indexAction}, 130
+  \item {ProfileModel}, 132
+    \subitem {changePw}, 132
+    \subitem {getUserPics}, 133
+
+  \indexspace
+
+  \item {redirect}
+    \subitem {Galleria\_\-Controller}, 55
+  \item {render}
+    \subitem {Galleria\_\-Site}, 87
+    \subitem {Galleria\_\-View}, 90
+  \item {renderLayout}
+    \subitem {Galleria\_\-View}, 91
+
+  \indexspace
+
+  \item {saveCatGroups}
+    \subitem {JsonModel}, 117
+  \item {saveCats}
+    \subitem {JsonModel}, 118
+  \item {SearchController}, 134
+    \subitem {indexAction}, 134
+  \item {SearchModel}, 135
+  \item {set}
+    \subitem {Galleria\_\-Configuration}, 48
+    \subitem {Galleria\_\-Session}, 85
+  \item {setNext}
+    \subitem {Galleria\_\-Controller}, 54
+  \item {setRender}
+    \subitem {Galleria\_\-View}, 90
+  \item {setRenderLayout}
+    \subitem {Galleria\_\-View}, 91
+  \item {start}
+    \subitem {Galleria\_\-Auto\_\-Load}, 47
+
+  \indexspace
+
+  \item {TagController}, 136
+    \subitem {indexAction}, 136
+  \item {TagModel}, 137
+    \subitem {getPics}, 138
+    \subitem {getTagName}, 137
+  \item {transform}
+    \subitem {Galleria\_\-Image}, 67
+  \item {tryLog}
+    \subitem {Galleria\_\-Auth}, 35
+
+  \indexspace
+
+  \item {ulList}
+    \subitem {Galleria\_\-View\_\-Categories}, 93
+  \item {update}
+    \subitem {Galleria\_\-Auth\_\-Object}, 43
+  \item {userActivity}
+    \subitem {JsonModel}, 115
+  \item {usercontrolAction}
+    \subitem {AdminController}, 22
+
+  \indexspace
+
+  \item {WWWROOT}
+    \subitem {bootstrap.php}, 141
+
+\end{theindex}

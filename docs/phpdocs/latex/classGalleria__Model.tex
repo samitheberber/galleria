@@ -1,0 +1,91 @@
+\section{Galleria\_\-Model Class Reference}
+\label{classGalleria__Model}\index{Galleria\_\-Model@{Galleria\_\-Model}}
+Inheritance diagram for Galleria\_\-Model:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classGalleria__Model__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf \_\-getConnection} ()
+\item 
+{\bf \_\-fetchObjects} (\$state)
+\item 
+{\bf \_\-prepareIn} (\$values)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 20 of file model.php.
+
+\subsection{Member Function Documentation}
+\index{Galleria\_\-Model@{Galleria\_\-Model}!\_\-getConnection@{\_\-getConnection}}
+\index{\_\-getConnection@{\_\-getConnection}!Galleria_Model@{Galleria\_\-Model}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Model.\_\-getConnection ()\hspace{0.3cm}{\tt  [protected]}}\label{classGalleria__Model_614cb85e8e133ba7b9630849f273dfff}
+
+
+Gives database connetion.
+
+This function gives database connection, the PDO object.  private \begin{Desc}
+\item[Returns:]\doxyref{Galleria\_\-Database\_\-Pdo}{p.}{classGalleria__Database__Pdo} \end{Desc}
+
+
+Definition at line 30 of file model.php.
+
+References Galleria\_\-Database.getPDO().
+
+Referenced by Galleria\_\-Model\_\-Collection.\_\-addChangelog(), JsonModel.\_\-addNewTag(), JsonModel.\_\-deleteEmptyTags(), Galleria\_\-Auth\_\-Model.\_\-getGroups(), JsonModel.\_\-getTagId(), Galleria\_\-Auth\_\-Model.\_\-getUserData(), JsonModel.addCat(), AdminModel.addNewGroup(), AdminModel.addNewUser(), AdminModel.addPicture(), JsonModel.addTag(), JsonModel.addUserInGroup(), JsonModel.changeCat(), JsonModel.changeDesc(), JsonModel.changePg(), ProfileModel.changePw(), JsonModel.changeYear(), ImagesModel.checkPermission(), JsonModel.deleteCat(), JsonModel.deleteGroup(), JsonModel.deletePic(), JsonModel.deletePicTag(), JsonModel.deleteUser(), JsonModel.delUserInGroup(), ImagesModel.fileFound(), BrowseModel.getCategories(), BrowseModel.getCatName(), Galleria\_\-Model\_\-Collection.getCats(), JsonModel.getChangelog(), Galleria\_\-Auth\_\-Model.getData(), AdminModel.getGroups(), Galleria\_\-Model\_\-Collection.getGroups(), JsonModel.getGroupsFromCat(), JsonModel.getGroupsFromUser(), ImagesModel.getImageInfo(), ImagesModel.getImageTags(), IndexModel.getLatestPictures(), JsonModel.getPgs(), TagModel.getPics(), AdminModel.getPics(), BrowseModel.getPictures(), Galleria\_\-Model\_\-Collection.getSearchPictures(), IndexModel.getStats(), TagModel.getTagName(), Galleria\_\-Model\_\-Collection.getTags(), ProfileModel.getUserPics(), AdminModel.getUsers(), JsonModel.groupAdmin(), JsonModel.pictureVisibility(), JsonModel.saveCatGroups(), JsonModel.saveCats(), and JsonModel.userActivity().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{classGalleria__Model_614cb85e8e133ba7b9630849f273dfff_cgraph}
+\end{center}
+\end{figure}
+\index{Galleria\_\-Model@{Galleria\_\-Model}!\_\-fetchObjects@{\_\-fetchObjects}}
+\index{\_\-fetchObjects@{\_\-fetchObjects}!Galleria_Model@{Galleria\_\-Model}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Model.\_\-fetchObjects (\$ {\em state})\hspace{0.3cm}{\tt  [protected]}}\label{classGalleria__Model_df09f8f2cefbe456a285f2022abc856e}
+
+
+Fetch objects.
+
+This function fetches objects and returns object array.  private \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em PDOStatement}]\$state \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]array \end{Desc}
+
+
+Definition at line 43 of file model.php.
+
+Referenced by Galleria\_\-Auth\_\-Model.\_\-getGroups(), Galleria\_\-Auth\_\-Model.\_\-getUserData(), ImagesModel.fileFound(), BrowseModel.getCategories(), Galleria\_\-Model\_\-Collection.getCats(), JsonModel.getChangelog(), AdminModel.getGroups(), Galleria\_\-Model\_\-Collection.getGroups(), JsonModel.getGroupsFromCat(), JsonModel.getGroupsFromUser(), ImagesModel.getImageTags(), IndexModel.getLatestPictures(), JsonModel.getPgs(), TagModel.getPics(), AdminModel.getPics(), BrowseModel.getPictures(), Galleria\_\-Model\_\-Collection.getSearchPictures(), Galleria\_\-Model\_\-Collection.getTags(), ProfileModel.getUserPics(), and AdminModel.getUsers().\index{Galleria\_\-Model@{Galleria\_\-Model}!\_\-prepareIn@{\_\-prepareIn}}
+\index{\_\-prepareIn@{\_\-prepareIn}!Galleria_Model@{Galleria\_\-Model}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Model.\_\-prepareIn (\$ {\em values})\hspace{0.3cm}{\tt  [protected]}}\label{classGalleria__Model_d0777def3c2b3f7f78e795f27b55be5c}
+
+
+Prepare in sentence.
+
+This function adds correct value of ?-marks in line for IN statement.  private \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em array}]\$values \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]string \end{Desc}
+
+
+Definition at line 60 of file model.php.
+
+Referenced by ImagesModel.checkPermission(), BrowseModel.getCategories(), BrowseModel.getCatName(), ImagesModel.getImageInfo(), IndexModel.getLatestPictures(), TagModel.getPics(), BrowseModel.getPictures(), Galleria\_\-Model\_\-Collection.getSearchPictures(), IndexModel.getStats(), and Galleria\_\-Model\_\-Collection.getTags().
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/var/www/galleria/data/lib/{\bf model.php}\end{CompactItemize}

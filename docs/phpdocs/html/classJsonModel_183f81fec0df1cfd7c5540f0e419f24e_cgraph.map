@@ -1,0 +1,6 @@
+<area shape="rect" href="$classGalleria__Model__Collection.html#004098db076da1d83b9658c53595e2ce" title="Galleria_Model_Collection._addChangelog" alt="" coords="225,5,511,32">
+<area shape="rect" href="$classGalleria__Model.html#614cb85e8e133ba7b9630849f273dfff" title="Galleria_Model._getConnection" alt="" coords="560,56,779,83">
+<area shape="rect" href="$classJsonModel.html#8f7d1bda56546bdf59fb2072fc68201e" title="JsonModel._deleteEmptyTags" alt="" coords="265,107,471,133">
+<area shape="rect" href="$classGalleria__Auth.html#2346b7b64e31f68b4cbc2466171acf7f" title="Galleria_Auth.getObject" alt="" coords="283,157,453,184">
+<area shape="rect" href="$classGalleria__Database.html#a42a56baaae480fe87e7961dcc9c5dc4" title="Galleria_Database.getPDO" alt="" coords="827,56,1019,83">
+<area shape="rect" href="$classGalleria__Session.html#aaa2adfd55cd5ac9436625e2760192bc" title="Galleria_Session.get" alt="" coords="593,157,745,184">

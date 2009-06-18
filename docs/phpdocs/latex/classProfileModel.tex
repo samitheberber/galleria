@@ -1,0 +1,90 @@
+\section{ProfileModel Class Reference}
+\label{classProfileModel}\index{ProfileModel@{ProfileModel}}
+Inheritance diagram for ProfileModel:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=91pt]{classProfileModel__inherit__graph}
+\end{center}
+\end{figure}
+Collaboration diagram for ProfileModel:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=91pt]{classProfileModel__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf changePw} (\$pw, \$uid)
+\item 
+{\bf getUserPics} (\$uid)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 19 of file profilemodel.php.
+
+\subsection{Member Function Documentation}
+\index{ProfileModel@{ProfileModel}!changePw@{changePw}}
+\index{changePw@{changePw}!ProfileModel@{ProfileModel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}ProfileModel.changePw (\$ {\em pw}, \$ {\em uid})}\label{classProfileModel_c7ef238b61a2cc391773b4c636eb8f55}
+
+
+Change password.
+
+This function changes password for specific user.  public \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em string}]\$pw \item[{\em integer}]\$uid \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]boolean \end{Desc}
+
+
+Definition at line 31 of file profilemodel.php.
+
+References Galleria\_\-Model.\_\-getConnection().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=275pt]{classProfileModel_c7ef238b61a2cc391773b4c636eb8f55_cgraph}
+\end{center}
+\end{figure}
+\index{ProfileModel@{ProfileModel}!getUserPics@{getUserPics}}
+\index{getUserPics@{getUserPics}!ProfileModel@{ProfileModel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}ProfileModel.getUserPics (\$ {\em uid})}\label{classProfileModel_209e4ead16fd0966ae0232b2e1a7b99d}
+
+
+Get pictures of user.
+
+This function returns specific user related pictures.  public \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em integer}]\$uid \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]array$|$boolean \end{Desc}
+
+
+Definition at line 46 of file profilemodel.php.
+
+References Galleria\_\-Model.\_\-fetchObjects(), and Galleria\_\-Model.\_\-getConnection().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{classProfileModel_209e4ead16fd0966ae0232b2e1a7b99d_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/var/www/galleria/data/site/mvc/model/{\bf profilemodel.php}\end{CompactItemize}

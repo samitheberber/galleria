@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/MarkUp/SCHEMA/xhtml11.xsd" xml:lang="en">
+    <head>
+        <title>Galleria</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="<?php echo $html_url; ?>css/screen.css" />
+        <script type="text/javascript">var html_url = '<?php echo $html_url; ?>';</script>
+        <script type="text/javascript" src="<?php echo $html_url; ?>js/jquery-1.3.2.min.js"></script>
+        <script type="text/javascript" src="<?php echo $html_url; ?>js/search.js"></script>
+<?php if (Galleria_Auth::isLogged() && Galleria_Auth::getObject()->isInAdminGroup()) {?>
+        <script type="text/javascript" src="<?php echo $html_url; ?>js/adminsite.js"></script>
+<?php } ?>
+    </head>
+    <body>
+        <div id="frame">
+            <div id="header">
+                <h1>Galleria</h1>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="<?php echo $html_url; ?>">Front page</a></li>
+                    <li><a href="<?php echo $html_url; ?>browse/">Browse</a></li>
+                    <li><a href="<?php echo $html_url; ?>search/">Search</a></li>
+                    <li><a href="<?php echo $html_url; ?>help/">Help</a></li>
+                    <?php if (Galleria_Auth::isLogged()) :?>
+                    <?php if (Galleria_Auth::getObject()->isInAdminGroup()) { ?><li><a href="<?php echo $html_url; ?>admin/">Admin</a></li><?php } ?>
+                    <li><a href="<?php echo $html_url; ?>profile/">Profile</a></li>
+                    <li><a href="<?php echo $html_url; ?>login/out/">Log out</a></li>
+                    <?php else: ?>
+                    <li><a href="<?php echo $html_url; ?>login/">Login</a></li>
+                    <?php endif; ?>
+                </ul>
+            </div>
+            <div id="content">
+                <?php echo $page_content; ?>
+            </div>
+            <div id="footer">
+                <p>Created by Sami Saada</p>
+            </div>
+        </div>
+    </body>
+</html>

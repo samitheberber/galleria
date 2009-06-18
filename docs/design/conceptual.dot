@@ -1,0 +1,39 @@
+strict digraph conceptual {
+
+    node [
+        shape=record
+    ]
+
+    users [
+        label="{users|username\lpassword\lname\lactive\l}"
+    ]
+
+    groups [
+        label="{groups|name\ladmin\l}"
+    ]
+
+    categories [
+        label="{categories|name\l}"
+    ]
+
+    pictures [
+        label="{pictures|photographer\lyear\ldescription\lshown\l}"
+    ]
+
+    tags [
+        label="{tags|name\l}"
+    ]
+
+    picturemodifies [
+        label="{picturemodifies|action\laction_timestamp\l}"
+    ]
+
+    categories->categories [label="parent"]
+    pictures->tags [label="tagid"]
+    picturemodifies->pictures [label="pictureid"]
+    picturemodifies->users [label="userid"]
+    users->groups [label="belongs"]
+    groups->categories [label="belongs"]
+    pictures->categories [label="belongs"]
+
+}

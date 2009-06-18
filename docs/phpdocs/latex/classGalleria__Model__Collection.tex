@@ -1,0 +1,169 @@
+\section{Galleria\_\-Model\_\-Collection Class Reference}
+\label{classGalleria__Model__Collection}\index{Galleria\_\-Model\_\-Collection@{Galleria\_\-Model\_\-Collection}}
+Inheritance diagram for Galleria\_\-Model\_\-Collection:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classGalleria__Model__Collection__inherit__graph}
+\end{center}
+\end{figure}
+Collaboration diagram for Galleria\_\-Model\_\-Collection:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=91pt]{classGalleria__Model__Collection__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf getSearchPictures} (\$text, \$pg, \$year)
+\item 
+{\bf getCats} ()
+\item 
+{\bf getGroups} ()
+\item 
+{\bf getTags} ()
+\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf \_\-addChangelog} (\$uid, \$pid, \$action)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 20 of file collection.php.
+
+\subsection{Member Function Documentation}
+\index{Galleria\_\-Model\_\-Collection@{Galleria\_\-Model\_\-Collection}!getSearchPictures@{getSearchPictures}}
+\index{getSearchPictures@{getSearchPictures}!Galleria_Model_Collection@{Galleria\_\-Model\_\-Collection}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Model\_\-Collection.getSearchPictures (\$ {\em text}, \$ {\em pg}, \$ {\em year})}\label{classGalleria__Model__Collection_02f3483cc54bddf1f12ac4e9bf0098a4}
+
+
+Gives searched pictures.
+
+This function gets searched pictures.  public \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em string}]\$text \item[{\em string}]\$pg \item[{\em string}]\$year \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]array \end{Desc}
+
+
+Definition at line 33 of file collection.php.
+
+References Galleria\_\-Model.\_\-fetchObjects(), Galleria\_\-Model.\_\-getConnection(), Galleria\_\-Model.\_\-prepareIn(), Galleria\_\-Auth.getObject(), and Galleria\_\-Auth.isLogged().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{classGalleria__Model__Collection_02f3483cc54bddf1f12ac4e9bf0098a4_cgraph}
+\end{center}
+\end{figure}
+\index{Galleria\_\-Model\_\-Collection@{Galleria\_\-Model\_\-Collection}!getCats@{getCats}}
+\index{getCats@{getCats}!Galleria_Model_Collection@{Galleria\_\-Model\_\-Collection}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Model\_\-Collection.getCats ()}\label{classGalleria__Model__Collection_a55a2ca06f0609522c58b0a99b283aaf}
+
+
+Gives categories.
+
+This function returns categories from database.  public \begin{Desc}
+\item[Returns:]array \end{Desc}
+
+
+Definition at line 56 of file collection.php.
+
+References Galleria\_\-Model.\_\-fetchObjects(), and Galleria\_\-Model.\_\-getConnection().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{classGalleria__Model__Collection_a55a2ca06f0609522c58b0a99b283aaf_cgraph}
+\end{center}
+\end{figure}
+\index{Galleria\_\-Model\_\-Collection@{Galleria\_\-Model\_\-Collection}!getGroups@{getGroups}}
+\index{getGroups@{getGroups}!Galleria_Model_Collection@{Galleria\_\-Model\_\-Collection}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Model\_\-Collection.getGroups ()}\label{classGalleria__Model__Collection_024df98b624b14ff9a2ae67b69d92973}
+
+
+Gives groups.
+
+This function returns group \doxyref{data}{p.}{namespacedata} from database.  public \begin{Desc}
+\item[Returns:]array \end{Desc}
+
+
+Reimplemented in {\bf AdminModel} \doxyref{}{p.}{classAdminModel_37d7155b3073e4f342efb352c52bd6c9}.
+
+Definition at line 71 of file collection.php.
+
+References Galleria\_\-Model.\_\-fetchObjects(), and Galleria\_\-Model.\_\-getConnection().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{classGalleria__Model__Collection_024df98b624b14ff9a2ae67b69d92973_cgraph}
+\end{center}
+\end{figure}
+\index{Galleria\_\-Model\_\-Collection@{Galleria\_\-Model\_\-Collection}!getTags@{getTags}}
+\index{getTags@{getTags}!Galleria_Model_Collection@{Galleria\_\-Model\_\-Collection}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Model\_\-Collection.getTags ()}\label{classGalleria__Model__Collection_b6b9b7c2e5d38d94e38e61f0cf294c2f}
+
+
+Gives tags.
+
+This function gets tags from database.  public \begin{Desc}
+\item[Returns:]array \end{Desc}
+
+
+Definition at line 86 of file collection.php.
+
+References Galleria\_\-Model.\_\-fetchObjects(), Galleria\_\-Model.\_\-getConnection(), Galleria\_\-Model.\_\-prepareIn(), Galleria\_\-Auth.getObject(), and Galleria\_\-Auth.isLogged().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{classGalleria__Model__Collection_b6b9b7c2e5d38d94e38e61f0cf294c2f_cgraph}
+\end{center}
+\end{figure}
+\index{Galleria\_\-Model\_\-Collection@{Galleria\_\-Model\_\-Collection}!\_\-addChangelog@{\_\-addChangelog}}
+\index{\_\-addChangelog@{\_\-addChangelog}!Galleria_Model_Collection@{Galleria\_\-Model\_\-Collection}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Model\_\-Collection.\_\-addChangelog (\$ {\em uid}, \$ {\em pid}, \$ {\em action})\hspace{0.3cm}{\tt  [protected]}}\label{classGalleria__Model__Collection_004098db076da1d83b9658c53595e2ce}
+
+
+Add to changelog.
+
+This function adds \doxyref{data}{p.}{namespacedata} to changelog of picture.  private \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em integer}]\$uid \item[{\em integer}]\$pid \item[{\em string}]\$action \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]boolean \end{Desc}
+
+
+Definition at line 114 of file collection.php.
+
+References Galleria\_\-Model.\_\-getConnection().
+
+Referenced by AdminModel.addPicture(), JsonModel.addTag(), JsonModel.changeCat(), JsonModel.changeDesc(), JsonModel.changePg(), JsonModel.changeYear(), JsonModel.deletePicTag(), and JsonModel.pictureVisibility().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{classGalleria__Model__Collection_004098db076da1d83b9658c53595e2ce_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/var/www/galleria/data/lib/model/{\bf collection.php}\end{CompactItemize}

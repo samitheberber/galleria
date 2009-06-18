@@ -1,0 +1,194 @@
+\section{Galleria\_\-Site Class Reference}
+\label{classGalleria__Site}\index{Galleria\_\-Site@{Galleria\_\-Site}}
+\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+static {\bf render} ()
+\end{CompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{CompactItemize}
+\item 
+static {\bf \_\-quickRender} ()
+\item 
+static {\bf \_\-parseParams} ()
+\item 
+static {\bf \_\-loadModel} ()
+\item 
+static {\bf \_\-loadView} ()
+\item 
+static {\bf \_\-loadController} ()
+\item 
+static {\bf \_\-activateView} ()
+\item 
+static {\bf \_\-redir} ()
+\end{CompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{CompactItemize}
+\item 
+static {\bf \$\_\-page} = 'index'
+\item 
+static {\bf \$\_\-subpage} = 'index'
+\item 
+static {\bf \$\_\-requests} = null
+\item 
+static {\bf \$\_\-model} = null
+\item 
+static {\bf \$\_\-viewpath} = null
+\item 
+static {\bf \$\_\-controller} = null
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 19 of file site.php.
+
+\subsection{Member Function Documentation}
+\index{Galleria\_\-Site@{Galleria\_\-Site}!render@{render}}
+\index{render@{render}!Galleria_Site@{Galleria\_\-Site}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static Galleria\_\-Site.render ()\hspace{0.3cm}{\tt  [static]}}\label{classGalleria__Site_0205e9ec939ea924e25e3650e7a19b70}
+
+
+\#@- Render view.
+
+This function does the rendering operations.  public 
+
+Definition at line 59 of file site.php.
+
+Referenced by \_\-activateView().\index{Galleria\_\-Site@{Galleria\_\-Site}!\_\-quickRender@{\_\-quickRender}}
+\index{\_\-quickRender@{\_\-quickRender}!Galleria_Site@{Galleria\_\-Site}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static Galleria\_\-Site.\_\-quickRender ()\hspace{0.3cm}{\tt  [static, protected]}}\label{classGalleria__Site_7a8c28e40e6a5f3ac9896378c29d3e54}
+
+
+Quick render.
+
+This function does the main parts for rendering, which are also used for redirections.  private 
+
+Definition at line 76 of file site.php.\index{Galleria\_\-Site@{Galleria\_\-Site}!\_\-parseParams@{\_\-parseParams}}
+\index{\_\-parseParams@{\_\-parseParams}!Galleria_Site@{Galleria\_\-Site}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static Galleria\_\-Site.\_\-parseParams ()\hspace{0.3cm}{\tt  [static, protected]}}\label{classGalleria__Site_e0ce26478006db25f6b28f9763217e5a}
+
+
+Parses parameters.
+
+This function parses all request to page hierarchy and request object.  private
+
+WWWROOT, SERVER, GET, POST 
+
+Definition at line 91 of file site.php.\index{Galleria\_\-Site@{Galleria\_\-Site}!\_\-loadModel@{\_\-loadModel}}
+\index{\_\-loadModel@{\_\-loadModel}!Galleria_Site@{Galleria\_\-Site}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static Galleria\_\-Site.\_\-loadModel ()\hspace{0.3cm}{\tt  [static, protected]}}\label{classGalleria__Site_f02798a462fc9f0e66017965bdaf25a4}
+
+
+Load model.
+
+This function loads model.  private
+
+PATH\_\-DATA\_\-SITE\_\-MVC\_\-MODEL 
+
+Definition at line 111 of file site.php.\index{Galleria\_\-Site@{Galleria\_\-Site}!\_\-loadView@{\_\-loadView}}
+\index{\_\-loadView@{\_\-loadView}!Galleria_Site@{Galleria\_\-Site}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static Galleria\_\-Site.\_\-loadView ()\hspace{0.3cm}{\tt  [static, protected]}}\label{classGalleria__Site_6eb1190bd3699b8f85e44d68fdcda9eb}
+
+
+Load view.
+
+This function loads view.  private
+
+PATH\_\-DATA\_\-SITE\_\-MVC\_\-VIEW\_\-SCRIPTS 
+
+Definition at line 126 of file site.php.\index{Galleria\_\-Site@{Galleria\_\-Site}!\_\-loadController@{\_\-loadController}}
+\index{\_\-loadController@{\_\-loadController}!Galleria_Site@{Galleria\_\-Site}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static Galleria\_\-Site.\_\-loadController ()\hspace{0.3cm}{\tt  [static, protected]}}\label{classGalleria__Site_6bfe1443ad144256c846b760f2fb2962}
+
+
+Load controller.
+
+This function loads controller.  private
+
+PATH\_\-DATA\_\-SITE\_\-MVC\_\-CONTROLLER 
+
+Definition at line 142 of file site.php.\index{Galleria\_\-Site@{Galleria\_\-Site}!\_\-activateView@{\_\-activateView}}
+\index{\_\-activateView@{\_\-activateView}!Galleria_Site@{Galleria\_\-Site}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static Galleria\_\-Site.\_\-activateView ()\hspace{0.3cm}{\tt  [static, protected]}}\label{classGalleria__Site_4182ad469dc58ec4b50164c7b227af8d}
+
+
+Activate view.
+
+This function activates view.  private
+
+WWWROOT, PATH\_\-DATA\_\-SITE\_\-MVC\_\-VIEW\_\-LAYOUT 
+
+Definition at line 176 of file site.php.
+
+References render().
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=168pt]{classGalleria__Site_4182ad469dc58ec4b50164c7b227af8d_cgraph}
+\end{center}
+\end{figure}
+\index{Galleria\_\-Site@{Galleria\_\-Site}!\_\-redir@{\_\-redir}}
+\index{\_\-redir@{\_\-redir}!Galleria_Site@{Galleria\_\-Site}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static Galleria\_\-Site.\_\-redir ()\hspace{0.3cm}{\tt  [static, protected]}}\label{classGalleria__Site_5cd7b65e4380a16ae7ef0a28e00e8e70}
+
+
+Redirects.
+
+This function redirects to other location.  private
+
+WWWROOT 
+
+Definition at line 209 of file site.php.
+
+\subsection{Member Data Documentation}
+\index{Galleria\_\-Site@{Galleria\_\-Site}!\$\_\-page@{\$\_\-page}}
+\index{\$\_\-page@{\$\_\-page}!Galleria_Site@{Galleria\_\-Site}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Site.\$\_\-page = 'index'\hspace{0.3cm}{\tt  [static, protected]}}\label{classGalleria__Site_6e027e589d9165b9cd4ccea0584a6477}
+
+
+
+
+Definition at line 29 of file site.php.\index{Galleria\_\-Site@{Galleria\_\-Site}!\$\_\-subpage@{\$\_\-subpage}}
+\index{\$\_\-subpage@{\$\_\-subpage}!Galleria_Site@{Galleria\_\-Site}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Site.\$\_\-subpage = 'index'\hspace{0.3cm}{\tt  [static, protected]}}\label{classGalleria__Site_e207c3361e57d11091688f780f6c636b}
+
+
+
+
+Definition at line 33 of file site.php.\index{Galleria\_\-Site@{Galleria\_\-Site}!\$\_\-requests@{\$\_\-requests}}
+\index{\$\_\-requests@{\$\_\-requests}!Galleria_Site@{Galleria\_\-Site}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Site.\$\_\-requests = null\hspace{0.3cm}{\tt  [static, protected]}}\label{classGalleria__Site_ab0baf162b547b13eff15350e24d74a0}
+
+
+
+
+Definition at line 37 of file site.php.\index{Galleria\_\-Site@{Galleria\_\-Site}!\$\_\-model@{\$\_\-model}}
+\index{\$\_\-model@{\$\_\-model}!Galleria_Site@{Galleria\_\-Site}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Site.\$\_\-model = null\hspace{0.3cm}{\tt  [static, protected]}}\label{classGalleria__Site_c059ed5583119f356939eada1ed40125}
+
+
+
+
+Definition at line 41 of file site.php.\index{Galleria\_\-Site@{Galleria\_\-Site}!\$\_\-viewpath@{\$\_\-viewpath}}
+\index{\$\_\-viewpath@{\$\_\-viewpath}!Galleria_Site@{Galleria\_\-Site}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Site.\$\_\-viewpath = null\hspace{0.3cm}{\tt  [static, protected]}}\label{classGalleria__Site_2853482867059add7fbc3fb82c85ef3b}
+
+
+
+
+Definition at line 45 of file site.php.\index{Galleria\_\-Site@{Galleria\_\-Site}!\$\_\-controller@{\$\_\-controller}}
+\index{\$\_\-controller@{\$\_\-controller}!Galleria_Site@{Galleria\_\-Site}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Galleria\_\-Site.\$\_\-controller = null\hspace{0.3cm}{\tt  [static, protected]}}\label{classGalleria__Site_fd6975b34472f56f8ca121cc907dfd99}
+
+
+
+
+Definition at line 49 of file site.php.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/var/www/galleria/data/lib/{\bf site.php}\end{CompactItemize}

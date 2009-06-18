@@ -1,0 +1,76 @@
+Toteutusdokumentti
+
+Toteutusdokumentissa kuvataan aikaansaatu ohjelmisto.
+
+1. JOHDANTO
+
+    Johdannon sisältö on pitkälti sama kuin suunnitteludokumentissa. Rajaukset osassa esitetään lisärajaukset suunnitteludokumenttiin nähden, esimerkiksi mitä osia ei ole toteutettu. Rajauksista pitää sopia ohjaajan kanssa etukäteen.
+
+
+2. OHJELMISTON YLEISRAKENNE
+
+    Ohjelmiston yleisrakenteessa kuvataan, mistä komponenteista ohjelmisto koostuu. WWW-alustaisissa sovelluksissa komponentteja ovat:
+    o HTML-sivut (käsintehdyt tai proseduurien generoimat),
+    o kuvat yms. erillistiedostot ja
+    o ohjelmat, joita käytetään sivujen tuottamiseen tai lomakkeiden käsittelyyn. Servlet-toteutuksessa ohjelmat jakautuvat servletteihin ja apuluokkiin. 
+
+    Kokonaisuuden kuvaamiseksi esitetään kaavio, josta näkyy, miten komponentit liittyvät toisiinsa. Kaaviossa esitetään
+    o liikkuminen sivujen välillä ja
+    o sivujen generointi ohjelmissa. 
+
+    Jos ohjelmiston käyttöliittymä hyödyntää kehyksiä (frame), on kuvattava millaisia riippuvuuksia kehysten sisällöillä on.
+
+    Yleisrakenteen kuvaamiseksi voidaan käyttää esimerkiksi kaaviotekniikkaa, jossa on symbolit manuaalisia html-sivuja, generoituja sivuja ja proseduureja varten (kuva 5).
+
+    Symboleja yhdistetään nuolilla, jotka kuvaavat siirtymiä sivujen välillä tai sivun tuottamista proseduurissa. Siirtymää kuvaavaan nuoleen on syytä liittää tieto siirtymän aiheuttajasta, linkistä tai lomakkeen lähetysnapista. Kuvassa 6 on esimerkki rakennekaaviosta.
+
+    Kustakin komponentista laaditaan erillinen kuvaus, jossa esitetään komponentin ymmärtämisen kannalta oleelliset asiat. Kuvaus on suunnattu henkilölle, joka mahdollisesti joskus joutuisi ylläpitämään ohjelmistoa.
+
+
+3. JÄRJESTELMÄN KOMPONENTIT
+
+    Kaikkien komponenttien kohdalta esitetään:
+    o komponentin nimi
+    o komponentin tarkoitus
+    o komponentin tyyppi 
+    Komponentit voidaan esitellä esim. ryhmiteltyinä html-sivuihin, servletteihin ja apuluokkiin. Lisäksi voi omana osionaan luetella sovelluksessa käytettävät kuva-, ääni- yms. tiedostot.
+
+    HTML-sivujen osalta kuvataan
+    o lyhyt luonnehdinta sivun sisällöstä
+    o mitä tiedostoja sivuun sisältyy
+    o mitä linkkejä tai lomakkeita sivulle sisältyy ja
+    o mitä ohjelmia sivulta käynnistetään ja miten (linkki vai lomakkeenkäsittelijä)
+    o jos sivuun liittyy Javascriptillä tehtäviä tarkistuksia, nämä mainitaan. 
+
+    HTML-lomakkeisiin liittyvien kenttien osalta kerrotaan, mitä kenttiä lomakkeeseen sisältyy. Jos arvoihin liittyy jotain erityisvaatimuksia, nämä kerrotaan. Piilokentät ja niiden käyttötarkoitus on syytä esittää. Jos sivu on konkreettinen HTML-tiedosto, kerrotaan, missä tämä tiedosto sijaitsee. Jos sivu on generoitu kerrotaan, mikä ohjelma generoi sen.
+
+    Ohjelmien (servlettien ja apuluokkien)  kohdalta esitetään
+    o tarkoitus
+    o parametrit
+    o toiminnan yleispiirteet
+    o ohjelman suorittamat tietokantaoperaatiot
+    o mitä erityistä ohjelmaan liittyen tulisi huomioida
+    o käytettävät apuluokat ja -palvelut
+
+    Selitysten tarkoituksena on auttaa ohjelmakoodin lukemista. Ohjelmakoodiin on syytä liittää kommentteja ja käyttää havainnollisia muuttujanimiä. Ohjelmaan liittyvät yleistiedot voi kirjoittaa myös ohjelmakoodin alkuun yleiskommentiksi, jolloin ne vain kerätään ohjelmakoodista dokumenttiin. 
+
+    Ohjelmakoodit sijoitetaan dokumentin liitteiksi.
+
+
+4. ASENNUSTIEDOT
+
+    Asennustietoina kerrotaan, miten järjestelmän tiedostot sijoittuvat hakemistoihin. Kaikki tiedostot voivat olla samassa hakemistossa tai jakautua useaan eri hakemistoon. Ohjeen tarkoituksena on toisaalta kertoa, miten sovellus on nyt asennettu ja toisaalta miten sen saisi asennettua uuteen ympäristöön. Apuluokkien muodostamat pakkaukset pitää esitellä. Servlettien sijoittelu riippuu servlettiympäristöstä, joten sitä ei tarvitse määritellä.
+
+
+5. KÄYNNISTYS- / KÄYTTÖOHJE
+
+    Perusoletuksena on, että järjestelmän käyttäjä osaa käsitellä WWW-sivuja selaimella. Tähän liittyviä ohjeita ei siten tarvitse antaa. WWW-sovelluksen tulisi olla helppokäyttöinen ja intuitiivinen. Sivujen  pitäisi itsessään sisältää riittävästi sivun käyttöön tarvittavaa informaatiota. Jos sivut ovat tällaisia, riittää antaa ohjelman käynnistykseen tarvittava URL. Jos käyttöön liittyy joitain yleisiä toimintajärjestykseen liittyviä asioita, ne voidaan kertoa tässä yhteydessä.  Näiden tietojen tulisi löytyä myös tuotettavan järjestelmän sivuilta. Muista kertoa ohjaajalle mahdolliset testaustunnukset ja salasanat.
+
+
+6. LIITTEET
+
+    Dokumentin liitteinä annetaan
+    o tehtäväkuvaus
+    o suunnitteludokumentti (korjattuna, jos alkuperäisessä oli puutteita)
+    o tietokannan määrittelevät create table lauseet, jos ne eivät ole mukana dokumentin tekstiosuudessa tai suunnitteludokumentissa
+    o ohjelmakoodit 

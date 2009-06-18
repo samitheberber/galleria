@@ -1,0 +1,33 @@
+strict digraph user_interface {
+
+    node [
+        shape=record
+    ]
+
+    index [label="{Front page|Public\l}"]
+    browse [label="{Browse|Public\l}"]
+    search [label="{Search|Public\l}"]
+    help [label="{Help|Public\l}"]
+    login [label="{Login|Public\l}"]
+    admin [label="{Admin|}"]
+    usercontrol [label="{User Control|}"]
+    picturecontrol [label="{Picture Control|}"]
+    categorycontrol [label="{Category Control|}"]
+    picture [label="{Picture|Public\l}"]
+    tags [label="{Tags|Public\l}"]
+
+    index->browse
+    index->search
+    index->help
+    index->login
+    login->admin
+    browse->picture
+    search->picture
+    admin->usercontrol
+    admin->picturecontrol
+    admin->categorycontrol
+    index->picture
+    index->tags
+    tags->picture
+
+}
