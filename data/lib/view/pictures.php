@@ -48,7 +48,9 @@ class Galleria_View_Pictures extends Galleria_Viewelement
      */
     public static function format(Galleria_Image_Object $imgObj)
     {
-        return '<img src="' . self::$_http_url . 'images/file/?id=' . $imgObj->getId() . '" alt="' . $imgObj->getAlt() . '" ' . (($imgObj->isShown()) ? '' : ' class="hidden"') .'/>';
+        return '<img src="' . self::$_http_url . 'images/file/?id=' . $imgObj->getId() . '" alt="' . $imgObj->getAlt() . '" ' . (($imgObj->isShown()) ? '' : ' class="hidden"') .'/>' . (
+                ($imgObj->hasPrev() || $imgObj->hasNext()) ? ('<br />' . ( $imgObj->hasPrev() ? ('<a href="' . self::$_http_url . 'images/?id=' . $imgObj->getPrev() . '" rel="prev">Previous</a> ') : '') . ( $imgObj->hasNext() ? (' <a href="' . self::$_http_url . 'images/?id=' . $imgObj->getNext() . '" rel="next">Next</a>') : '')) : ''
+                );
     }
 
 }

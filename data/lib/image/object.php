@@ -46,6 +46,14 @@ class Galleria_Image_Object
      * @var Galleria_Element_Category $_cat
      */
     protected $_cat;
+    /**
+     * @var integer $_prev
+     */
+    protected $_prev;
+    /**
+     * @var integer $_next
+     */
+    protected $_next;
     /**#@-*/
 
     /**
@@ -63,6 +71,8 @@ class Galleria_Image_Object
         $this->_desc = $obj->desc;
         $this->_shown = isset($obj->shown) ? (boolean) $obj->shown : true;
         $this->_cat = new Galleria_Element_Category($obj->cid, $obj->cname);
+        $this->_prev = $obj->prev;
+        $this->_next = $obj->next;
     }
 
     /**
@@ -147,6 +157,40 @@ class Galleria_Image_Object
     public function isShown()
     {
         return $this->_shown;
+    }
+
+    /**
+     * Has prev?
+     *
+     * This function tells if picture has previous picture.
+     * @access public
+     * @return boolean
+     */
+    public function hasPrev()
+    {
+        return (boolean) $this->_prev;
+    }
+
+    public function getPrev()
+    {
+        return $this->_prev;
+    }
+
+    /**
+     * Has next?
+     *
+     * This function tells if picture has next picture.
+     * @access public
+     * @return boolean
+     */
+    public function hasNext()
+    {
+        return (boolean) $this->_next;
+    }
+
+    public function getNext()
+    {
+        return $this->_next;
     }
 
 }

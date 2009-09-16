@@ -92,3 +92,22 @@ CREATE OR REPLACE VIEW galleria.changelog AS
     JOIN galleria.users AS u
          ON u.id = pm.userid
     ORDER BY timestamp ASC;
+
+-- Functions
+CREATE OR REPLACE FUNCTION galleria.prevpic(INTEGER, INTEGER)
+    RETURNS INTEGER AS $$
+            SELECT pid
+            FROM galleria.picturedata
+            WHERE pid < $1 AND cid = $2
+            ORDER BY pid DESC
+            LIMIT 1
+    $$ LANGUAGE SQL;
+
+CREATE OR REPLACE FUNCTION galleria.nextpic(INTEGER, INTEGER)
+    RETURNS INTEGER AS $$
+            SELECT pid
+            FROM galleria.picturedata
+            WHERE pid > $1 AND cid = $2
+            ORDER BY pid ASC
+            LIMIT 1
+    $$ LANGUAGE SQL;
