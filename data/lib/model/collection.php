@@ -56,7 +56,7 @@ abstract class Galleria_Model_Collection extends Galleria_Model
     public function getCats()
     {
         $pdo = $this->_getConnection();
-        $sth = $pdo->prepare('SELECT c.id, c.name, c.parent FROM galleria.categories AS c');
+        $sth = $pdo->prepare('SELECT c.id, galleria.catpath(c.id) AS name, c.parent FROM galleria.categories AS c');
         $sth->execute();
         return $this->_fetchObjects($sth);
     }
