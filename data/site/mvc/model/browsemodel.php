@@ -85,14 +85,14 @@ class BrowseModel extends Galleria_Model_Collection
         $pdo = $this->_getConnection();
         if (Galleria_Auth::isLogged() && Galleria_Auth::getObject()->hasGroups()) {
             if (Galleria_Auth::getObject()->isInAdminGroup()) {
-                $sth = $pdo->prepare('SELECT c.name FROM galleria.categories AS c WHERE c.id = ?');
+                $sth = $pdo->prepare('SELECT galleria.catpath(?) AS name');
                 $state = $sth->execute(array($id));
             } else {
-                $sth = $pdo->prepare('SELECT DISTINCT cl.name FROM galleria.categorylist AS cl WHERE (cl.gid IS NULL OR cl.gid IN (' . $this->_prepareIn(Galleria_Auth::getObject()->getSQLGroups()) . ')) AND cl.cid = ?');
+                $sth = $pdo->prepare('SELECT DISTINCT galleria.catpath(cl.cid) AS name FROM galleria.categorylist AS cl WHERE (cl.gid IS NULL OR cl.gid IN (' . $this->_prepareIn(Galleria_Auth::getObject()->getSQLGroups()) . ')) AND cl.cid = ?');
                 $state = $sth->execute(array_merge(Galleria_Auth::getObject()->getSQLGroups(), array($id)));
             }
         } else {
-            $sth = $pdo->prepare('SELECT DISTINCT cl.name FROM galleria.categorylist AS cl WHERE (cl.gid IS NULL) AND cl.cid = ?');
+            $sth = $pdo->prepare('SELECT DISTINCT galleria.catpath(cl.cid) AS name FROM galleria.categorylist AS cl WHERE (cl.gid IS NULL) AND cl.cid = ?');
             $state = $sth->execute(array($id));
         }
         return ($state) ? (($obj = $sth->fetchObject()) ? $obj->name : null) : null;

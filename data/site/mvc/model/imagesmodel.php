@@ -32,14 +32,14 @@ class ImagesModel extends Galleria_Model_Collection
         $pdo = $this->_getConnection();
         if (Galleria_Auth::isLogged() && Galleria_Auth::getObject()->hasGroups()) {
             if (Galleria_Auth::getObject()->isInAdminGroup()) {
-                $sth = $pdo->prepare('SELECT DISTINCT pd.pid, pd.pg, pd.year, pd.desc, pd.cid, pd.cname, pd.shown, galleria.prevpic(pd.pid, pd.cid) AS prev, galleria.nextpic(pd.pid, pd.cid) AS next FROM galleria.picturedata AS pd WHERE pd.pid = ?');
+                $sth = $pdo->prepare('SELECT DISTINCT pd.pid, pd.pg, pd.year, pd.desc, pd.cid, galleria.catpath(pd.cid) AS cname, pd.shown, galleria.prevpic(pd.pid, pd.cid) AS prev, galleria.nextpic(pd.pid, pd.cid) AS next FROM galleria.picturedata AS pd WHERE pd.pid = ?');
                 $sth->execute(array($pid));
             } else {
-                $sth = $pdo->prepare('SELECT DISTINCT pd.pid, pd.pg, pd.year, pd.desc, pd.cid, pd.cname, galleria.prevpic(pd.pid, pd.cid) AS prev, galleria.nextpic(pd.pid, pd.cid) AS next FROM galleria.picturedata AS pd WHERE pd.pid = ? AND pd.shown = TRUE AND (pd.gid IS NULL OR pd.gid IN (' . $this->_prepareIn(Galleria_Auth::getObject()->getSQLGroups()) . '))');
+                $sth = $pdo->prepare('SELECT DISTINCT pd.pid, pd.pg, pd.year, pd.desc, pd.cid, galleria.catpath(pd.cid) AS cname, galleria.prevpic(pd.pid, pd.cid) AS prev, galleria.nextpic(pd.pid, pd.cid) AS next FROM galleria.picturedata AS pd WHERE pd.pid = ? AND pd.shown = TRUE AND (pd.gid IS NULL OR pd.gid IN (' . $this->_prepareIn(Galleria_Auth::getObject()->getSQLGroups()) . '))');
                 $sth->execute(array_merge(array($pid), Galleria_Auth::getObject()->getSQLGroups()));
             }
         } else {
-            $sth = $pdo->prepare('SELECT DISTINCT pd.pid, pd.pg, pd.year, pd.desc, pd.cid, pd.cname, galleria.prevpic(pd.pid, pd.cid) AS prev, galleria.nextpic(pd.pid, pd.cid) AS next FROM galleria.picturedata AS pd WHERE pd.pid = ? AND pd.shown = TRUE AND pd.gid IS NULL');
+            $sth = $pdo->prepare('SELECT DISTINCT pd.pid, pd.pg, pd.year, pd.desc, pd.cid, galleria.catpath(pd.cid) AS cname, galleria.prevpic(pd.pid, pd.cid) AS prev, galleria.nextpic(pd.pid, pd.cid) AS next FROM galleria.picturedata AS pd WHERE pd.pid = ? AND pd.shown = TRUE AND pd.gid IS NULL');
             $sth->execute(array($pid));
         }
         $obj = $sth->fetchObject();

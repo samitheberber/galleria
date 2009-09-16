@@ -111,3 +111,12 @@ CREATE OR REPLACE FUNCTION galleria.nextpic(INTEGER, INTEGER)
             ORDER BY pid ASC
             LIMIT 1
     $$ LANGUAGE SQL;
+
+CREATE OR REPLACE FUNCTION galleria.catpath(INTEGER)
+    RETURNS VARCHAR AS $$
+        SELECT CASE WHEN c.parent IS NULL THEN c.name
+                    ELSE galleria.catpath(c.parent) || ' / ' || c.name
+               END
+        FROM galleria.categories AS c
+        WHERE c.id = $1
+    $$ LANGUAGE SQL;
