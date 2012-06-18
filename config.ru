@@ -1,8 +1,8 @@
 require 'rack-rewrite'
 
 use Rack::Rewrite do
-  send_file %r{([^\?]+)}, Dir.getwd + '/data/html/$1', :if => Proc.new { |env|
-    path = File.expand_path(Dir.getwd + '/data/html' + env['PATH_INFO'])
+  send_file %r{([^\?]+)}, Dir.getwd + '/public/$1', :if => Proc.new { |env|
+    path = File.expand_path(Dir.getwd + '/public' + env['PATH_INFO'])
     File.file?(path)
   }
   rewrite %r{(.*)}, 'index.php$1'
