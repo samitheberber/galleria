@@ -1,4 +1,5 @@
 require 'rack-rewrite'
+require './lib/galleria'
 
 use Rack::Rewrite do
   send_file %r{([^\?]+)}, Dir.getwd + '/public/$1', :if => Proc.new { |env|
@@ -11,4 +12,4 @@ end
 require 'rack-legacy'
 
 use Rack::Legacy::Php, 'data/html'
-run Rack::File.new Dir.getwd
+run Galleria.new
