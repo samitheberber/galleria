@@ -197,7 +197,7 @@ class Galleria_Site
      */
     protected static function _activateView()
     {
-        $html_url = WWWROOT;
+        $html_url = preg_replace('/\/index.php/', '', WWWROOT);
         if (self::$_controller->getView()->render()) {
             $view = self::$_controller->getView();
             ob_start();
