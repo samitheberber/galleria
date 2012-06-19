@@ -9,7 +9,7 @@ use Rack::Rewrite do
   }
   rewrite '/', 'index.php'
   rewrite %r{/images/\?id(.*)}, 'index.php/images/\?id$1'
-  rewrite %r{/images/file/\?id(.*)}, 'index.php/images/file/\?id$1'
+  rewrite %r{/images/file/\?(.*)}, 'index.php/images/file/\?$1'
   rewrite %r{/json/post/}, 'index.php/json/post/'
   rewrite %r{/json/get/\?(.*)}, 'index.php/json/get/\?$1'
   [
