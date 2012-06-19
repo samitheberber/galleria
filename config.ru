@@ -12,10 +12,14 @@ use Rack::Rewrite do
   rewrite %r{/images/file/\?(.*)}, 'index.php/images/file/\?$1'
   rewrite %r{/json/post/}, 'index.php/json/post/'
   rewrite %r{/json/get/\?(.*)}, 'index.php/json/get/\?$1'
+  rewrite %r{/browse/categoryedit/\?(.*)}, 'index.php/browse/categoryedit/\?$1'
+  rewrite %r{/browse/\?(.*)}, 'index.php/browse/\?$1'
+  rewrite %r{/tag/\?(.*)}, 'index.php/tag/\?$1'
   [
     'browse',
     'search',
     'help',
+    'login/out',
     'login',
     'admin/usercontrol',
     'admin/picturecontrol',
