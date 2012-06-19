@@ -8,11 +8,19 @@ use Rack::Rewrite do
     File.file?(path)
   }
   rewrite '/', 'index.php'
+  rewrite %r{/images/\?id(.*)}, 'index.php/images/\?id$1'
+  rewrite %r{/images/file/\?id(.*)}, 'index.php/images/file/\?id$1'
+  rewrite %r{/json/post/}, 'index.php/json/post/'
+  rewrite %r{/json/get/\?(.*)}, 'index.php/json/get/\?$1'
   [
     'browse',
     'search',
     'help',
     'login',
+    'admin/usercontrol',
+    'admin/picturecontrol',
+    'admin',
+    'profile',
   ].each do |page|
     rewrite %r{/#{page}/?}, "index.php/#{page}"
   end

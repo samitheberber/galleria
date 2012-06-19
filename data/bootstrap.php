@@ -14,6 +14,7 @@
 $webroot = '';
 foreach(explode('/', $_SERVER['PHP_SELF'], -1) as $part) {
     $webroot .= $part . '/';
+    if ($part == 'index.php') break;
 }
 
 /**#@+
@@ -103,7 +104,7 @@ Galleria_Database::init( Galleria_Configuration::get()->{'database'} );
 
 if (Galleria_Database::isOnline()) {
 
-    Galleria_Viewelement::init(WWWROOT);
+    Galleria_Viewelement::init(preg_replace('/\/index.php/', '', WWWROOT));
     Galleria_Auth::init();
 
     /**
